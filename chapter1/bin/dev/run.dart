@@ -1,5 +1,4 @@
 import 'dart:mirrors';
-import 'package:dio/dio.dart';
 import '../chapter1.dart';
 import 'util.dart';
 
@@ -35,7 +34,7 @@ void runChapters({
   printGreen("~~~");
   printGreen("Point: $point");
 
-  try {
+  /* try {
     Dio().post(
       "https://capekngoding.com/magicbook/api/scores",
       options: Options(
@@ -52,5 +51,5 @@ void runChapters({
     );
   } on Exception catch (err) {
     print("--- 101 ---");
-  }
+  } */
 }

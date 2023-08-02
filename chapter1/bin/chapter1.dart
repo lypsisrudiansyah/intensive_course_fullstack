@@ -68,9 +68,7 @@ class Chapter1 {
     String value = "5000";
 
     // Uncomment kode dibawah, dan perbaiki agar tidak error
-    /*
-    value = price;
-    */
+    price = int.parse(value);
     return price == 5000;
   }
 
@@ -85,6 +83,9 @@ class Chapter1 {
 
     String text = "hello 'Deny', apa kabar?";
     String? name;
+    int startIndex = text.indexOf("'") + 1;
+    int endIndex = text.lastIndexOf("'");
+    name = text.substring(startIndex, endIndex);
     //Berdasarkan referensi di atas,
     //Ambil text diantara ' dan ' pada variable text
     return name == "Deny";
@@ -93,7 +94,10 @@ class Chapter1 {
   bool? exercise9() {
     List numbers = [70, 23, 44, 33, 100, 23, 109];
     double average = 0;
-    double total = 0;
+    // summary value inside array numbers how ?
+    int total = numbers.reduce((value, element) => value + element);
+    print('total : $total');
+    average = total / numbers.length;
     /*
           Hitunglah nilai rata2 dari List di atas.
           [TIPS] Gunakan for untuk mendapatkan total.
