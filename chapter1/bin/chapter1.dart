@@ -8,6 +8,7 @@ class Chapter1 {
   bool? exercise2() {
     double? price;
     String text = "100.24";
+    price = double.tryParse(text);
     //Ubahlah variable text di atas menjadi double,
     //dan isilah varibel price dengan hasil konversinya
     //di bagian bawah
@@ -23,7 +24,7 @@ class Chapter1 {
 
     String text = "300.24a".replaceAll(RegExp(r'[^\d.]'), '');
     print(text);
-     price = double.tryParse(text) ?? 0;
+    price = double.tryParse(text) ?? 0;
     return price == 300.24;
   }
 
@@ -31,7 +32,7 @@ class Chapter1 {
     int input = 12;
     // Tuliskan kode untuk memverifikasi apakah input adalah bilangan ganjil
     bool? output;
-    return input % 2 != 0;
+    return input % 2 == 0;
   }
 
   bool? exercise5() {
@@ -41,9 +42,9 @@ class Chapter1 {
     //Kode dibawah akan error jika di jalankan,
     //Perbaiki dengan meng-gunakan .tryParse("300aa")??0
     //Sehingga ketika parameter-nya tidak valid, nilainya menjadi 0
-    /*
-          total = double.parse("300aa");
-          */
+
+    total = double.tryParse("300aa") ?? 0;
+
     return total != null;
   }
 
@@ -55,9 +56,9 @@ class Chapter1 {
     //Perbaiki dengan meng-gunakan .tryParse("39ads")??0
     //Sehingga ketika parameter-nya tidak valid, nilainya menjadi 0
 
-    /*
-    age = int.parse("39ads");
-    */
+    
+    age = int.tryParse("39ads") ?? 0;
+
 
     return age != null;
   }
