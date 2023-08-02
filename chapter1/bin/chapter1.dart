@@ -23,7 +23,6 @@ class Chapter1 {
     //Gunakan Regex seperti ini: .replaceAll(RegExp(r'[^\d.]'), '')
 
     String text = "300.24a".replaceAll(RegExp(r'[^\d.]'), '');
-    print(text);
     price = double.tryParse(text) ?? 0;
     return price == 300.24;
   }
@@ -96,13 +95,7 @@ class Chapter1 {
     double average = 0;
     // summary value inside array numbers how ?
     int total = numbers.reduce((value, element) => value + element);
-    print('total : $total');
     average = total / numbers.length;
-    /*
-          Hitunglah nilai rata2 dari List di atas.
-          [TIPS] Gunakan for untuk mendapatkan total.
-          Gunakan numbers.length untuk mendapatkan panjang List
-          */
     return average.toStringAsFixed(2) == "57.43";
   }
 
@@ -113,8 +106,10 @@ class Chapter1 {
           [Tips] - Gunakan .sort, ambil minValue dari .first dan ambil maxValue
           dari .last
           */
-    int minValue = 0;
-    int maxValue = 0;
+    numbers.sort((a, b) => a.compareTo(b));      
+
+    int minValue = numbers.first;
+    int maxValue = numbers.last;
 
     return minValue == 23 && maxValue == 109;
   }
@@ -124,6 +119,8 @@ class Chapter1 {
     // Tuliskan kode untuk menambahkan 5 pada input
     int? output;
 
+    output = input + 5;
+
     return output == 15;
   }
 
@@ -131,6 +128,8 @@ class Chapter1 {
     int input = 10;
     // Tuliskan kode untuk mengurangi 5 pada input
     int? output;
+    output = input - 5;
+
 
     return output == 5;
   }
@@ -140,6 +139,8 @@ class Chapter1 {
     int input2 = 20;
     // Tuliskan kode untuk menjumlahkan input1 dan input2
     int? output;
+    output = input1 + input2;
+
 
     return output == 30;
   }
@@ -149,6 +150,7 @@ class Chapter1 {
     int input2 = 20;
     // Tuliskan kode untuk mengurangi input2 dengan input1
     int? output;
+    output = input2 - input1;
 
     return output == 10;
   }
@@ -158,6 +160,8 @@ class Chapter1 {
     int input2 = 20;
     // Tuliskan kode untuk membagi input2 dengan input1
     double? output;
+    output = input2 / input1;
+
 
     return output == 2.0;
   }
@@ -167,6 +171,8 @@ class Chapter1 {
     int input2 = 20;
     // Tuliskan kode untuk mengalikan input1 dan input2
     int? output;
+    output = input2 * input1;
+    
 
     return output == 200;
   }
@@ -176,6 +182,8 @@ class Chapter1 {
     int input2 = 20;
     // Tuliskan kode untuk menghitung sisa bagi input2 dengan input1
     int? output;
+    output = input2 % input1;
+
 
     return output == 0;
   }
@@ -184,6 +192,8 @@ class Chapter1 {
     String input = "Hello";
     // Tuliskan kode untuk menambahkan " World!" pada input
     String? output = "";
+    output = "$input World!";
+
 
     return output == "Hello World!";
   }
@@ -192,6 +202,7 @@ class Chapter1 {
     String input = "Hello World!";
     // Tuliskan kode untuk mengambil kata pertama dari input
     String? output = "";
+    output = input.split(' ')[0];
 
     return output == "Hello";
   }
@@ -200,6 +211,7 @@ class Chapter1 {
     String input = "Hello World!";
     // Tuliskan kode untuk mengambil kata kedua dari input
     String? output = "";
+    output = input.split(' ')[1];
 
     return output == "World!";
   }
@@ -209,6 +221,8 @@ class Chapter1 {
     // Tuliskan kode untuk memverifikasi apakah input adalah bilangan genap
     bool? output;
 
+    output = input % 2 == 0;
+
     return output == false;
   }
 
@@ -216,6 +230,7 @@ class Chapter1 {
     int input = 12345;
     // Tuliskan kode untuk memverifikasi apakah input adalah bilangan ganjil
     bool? output;
+    output = input % 2 != 0;
 
     return output == true;
   }
@@ -224,6 +239,7 @@ class Chapter1 {
     String input = "Dart";
     // Tuliskan kode untuk memverifikasi apakah input memiliki panjang lebih dari 3 karakter
     bool? output;
+    output = input.length > 3;
 
     return output == true;
   }
@@ -232,6 +248,8 @@ class Chapter1 {
     String input = "Dart";
     // Tuliskan kode untuk memverifikasi apakah input memiliki panjang sama dengan 3 karakter
     bool? output;
+    output = input.length  == 3;
+    
 
     return output == false;
   }
@@ -240,6 +258,7 @@ class Chapter1 {
     String input = "Dart";
     // Tuliskan kode untuk memverifikasi apakah input memiliki huruf pertama 'D'
     bool? output;
+    output = input[0] == 'D';
 
     return output == true;
   }
@@ -248,6 +267,8 @@ class Chapter1 {
     String input = "Dart";
     // Tuliskan kode untuk memverifikasi apakah input memiliki huruf terakhir 't'
     bool? output;
+    output = input[input.length -1 ] == 't';
+    
 
     return output == true;
   }
@@ -256,6 +277,8 @@ class Chapter1 {
     int input = 12345;
     // Tuliskan kode untuk memverifikasi apakah input memiliki 5 digit
     bool? output;
+    output = input.toString().length == 5;
+
 
     return output == true;
   }
@@ -264,6 +287,8 @@ class Chapter1 {
     int input = 12345;
     // Tuliskan kode untuk memverifikasi apakah input memiliki 4 digit
     bool? output;
+    output = input.toString().length == 4;
+
 
     return output == false;
   }
@@ -272,6 +297,10 @@ class Chapter1 {
     double input = 123.45;
     // Tuliskan kode untuk memverifikasi apakah input memiliki 2 digit setelah koma
     bool? output;
+    var b = input.toString().split('.');
+    print('srt  : $b');
+
+    output = b[1].length == 2;
 
     return output == true;
   }
