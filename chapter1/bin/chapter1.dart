@@ -355,7 +355,6 @@ class Chapter1 {
     var result = a.contains('Dart');
     output = result;
 
-    print("srt  : $result ");
 
     return output == true;
   }
@@ -364,6 +363,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengecek apakah semua angka pada List numbers adalah angka genap.
     bool? output = true;
+    output = numbers.every((element) => element % 2 == 0);
 
     return output == false;
   }
@@ -372,6 +372,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengecek apakah ada angka 3 pada List numbers.
     bool? output = false;
+    output = numbers.contains(3);
     return output;
   }
 
@@ -379,6 +380,8 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menggabungkan semua angka pada List numbers menjadi satu string tanpa spasi, misalnya "12345".
     String? output = "";
+    output = numbers.join('');
+
     return output == "12345";
   }
 
@@ -386,6 +389,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menggabungkan semua angka pada List numbers menjadi satu string dengan spasi di antara angka, misalnya "1 2 3 4 5".
     String? output = "";
+    output = numbers.join(' ');
     return output == "1 2 3 4 5";
   }
 
@@ -397,6 +401,7 @@ class Chapter1 {
     };
     // Implementasikan kode untuk mendapatkan daftar keys pada Map person.
     List<String> output = [];
+    output = person.keys.toList();
     return output.contains("name") &&
         output.contains("age") &&
         output.contains("city");
@@ -410,6 +415,8 @@ class Chapter1 {
     };
     // Implementasikan kode untuk mendapatkan daftar values pada Map person.
     List<dynamic> output = [];
+
+    output = person.values.toList();
     return output.contains("John") &&
         output.contains(30) &&
         output.contains("New York");
@@ -419,6 +426,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghitung jumlah angka pada List numbers.
     int? output = -1;
+    output = numbers.length;
     return output == 5;
   }
 
@@ -426,20 +434,28 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghitung jumlah total dari semua angka pada List numbers.
     int? output = -1;
-    return output == 15;
+
+    output = numbers.reduce((value, element) => value + element);
+    return output == 15; 
   }
 
   bool? exercise44() {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghitung jumlah total dari semua angka pada List numbers, tapi kali ini tambahkan nilai awal 10.
     int? output = -1;
+    numbers.insert(0, 10);
+    output = numbers.reduce((value, element) => value + element);
     return output == 25;
   }
 
   bool? exercise45() {
-    List<int> numbers = [1, 2, 3, 4, 5];
+    List<int> numbers = <int>[1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengambil setiap angka pada List numbers dan kalikan dengan 2, hasilnya disimpan dalam List baru.
     List<int> output = [];
+    output = numbers.map((e) => e * 2).toList();
+
+    print("srt  : $output ");
+
     return output.contains(2) && output.contains(10) && output.length == 5;
   }
 
@@ -447,6 +463,8 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengambil setiap angka ganjil pada List numbers, hasilnya disimpan dalam List baru.
     List<int> output = [];
+    output = numbers.where((element) => element % 2 != 0).toList();
+    
     return output.contains(1) &&
         output.contains(3) &&
         output.contains(5) &&
@@ -456,12 +474,14 @@ class Chapter1 {
   bool? exercise47() {
     List<String> fruits = ["banana", "cherry", "apple"];
     // Implementasikan kode untuk mengurutkan List fruits secara ascending.
+    fruits.sort();
     return fruits[0] == "apple" && fruits[2] == "cherry";
   }
 
   bool? exercise48() {
     List<String> fruits = ["apple", "banana", "cherry"];
     // Implementasikan kode untuk mengurutkan List fruits secara descending.
+    // 
     return fruits[0] == "cherry" && fruits[2] == "apple";
   }
 
