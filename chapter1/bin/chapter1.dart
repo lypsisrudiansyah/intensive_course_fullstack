@@ -298,7 +298,6 @@ class Chapter1 {
     // Tuliskan kode untuk memverifikasi apakah input memiliki 2 digit setelah koma
     bool? output;
     var b = input.toString().split('.');
-    print('srt  : $b');
 
     output = b[1].length == 2;
 
@@ -309,6 +308,8 @@ class Chapter1 {
     double input = 123.45;
     // Tuliskan kode untuk memverifikasi apakah input memiliki 3 digit setelah koma
     bool? output;
+    var b = input.toString().split('.');
+    output = b[1].length == 2;
 
     return output == false;
   }
@@ -317,6 +318,12 @@ class Chapter1 {
     String input = "Hello World";
     // Tuliskan kode untuk memverifikasi apakah input adalah palindrome
     bool? output;
+    String beforeReversed = input;
+    String reversed = input.split('').reversed.join.toString();
+    output = input == reversed;
+
+    print("srt  : $input ");
+  
 
     return output == false;
   }

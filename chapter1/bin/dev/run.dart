@@ -1,4 +1,6 @@
 import 'dart:mirrors';
+import 'package:dio/dio.dart';
+
 import '../chapter1.dart';
 import 'util.dart';
 
@@ -49,7 +51,8 @@ void runChapters({
         "point": point,
       },
     );
-  } on Exception catch (err) {
+    print("--- Succeed send to API ---");
+  } on Exception {
     print("--- 101 ---");
   } */
 }
