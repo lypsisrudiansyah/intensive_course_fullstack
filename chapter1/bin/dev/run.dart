@@ -36,7 +36,7 @@ void runChapters({
   printGreen("~~~");
   printGreen("Point: $point");
 
-  /* try {
+  try {
     Dio().post(
       "https://capekngoding.com/magicbook/api/scores",
       options: Options(
@@ -54,5 +54,5 @@ void runChapters({
     print("--- Succeed send to API ---");
   } on Exception {
     print("--- 101 ---");
-  } */
+  }
 }

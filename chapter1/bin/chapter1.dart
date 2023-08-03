@@ -55,9 +55,7 @@ class Chapter1 {
     //Perbaiki dengan meng-gunakan .tryParse("39ads")??0
     //Sehingga ketika parameter-nya tidak valid, nilainya menjadi 0
 
-    
     age = int.tryParse("39ads") ?? 0;
-
 
     return age != null;
   }
@@ -106,7 +104,7 @@ class Chapter1 {
           [Tips] - Gunakan .sort, ambil minValue dari .first dan ambil maxValue
           dari .last
           */
-    numbers.sort((a, b) => a.compareTo(b));      
+    numbers.sort((a, b) => a.compareTo(b));
 
     int minValue = numbers.first;
     int maxValue = numbers.last;
@@ -130,7 +128,6 @@ class Chapter1 {
     int? output;
     output = input - 5;
 
-
     return output == 5;
   }
 
@@ -140,7 +137,6 @@ class Chapter1 {
     // Tuliskan kode untuk menjumlahkan input1 dan input2
     int? output;
     output = input1 + input2;
-
 
     return output == 30;
   }
@@ -162,7 +158,6 @@ class Chapter1 {
     double? output;
     output = input2 / input1;
 
-
     return output == 2.0;
   }
 
@@ -172,7 +167,6 @@ class Chapter1 {
     // Tuliskan kode untuk mengalikan input1 dan input2
     int? output;
     output = input2 * input1;
-    
 
     return output == 200;
   }
@@ -184,7 +178,6 @@ class Chapter1 {
     int? output;
     output = input2 % input1;
 
-
     return output == 0;
   }
 
@@ -193,7 +186,6 @@ class Chapter1 {
     // Tuliskan kode untuk menambahkan " World!" pada input
     String? output = "";
     output = "$input World!";
-
 
     return output == "Hello World!";
   }
@@ -248,8 +240,7 @@ class Chapter1 {
     String input = "Dart";
     // Tuliskan kode untuk memverifikasi apakah input memiliki panjang sama dengan 3 karakter
     bool? output;
-    output = input.length  == 3;
-    
+    output = input.length == 3;
 
     return output == false;
   }
@@ -267,8 +258,7 @@ class Chapter1 {
     String input = "Dart";
     // Tuliskan kode untuk memverifikasi apakah input memiliki huruf terakhir 't'
     bool? output;
-    output = input[input.length -1 ] == 't';
-    
+    output = input[input.length - 1] == 't';
 
     return output == true;
   }
@@ -279,7 +269,6 @@ class Chapter1 {
     bool? output;
     output = input.toString().length == 5;
 
-
     return output == true;
   }
 
@@ -288,7 +277,6 @@ class Chapter1 {
     // Tuliskan kode untuk memverifikasi apakah input memiliki 4 digit
     bool? output;
     output = input.toString().length == 4;
-
 
     return output == false;
   }
@@ -309,7 +297,7 @@ class Chapter1 {
     // Tuliskan kode untuk memverifikasi apakah input memiliki 3 digit setelah koma
     bool? output;
     var b = input.toString().split('.');
-    output = b[1].length == 2;
+    output = b[1].length == 3;
 
     return output == false;
   }
@@ -322,8 +310,6 @@ class Chapter1 {
     String reversed = input.split('').reversed.join.toString();
     output = input == reversed;
 
-    print("srt  : $input ");
-  
 
     return output == false;
   }
@@ -332,6 +318,7 @@ class Chapter1 {
     String input = "Dart is Awesome";
     // Tuliskan kode untuk mengubah input menjadi huruf kecil semua dan memisahkan kata dengan spasi menjadi underscore
     String? output = "";
+    output = input.toLowerCase().replaceAll(' ', '_');
 
     return output == "dart_is_awesome";
   }
@@ -340,6 +327,7 @@ class Chapter1 {
     String input = "1234";
     // Tuliskan kode untuk memverifikasi apakah input adalah angka
     bool? output;
+    output = int.parse(input) is int;
 
     return output == true;
   }
@@ -349,6 +337,7 @@ class Chapter1 {
         "Dart is a client-optimized programming language for fast apps on multiple platforms.";
     // Tuliskan kode untuk membatasi jumlah karakter pada input menjadi 50 karakter
     String? output = "";
+    output = input.substring(0, 50);
 
     return output.length == 50;
   }
@@ -358,6 +347,18 @@ class Chapter1 {
         "Dart is a client-optimized programming language for fast apps on multiple platforms.";
     // Tuliskan kode untuk memverifikasi apakah kata "Dart" muncul pada input
     bool? output = false;
+    var a = input.split(' ');
+    // * First Approach
+    // var result = a.firstWhere((element) => element == 'Dart', orElse: () => "404");
+    // output = result != "404";
+    
+    // * Second Approach
+    var result = a.contains('Dart');
+    output = result;
+    
+    print("srt  : $result ");
+
+
     return output == true;
   }
 
