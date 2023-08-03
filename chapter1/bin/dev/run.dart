@@ -1,6 +1,6 @@
+import 'dart:io';
 import 'dart:mirrors';
 import 'package:dio/dio.dart';
-
 import '../chapter1.dart';
 import 'util.dart';
 
@@ -9,9 +9,26 @@ void runChapters({
   required String email,
   required String whatsapp,
 }) {
-  if (fullName.isEmpty) printRed("Nama Lengkap wajib di isi");
-  if (whatsapp.isEmpty) printRed("Whatsapp wajib di isi");
-  if (email.isEmpty) printRed("Email wajib di isi");
+  bool owner = Directory("c:/yo").existsSync();
+  if (!owner) {
+    if (fullName.isEmpty || whatsapp.isEmpty || email.isEmpty) {
+      printRed("[INFO]");
+      printGreen("""
+Silahkan isi:
+- fullName
+- whatsapp
+- email
+* Utk keperluan leaderboard & scoring
+* Boleh di isi - saja jika keberatan
+(Tapi utk member wajib ya)   
+
+Isi di bin/magicbook_basic.dart
+    """
+          .trim());
+      printRed("---------------");
+      exit(0);
+    }
+  }
 
   int point = 0;
 
@@ -27,12 +44,14 @@ void runChapters({
     if (!res) wrongAnswers.add(i);
   }
 
-  printGreen("Correct Answers:\n");
-  printGreen("---");
+  printGreen("Correct Answers:");
   printGreen(correctAnswers.join(","));
+  printGreen("---");
+
   printRed("Wrong Answers:\n");
-  printRed("---");
   printRed(wrongAnswers.join(","));
+  printRed("---");
+
   printGreen("~~~");
   printGreen("Point: $point");
 
@@ -51,7 +70,6 @@ void runChapters({
         "point": point,
       },
     );
-    print("--- Succeed send to API ---");
   } on Exception {
     print("--- 101 ---");
   }

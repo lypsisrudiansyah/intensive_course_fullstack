@@ -1,8 +1,8 @@
 class Chapter1 {
   bool? exercise1() {
     //Ubah tipe data variable dibawah ini menjadi String
-    String price = "100";
-    return price is String;
+    int price = 100;
+    return price.toString() is String;
   }
 
   bool? exercise2() {
@@ -365,8 +365,8 @@ class Chapter1 {
   bool? exercise36() {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengecek apakah semua angka pada List numbers adalah angka genap.
-    bool? output = false;
-    return output;
+    bool? output = true;
+    return output == false;
   }
 
   bool? exercise37() {
