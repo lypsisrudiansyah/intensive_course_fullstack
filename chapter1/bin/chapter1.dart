@@ -577,7 +577,6 @@ class Chapter1 {
     // Implementasikan kode untuk mengambil 11 karakter terakhir dari variable text.
     String? output = "";
     output = text.substring(text.length - 11, text.length);
-    print("srt  : $output ");
 
     
     return output == " is awesome";
@@ -596,6 +595,8 @@ class Chapter1 {
     List<String> names = ["John", "Jane", "Jim", "Jack", "Jill"];
     // Implementasikan kode untuk menggabungkan semua nama pada List names menjadi satu string dengan koma di antara nama-nama tersebut, misalnya "John, Jane, Jim, Jack, Jill".
     String? output = "";
+
+    output = names.join(', ');
     return output == "John, Jane, Jim, Jack, Jill";
   }
 
@@ -603,6 +604,11 @@ class Chapter1 {
     String text = "Dart";
     // Implementasikan kode untuk membalikkan urutan karakter pada variable text, sehingga menjadi "traD".
     String? output = "";
+
+    output = text.split('').reversed.join('');
+    // var a = text.split('');
+    print("srt  : $output ");
+
     return output == "traD";
   }
 
@@ -610,6 +616,8 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk memeriksa apakah semua angka pada List numbers adalah angka positif (lebih besar dari 0).
     bool? output = false;
+    output = numbers.any((element) => element > 0);
+
     return output;
   }
 
@@ -617,6 +625,8 @@ class Chapter1 {
     List<int> numbers = [33, 22, 13, 14, 15];
     // Implementasikan kode untuk menghitung jumlah angka pada List numbers.
     int? output = -1;
+
+    output = numbers.length;
     return output == 5;
   }
 
@@ -624,6 +634,12 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengambil nilai maksimum dari List numbers.
     int? output = -1;
+    // * First approach
+    // output = numbers.reduce((value, element) => value > element ? value : element);
+    // * 2nd approach
+    numbers.sort((a, b) => b.compareTo(a));
+    output = numbers.first;
+    
     return output == 5;
   }
 
@@ -940,32 +956,28 @@ class Chapter1 {
     List<String> fruits = ["apple", "banana", "cherry"];
     // Implementasikan kode untuk menggabungkan dua List menjadi satu, hasilnya disimpan dalam variable baru.
     List<String>? otherFruits = ["orange", "grape"];
-    List<String>? output = [...fruits, ...otherFruits];
-    return output.toString() ==
-        '["apple", "banana", "cherry", "orange", "grape"]';
+    List<String>? output = [];
+    return output.toString() == '[apple, banana, cherry, orange, grape]';
   }
 
   bool? exercise109() {
     List<String> fruits = ["apple", "banana", "cherry"];
     // Implementasikan kode untuk menggabungkan dua List menjadi satu, hasilnya disimpan dalam List fruits.
     List<String>? otherFruits = ["orange", "grape"];
-    fruits.addAll(otherFruits);
-    return fruits.toString() ==
-        '["apple", "banana", "cherry", "orange", "grape"]';
+    return fruits.toString() == '[apple, banana, cherry, orange, grape]';
   }
 
   bool? exercise110() {
     List<String> fruits = ["apple", "banana", "cherry", "orange", "grape"];
     // Implementasikan kode untuk mengambil dua elemen pertama dari List fruits.
-    List<String>? output = fruits.sublist(0, 2);
-    return output.toString() == '["apple", "banana"]';
+    List<String>? output = [];
+    return output.toString() == '[apple, banana]';
   }
 
   bool? exercise111() {
     List<String> fruits = ["apple", "banana", "cherry", "orange", "grape"];
     // Implementasikan kode untuk menghapus dua elemen pertama dari List fruits.
-    fruits.removeRange(0, 2);
-    return fruits.toString() == '["cherry", "orange", "grape"]';
+    return fruits.toString() == '[cherry, orange, grape]';
   }
 
   bool? exercise112() {
@@ -992,8 +1004,9 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghitung hasil pembagian semua angka pada List numbers (dalam bentuk double).
     double? output = 0;
-    return output == 0.008333333333333333;
+    return output.toStringAsFixed(2) == "3.00";
   }
+
 
   bool? exercise116() {
     List<int> numbers = [1, 2, 3, 4, 5];
