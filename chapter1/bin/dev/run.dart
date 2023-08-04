@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:mirrors';
+import 'package:dio/dio.dart';
 import '../chapter1.dart';
 import 'util.dart';
 
@@ -54,7 +55,7 @@ Isi di bin/magicbook_basic.dart
   printGreen("~~~");
   printGreen("Point: $point");
 
-  /* try {
+  try {
     Dio().post(
       "https://capekngoding.com/magicbook/api/scores",
       options: Options(
@@ -69,7 +70,9 @@ Isi di bin/magicbook_basic.dart
         "point": point,
       },
     );
+
+    print('successfully send to API');
   } on Exception {
     print("--- 101 ---");
-  } */
+  }
 }

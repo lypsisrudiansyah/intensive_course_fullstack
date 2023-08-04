@@ -1,3 +1,4 @@
+
 class Chapter1 {
   bool? exercise1() {
     //Ubah tipe data variable dibawah ini menjadi String
@@ -454,7 +455,6 @@ class Chapter1 {
     List<int> output = [];
     output = numbers.map((e) => e * 2).toList();
 
-    print("srt  : $output ");
 
     return output.contains(2) && output.contains(10) && output.length == 5;
   }
@@ -481,7 +481,7 @@ class Chapter1 {
   bool? exercise48() {
     List<String> fruits = ["apple", "banana", "cherry"];
     // Implementasikan kode untuk mengurutkan List fruits secara descending.
-    // 
+    fruits.sort((a, b) => b.compareTo(a));
     return fruits[0] == "cherry" && fruits[2] == "apple";
   }
 
@@ -489,6 +489,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk memeriksa apakah semua angka pada List numbers adalah angka positif (lebih besar dari 0).
     bool? output = false;
+    output = numbers.every((element) => element > 0);
     return output;
   }
 
@@ -496,6 +497,7 @@ class Chapter1 {
     List<int> numbers = [-1, -2, 3, 4, 5];
     // Implementasikan kode untuk memeriksa apakah ada angka negatif pada List numbers.
     bool? output = false;
+    output = numbers.any((element) => element < 0);
     return output;
   }
 
@@ -503,6 +505,8 @@ class Chapter1 {
     List<String> fruits = ["apple", "banana", "cherry"];
     // Implementasikan kode untuk memeriksa apakah ada buah dengan nama "apple" pada List fruits.
     bool? output = false;
+    // output = fruits.contains('apple');
+    output = fruits.any((element) => element == 'apple');
     return output;
   }
 
@@ -510,6 +514,7 @@ class Chapter1 {
     List<String> fruits = ["apple", "banana", "cherry"];
     // Implementasikan kode untuk menggabungkan semua elemen pada List fruits menjadi satu string dengan spasi di antara buah-buahnya, misalnya "apple banana cherry".
     String? output = "";
+    output = fruits.join(' ');
     return output == "apple banana cherry";
   }
 
@@ -517,6 +522,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengubah semua karakter pada variable text menjadi huruf kecil.
     String? output = "";
+    output = text.toLowerCase();
     return output == "dart is awesome";
   }
 
@@ -524,13 +530,18 @@ class Chapter1 {
     String text = "dart is awesome";
     // Implementasikan kode untuk mengubah semua karakter pada variable text menjadi huruf besar.
     String? output = "";
+    output = text.toUpperCase();
     return output == "DART IS AWESOME";
   }
 
   bool? exercise55() {
-    String text = "Dart is awesome";
+    String text = "dart is awesome";
     // Implementasikan kode untuk mengubah karakter pertama pada variable text menjadi huruf besar.
     String? output = "";
+
+
+    output = text.replaceFirst(text[0], text[0].toUpperCase());
+
     return output == "Dart is awesome";
   }
 
@@ -538,6 +549,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengubah karakter terakhir pada variable text menjadi huruf besar.
     String? output = "";
+    output = text.replaceRange(text.length - 1, text.length, text[text.length -1].toUpperCase());
     return output == "Dart is awesomE";
   }
 
@@ -545,6 +557,9 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengganti kata "awesome" pada variable text dengan kata "fantastic".
     String? output = "";
+    output = text.replaceAll('awesome', 'fantastic');
+
+
     return output == "Dart is fantastic";
   }
 
@@ -552,6 +567,8 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengambil 10 karakter pertama dari variable text.
     String? output = "";
+    output = text.substring(0, 10);
+
     return output == "Dart is aw";
   }
 
@@ -559,6 +576,10 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengambil 11 karakter terakhir dari variable text.
     String? output = "";
+    output = text.substring(text.length - 11, text.length);
+    print("srt  : $output ");
+
+    
     return output == " is awesome";
   }
 
@@ -566,6 +587,8 @@ class Chapter1 {
     String text = "  Dart is awesome  ";
     // Implementasikan kode untuk menghapus spasi di awal dan akhir dari variable text.
     String? output = "";
+    // output = text.replaceAll('  ', '');
+    output = text.trim();
     return output == "Dart is awesome";
   }
 
