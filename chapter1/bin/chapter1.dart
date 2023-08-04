@@ -731,8 +731,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengambil substring dari index 5 hingga akhir dari variable text.
     String? output = "";
-    output = text.substring(5,text.length);
-
+    output = text.substring(5, text.length);
 
     return output == "is awesome";
   }
@@ -788,7 +787,6 @@ class Chapter1 {
     // * 2nd Approach
     output = text.replaceRange(text.length - 4, text.length, '');
 
-
     return output == "Dart is awe";
   }
 
@@ -832,9 +830,9 @@ class Chapter1 {
     // Implementasikan kode untuk mengubah karakter terakhir pada variable text menjadi huruf besar.
     String? output = "";
     int lastIndex = text.length - 1;
-    output = text.replaceFirst(text[lastIndex], text[lastIndex].toUpperCase());
-    print("srt  : $output ");
-
+    output = text.replaceRange(
+        text.length - 1, text.length, text[text.length - 1].toUpperCase());
+    print("srt  : $output , $lastIndex ");
 
     return output == "dart is awesomE";
   }
@@ -843,6 +841,8 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengganti kata "awesome" pada variable text dengan kata "fantastic".
     String? output = "";
+    output = text.replaceAll('awesome', 'fantastic');
+
     return output == "Dart is fantastic";
   }
 
@@ -850,6 +850,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengambil 10 karakter pertama dari variable text.
     String? output = "";
+    output = text.substring(0, 10);
     return output == "Dart is aw";
   }
 
@@ -857,6 +858,8 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengambil 8 karakter terakhir dari variable text.
     String? output = "";
+    output = text.substring(text.length - 11, text.length);
+
     return output == " is awesome";
   }
 
@@ -864,6 +867,7 @@ class Chapter1 {
     String text = "  Dart is awesome  ";
     // Implementasikan kode untuk menghapus spasi di awal dan akhir dari variable text.
     String? output = "";
+    output = text.trim();
     return output == "Dart is awesome";
   }
 
@@ -871,6 +875,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk memeriksa apakah kata "Dart" muncul pada variable text.
     bool? output = false;
+    output = text.contains('Dart');
     return output;
   }
 
@@ -878,6 +883,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk memeriksa apakah variable text mengandung huruf "a".
     bool? output = false;
+    output = text.contains('a');
     return output;
   }
 
@@ -885,6 +891,8 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk memeriksa apakah variable text mengandung huruf "x".
     bool? output;
+    output = text.contains('x');
+
     return output == false;
   }
 
@@ -892,6 +900,11 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk menghitung jumlah huruf "a" pada variable text.
     int? output = -1;
+    output = text.split('').fold(0, (previousValue, element) {
+      // print("asdasd  : $previousValue , $element ");
+      return element == 'a' ? previousValue + 1 : previousValue;
+    });
+
     return output == 2;
   }
 
@@ -899,13 +912,28 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk menghitung jumlah huruf "x" pada variable text.
     int? output = -1;
+    output = text.split('').fold(
+          0,
+          (previousValue, element) =>
+              element == 'x' ? previousValue + 1 : previousValue,
+        );
     return output == 0;
   }
 
   bool? exercise96() {
-    String text = "Dart is awesome";
+    String text = "Dart is Awesome";
     // Implementasikan kode untuk menghitung jumlah huruf "a" atau "A" pada variable text.
     int? output = -1;
+
+    output = text.split('').fold(
+          0,
+          (previousValue, element) =>
+              element.toLowerCase() == 'a' ? previousValue + 1 : previousValue,
+        );
+
+    print("srt  : $output ");
+
+
     return output == 2;
   }
 
@@ -913,6 +941,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk memeriksa apakah variable text mengandung kata "is".
     bool? output = false;
+    output = text.contains('is');
     return output;
   }
 
@@ -920,6 +949,8 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk memeriksa apakah variable text diawali dengan kata "Dart" dan mengandung kata "awesome".
     bool? output = false;
+    String firstWord = text.split(' ').first;
+    output = firstWord == 'Dart' && text.contains('awesome');
     return output;
   }
 
