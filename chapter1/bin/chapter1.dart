@@ -610,7 +610,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk memeriksa apakah semua angka pada List numbers adalah angka positif (lebih besar dari 0).
     bool? output = false;
-    output = numbers.any((element) => element > 0);
+    output = numbers.every((element) => element > 0);
 
     return output;
   }
@@ -832,7 +832,6 @@ class Chapter1 {
     int lastIndex = text.length - 1;
     output = text.replaceRange(
         text.length - 1, text.length, text[text.length - 1].toUpperCase());
-    print("srt  : $output , $lastIndex ");
 
     return output == "dart is awesomE";
   }
@@ -931,9 +930,6 @@ class Chapter1 {
               element.toLowerCase() == 'a' ? previousValue + 1 : previousValue,
         );
 
-    print("srt  : $output ");
-
-
     return output == 2;
   }
 
@@ -958,6 +954,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk memeriksa apakah variable text diakhiri dengan huruf "e".
     bool? output = false;
+    output = text.split('').last == 'e';
     return output;
   }
 
@@ -965,6 +962,8 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk memeriksa apakah variable text mengandung huruf "x" dan "a".
     bool? output;
+
+    output = text.contains('x') && text.contains('a');
     return output == false;
   }
 
@@ -972,6 +971,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk menggabungkan variable text dengan string " and Flutter", hasilnya disimpan dalam variable baru.
     String? output = "";
+    output = "$text and Flutter";
     return output == "Dart is awesome and Flutter";
   }
 
@@ -979,6 +979,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk menggabungkan variable text dengan string " and Flutter" dengan menggunakan operator +=, hasilnya disimpan dalam variable baru.
     String? output = "";
+    output = text;
     output += " and Flutter";
     return output == "Dart is awesome and Flutter";
   }
@@ -987,6 +988,7 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk menggabungkan variable text dengan string " and Flutter" dengan menggunakan method concat, hasilnya disimpan dalam variable baru.
     String? output = "";
+    output = "$text and Flutter";
     return output == "Dart is awesome and Flutter";
   }
 
@@ -994,14 +996,16 @@ class Chapter1 {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengubah variable text menjadi list kata-kata, hasilnya disimpan dalam variable baru.
     List<String>? output = text.split(" ");
-    return output.toString() == '["Dart", "is", "awesome"]';
+    return output.toString() == '[Dart, is, awesome]';
   }
 
   bool? exercise105() {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengubah variable text menjadi list karakter, hasilnya disimpan dalam variable baru.
     List<String>? output = text.split("");
-    return output ==
+
+    // output.
+    return output.toString() ==
         [
           "D",
           "a",
@@ -1018,19 +1022,21 @@ class Chapter1 {
           "o",
           "m",
           "e"
-        ];
+        ].toList().toString();
   }
 
   bool? exercise106() {
     String text = "Dart is awesome";
     // Implementasikan kode untuk mengubah list kata-kata pada variable text menjadi kalimat utuh, hasilnya disimpan dalam variable baru.
     String? output = "";
+    output = text.split(" ").join(" ");
     return output == "Dart is awesome";
   }
 
   bool? exercise107() {
     List<String> fruits = ["apple", "banana", "cherry"];
     // Implementasikan kode untuk menambahkan kata "orange" pada List fruits.
+    fruits.add('orange');
     return fruits.contains("orange");
   }
 
@@ -1039,6 +1045,8 @@ class Chapter1 {
     // Implementasikan kode untuk menggabungkan dua List menjadi satu, hasilnya disimpan dalam variable baru.
     List<String>? otherFruits = ["orange", "grape"];
     List<String>? output = [];
+    output.addAll(fruits);
+    output.addAll(otherFruits);
     return output.toString() == '[apple, banana, cherry, orange, grape]';
   }
 
@@ -1046,6 +1054,10 @@ class Chapter1 {
     List<String> fruits = ["apple", "banana", "cherry"];
     // Implementasikan kode untuk menggabungkan dua List menjadi satu, hasilnya disimpan dalam List fruits.
     List<String>? otherFruits = ["orange", "grape"];
+    // * Below we have 3 approaches to solved it
+    fruits.addAll(otherFruits);
+    // fruits += otherFruits;
+    // fruits = [...fruits, ...otherFruits];
     return fruits.toString() == '[apple, banana, cherry, orange, grape]';
   }
 
@@ -1053,18 +1065,27 @@ class Chapter1 {
     List<String> fruits = ["apple", "banana", "cherry", "orange", "grape"];
     // Implementasikan kode untuk mengambil dua elemen pertama dari List fruits.
     List<String>? output = [];
+    // * Below we have 3 approaches to solved it
+    // output = fruits.sublist(0, 2);
+
+    // output = fruits.take(2).toList();
+
+    output = fruits.getRange(0, 2).toList();
+
     return output.toString() == '[apple, banana]';
   }
 
   bool? exercise111() {
     List<String> fruits = ["apple", "banana", "cherry", "orange", "grape"];
     // Implementasikan kode untuk menghapus dua elemen pertama dari List fruits.
+    fruits.removeRange(0, 2);
     return fruits.toString() == '[cherry, orange, grape]';
   }
 
   bool? exercise112() {
     List<String> fruits = ["apple", "banana", "cherry", "orange", "grape"];
     // Implementasikan kode untuk menghapus elemen dengan nilai "cherry" dari List fruits.
+    fruits.remove('cherry');
     return !fruits.contains("cherry");
   }
 
@@ -1072,6 +1093,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghitung jumlah semua angka pada List numbers.
     int? output = -1;
+    output = numbers.reduce((value, element) => value + element);
     return output == 15;
   }
 
@@ -1079,6 +1101,8 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghitung hasil perkalian semua angka pada List numbers.
     int? output = -1;
+    output = numbers.reduce((value, element) => value * element);
+
     return output == 120;
   }
 
@@ -1086,13 +1110,20 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghitung hasil pembagian semua angka pada List numbers (dalam bentuk double).
     double? output = 0;
-    return output.toStringAsFixed(2) == "3.00";
+
+    for (var element in numbers) {
+      output = output! + (element / numbers.length);
+    }
+
+    return output!.toStringAsFixed(2) == "3.00";
   }
 
   bool? exercise116() {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk memeriksa apakah semua angka pada List numbers adalah angka positif (lebih besar dari 0).
     bool? output = false;
+    output = numbers.every((element) => element > 0);
+
     return output;
   }
 
@@ -1100,6 +1131,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk memeriksa apakah setidaknya ada satu angka pada List numbers yang merupakan angka genap.
     bool? output = false;
+    output = numbers.any((element) => element % 2 == 0);
     return output;
   }
 
@@ -1107,6 +1139,7 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menemukan angka pertama pada List numbers yang merupakan angka genap.
     int? output = -1;
+    output = numbers.firstWhere((element) => element % 2 == 0);
     return output == 2;
   }
 
@@ -1114,6 +1147,8 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menemukan angka pertama pada List numbers yang merupakan angka ganjil.
     int? output = -1;
+    output = numbers.firstWhere((element) => element % 2 != 0);
+
     return output == 1;
   }
 
@@ -1121,6 +1156,8 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menemukan indeks angka pertama pada List numbers yang merupakan angka genap.
     int? output = -1;
+    output = numbers.indexWhere((element) => element % 2 == 0);
+
     return output == 1;
   }
 
@@ -1128,24 +1165,32 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menemukan indeks angka pertama pada List numbers yang merupakan angka ganjil.
     int? output = -1;
+    output = numbers.indexWhere((element) => element % 2 != 0);
+
     return output == 0;
   }
 
   bool? exercise122() {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghapus angka pertama pada List numbers yang merupakan angka genap.
+
+    var firstEven = numbers.firstWhere((element) => element % 2 == 0);
+    numbers.remove(firstEven);
+
     return !numbers.contains(2);
   }
 
   bool? exercise123() {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk menghapus semua angka pada List numbers yang merupakan angka ganjil.
+    numbers.removeWhere((element) => element % 2 != 0);
     return !numbers.contains(1) && !numbers.contains(3) && !numbers.contains(5);
   }
 
   bool? exercise124() {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengubah semua angka pada List numbers menjadi dua kali lipatnya.
+    numbers = numbers.map((e) => e * 2).toList();
     return numbers.toString() == '[2, 4, 6, 8, 10]';
   }
 
@@ -1153,6 +1198,10 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengambil dua elemen terakhir dari List numbers.
     List<int>? output = [];
+    // * We have 2 approaches to solved it
+    output = numbers.sublist(numbers.length - 2, numbers.length);
+    // output = numbers.getRange(numbers.length - 2, numbers.length).toList();
+
     return output.toString() == '[4, 5]';
   }
 
@@ -1160,6 +1209,13 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengambil tiga elemen pertama dari List numbers.
     List<int>? output = [];
+    // * We have 3 approaches to solved it
+    output = numbers.sublist(0, 3);
+    // output = numbers.getRange(0, 3).toList();
+    // output = numbers.take(3).toList();
+
+    print("asdasd  : $output");
+
     return output.toString() == '[1, 2, 3]';
   }
 
@@ -1167,18 +1223,24 @@ class Chapter1 {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengambil tiga elemen terakhir dari List numbers.
     var output = [];
+    // * We have 2 approaches to solved it
+    output = numbers.sublist(numbers.length - 3, numbers.length);
+    // output = numbers.getRange(numbers.length - 3, numbers.length).toList();
     return output.toString() == '[3, 4, 5]';
   }
 
   bool? exercise128() {
     List<int> numbers = [5, 3, 2, 1, 4];
     // Implementasikan kode untuk mengurutkan List numbers secara ascending.
+    numbers.sort();
     return numbers.toString() == '[1, 2, 3, 4, 5]';
   }
 
   bool? exercise129() {
     List<int> numbers = [1, 2, 3, 4, 5];
     // Implementasikan kode untuk mengurutkan List numbers secara descending.
+    numbers.sort((a, b) => b.compareTo(a),);
+
     return numbers.toString() == '[5, 4, 3, 2, 1]';
   }
 
@@ -1187,6 +1249,8 @@ class Chapter1 {
     // Implementasikan kode untuk menggabungkan List numbers dengan List numbers lainnya, kemudian mengurutkannya secara ascending.
     List<int>? otherNumbers = [6, 7, 8];
     List<int>? output = [];
+    output = [...numbers, ...otherNumbers];
+    output.sort();
     return output.toString() == '[1, 2, 3, 4, 5, 6, 7, 8]';
   }
 }
