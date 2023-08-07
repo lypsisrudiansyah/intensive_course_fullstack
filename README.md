@@ -3,5 +3,10 @@
 ## Folders
 ### Chapter 1
   - Learn & Practice Basic Dart
-  - Practice From around 130 Exercises 
+    - Variable
+    - Operator
+    - Null Safety
+    - IF Statement
+    - List dan Map
+  - Practice From around 130 Exercises
 ### 
