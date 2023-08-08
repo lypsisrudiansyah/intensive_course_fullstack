@@ -115,7 +115,9 @@ Isi di bin/magicbook_basic.dart
         "codes": codes
       },
     );
-  } on Exception catch (err) {
+
+    print('successfully send to API');
+  } on Exception {
     print("--- 101 ---");
   }
 }

@@ -3,8 +3,10 @@ class Chapter2 {
     List numbers = [10, 20, 30, 40];
     List output = [];
     // ? Instruksi:Gunakan looping for untuk menambahkan semua item dari numbers ke output
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < numbers.length; i++) {
+      // output[i] = numbers[i];
+      output.add(numbers[i]);
+    }
     // --- End of Answer ---
     return output.toString() == "[10, 20, 30, 40]";
   }
@@ -14,7 +16,9 @@ class Chapter2 {
     List<String> output = [];
 
     // ? Instruksi: Gunakan looping for untuk menambahkan semua item dari fruits ke output
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < fruits.length; i++) {
+      output.add(fruits[i]);
+    }
 
     // --- End of Answer ---
 
@@ -26,7 +30,10 @@ class Chapter2 {
     List<int> output = [];
 
     // ? Instruksi: Gunakan looping for untuk menambahkan semua item dari numbers ke output
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      // output[i] = numbers[i];
+      output.add(numbers[i]);
+    }
 
     // --- End of Answer ---
 
@@ -39,8 +46,12 @@ class Chapter2 {
     bool output = false;
 
     // ? Instruksi: Gunakan looping for untuk mencari apakah terdapat 'kiwi' dalam list fruits
-    // TODO: Tulis kode for loop di sini
 
+    for (var i = 0; i < fruits.length; i++) {
+      if (fruits[i] == 'kiwi') {
+        output = true;
+      }
+    }
     // --- End of Answer ---
 
     return output == true;
@@ -52,7 +63,9 @@ class Chapter2 {
     List<int> multiplesOfN = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list multiplesOfN dengan kelipatan n dari 1 hingga 5
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < n; i++) {
+      multiplesOfN.add((i + 1) * n);
+    }
 
     // --- End of Answer ---
 
@@ -65,7 +78,9 @@ class Chapter2 {
     String result = "";
 
     // ? Instruksi: Gunakan looping for untuk menggabungkan semua item dari colors menjadi satu string result
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < colors.length; i++) {
+      result += colors[i];
+    }
 
     // --- End of Answer ---
 
@@ -78,7 +93,9 @@ class Chapter2 {
     int sum = 0;
 
     // ? Instruksi: Gunakan looping for untuk menjumlahkan semua item dari numbers ke dalam variabel sum
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      sum += numbers[i];
+    }
 
     // --- End of Answer ---
 
@@ -91,7 +108,9 @@ class Chapter2 {
     int product = 1;
 
     // ? Instruksi: Gunakan looping for untuk mengalikan semua item dari numbers ke dalam variabel product
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      product *= numbers[i];
+    }
 
     // --- End of Answer ---
 
@@ -104,7 +123,9 @@ class Chapter2 {
     List<int> reversedNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list reversedNumbers dengan item dari numbers secara terbalik
-    // TODO: Tulis kode for loop di sini
+    for (var i = (numbers.length - 1); i >= 0; i--) {
+      reversedNumbers.add(numbers[i]);
+    }
 
     // --- End of Answer ---
 
@@ -117,8 +138,12 @@ class Chapter2 {
     List<int> oddNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list oddNumbers dengan item dari numbers yang merupakan bilangan ganjil
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < numbers.length; i++) {
+      var oddNumber = numbers[i] % 2 != 0 ? numbers[i] : null;
+      if (oddNumber != null) {
+        oddNumbers.add(oddNumber);
+      }
+    }
     // --- End of Answer ---
 
     return oddNumbers.toString() == "[1, 3, 5]";
@@ -132,6 +157,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari apakah target ada di dalam list numbers
     // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] == target) {
+        exists = true;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -145,7 +175,11 @@ class Chapter2 {
     bool exists = false;
 
     // ? Instruksi: Gunakan looping for untuk mencari apakah target ada di dalam list fruits
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < fruits.length; i++) {
+      if (fruits[i] == target) {
+        exists = true;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -158,7 +192,11 @@ class Chapter2 {
     bool allEven = true;
 
     // ? Instruksi: Gunakan looping for untuk mengecek apakah semua angka dalam list numbers adalah bilangan genap
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 != 0) {
+        allEven = false;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -171,7 +209,11 @@ class Chapter2 {
     bool allDivisibleBy3 = true;
 
     // ? Instruksi: Gunakan looping for untuk mengecek apakah semua angka dalam list numbers dapat dibagi dengan 3 (hasil bagi = 0)
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 3 != 0) {
+        allDivisibleBy3 = false;
+      }
+    }
 
     // --- End of Answer ---
     return allDivisibleBy3;
@@ -184,7 +226,11 @@ class Chapter2 {
     bool found = false;
 
     // ? Instruksi: Gunakan looping for untuk mencari apakah target ada di dalam list fruits
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < fruits.length; i++) {
+      if (fruits[i] == target) {
+        found = true;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -197,8 +243,9 @@ class Chapter2 {
     int sum = 0;
 
     // ? Instruksi: Gunakan looping for untuk menjumlahkan semua angka dalam list numbers
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < numbers.length; i++) {
+      sum += numbers[i];
+    }
     // --- End of Answer ---
 
     return sum == 15;
@@ -210,7 +257,9 @@ class Chapter2 {
     String joinedFruits = "";
 
     // ? Instruksi: Gunakan looping for untuk menggabungkan semua item dari list fruits menjadi satu string joinedFruits
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < fruits.length; i++) {
+      joinedFruits += fruits[i];
+    }
 
     // --- End of Answer ---
 
@@ -223,7 +272,9 @@ class Chapter2 {
     int product = 1;
 
     // ? Instruksi: Gunakan looping for untuk mengalikan semua angka dalam list numbers
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      product *= numbers[i];
+    }
 
     // --- End of Answer ---
 
@@ -236,7 +287,10 @@ class Chapter2 {
     List<int> reversedNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list reversedNumbers dengan item dari list numbers secara terbalik
-    // TODO: Tulis kode for loop di sini
+    for (var i = (numbers.length - 1); i >= 0; i--) {
+      print('Anunya: i = $i, numbers[i] = ${numbers[i]}');
+      reversedNumbers.add(numbers[i]);
+    }
 
     // --- End of Answer ---
 
@@ -249,8 +303,12 @@ class Chapter2 {
     List<int> oddNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list oddNumbers dengan item dari list numbers yang merupakan bilangan ganjil
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < numbers.length; i++) {
+      var oddNumber = numbers[i] % 2 != 0 ? numbers[i] : null;
+      if (oddNumber != null) {
+        oddNumbers.add(oddNumber);
+      }
+    }
     // --- End of Answer ---
 
     return oddNumbers.toString() == "[1, 3, 5]";
@@ -1886,7 +1944,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 0;
+    return matchedEmployees.isEmpty;
   }
 
 // Exercise 110
@@ -1905,7 +1963,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return matchedProducts.length == 0;
+    return matchedProducts.isEmpty;
   }
 
 // Exercise 111
@@ -2025,7 +2083,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return matchedProducts.length == 0;
+    return matchedProducts.isEmpty;
   }
 
 // Exercise 117
@@ -2544,7 +2602,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return lowRatedProducts.length == 0;
+    return lowRatedProducts.isEmpty;
   }
 
 // Exercise 135
