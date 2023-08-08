@@ -1214,7 +1214,6 @@ class Chapter1 {
     // output = numbers.getRange(0, 3).toList();
     // output = numbers.take(3).toList();
 
-    print("asdasd  : $output");
 
     return output.toString() == '[1, 2, 3]';
   }
