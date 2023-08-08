@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Table</title>
+    <style>
+      /* Add your table styles here */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #e1e1e1;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      tr:hover {
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 30px">Rank</th>
+            <th style="width: 60px;">Point</th>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(item, index) in items" :key="item.id">
+            <td>{{ index+1 }}</td>
+            <td>{{ item.point }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.email }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+      let chapter_number = 1;
+      new Vue({
+        el: "#app",
+        data: {
+          items: [],
+        },
+        mounted() {
+          // Fetch data from the API
+          fetch(
+            `https://capekngoding.com/magicbook/api/scores/${chapter_number}`
+          )
+            .then((response) => response.json())
+            .then((data) => (this.items = data["data"]))
+            .catch((error) => console.error("Error fetching data:", error));
+        },
+      });
+    </script>
+  </body>
+</html>

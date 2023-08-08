@@ -1,0 +1,15 @@
+  bool? exercise1() {
+    List<Map<String,dynamic>> input = [@data];
+    List<Map<String,dynamic>> output = [];
+    //@intruksi: <instructions detail>
+    // TODO: Tulis kode for loop di sini
+    @answer
+    // --- End of Answer ---
+    return @checkOutputReturnTrueIfCorrect
+  }
+  // return seharusnya mengecek nilai dari list-nya
+  // Contoh: return output[0]["id"] == 2
+  // Tidak boleh return output.isEmpty atau output.isNotEmpty
+  // Condition pada intruksi selalu terpenuhi, sehingga tidak mungkin menghasilkan output kosong
+  // Ingat, output tidak mungkin kosong, itu pasti harus ada isinya
+  // JIka kosong, berarti condition pada intruksi-nya salah!
