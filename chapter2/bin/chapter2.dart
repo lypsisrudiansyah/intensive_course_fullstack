@@ -1036,7 +1036,6 @@ class Chapter2 {
       if (value > 0) {
         totalSales += value;
       }
-
     }
 
     // --- End of Answer ---
@@ -1240,7 +1239,12 @@ class Chapter2 {
     int maxHourlyRate = 0;
 
     // Instruksi: Gunakan looping for untuk mencari nilai maksimum dari "hourlyRate" pada data karyawan
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int hourlyRate = data[i]['hourlyRate'];
+      if (hourlyRate > maxHourlyRate) {
+        maxHourlyRate = hourlyRate;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1257,7 +1261,10 @@ class Chapter2 {
     double totalHarga = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total harga dari semua produk di dalam list products
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      int price = products[i]['price'];
+      totalHarga += price;
+    }
 
     // --- End of Answer ---
 
@@ -1274,7 +1281,11 @@ class Chapter2 {
     double totalPendapatan = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total pendapatan dari semua transaksi di dalam list transactions
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < transactions.length; i++) {
+      int price = transactions[i]['price'];
+      int amount = transactions[i]['amount'];
+      totalPendapatan += (price * amount);
+    }
 
     // --- End of Answer ---
 
@@ -1291,7 +1302,10 @@ class Chapter2 {
     double totalGaji = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total gaji dari semua karyawan di dalam list employees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      int price = employees[i]['salary'];
+      totalGaji += price;
+    }
 
     // --- End of Answer ---
 
@@ -1310,8 +1324,11 @@ class Chapter2 {
     double totalNilaiPemesanan = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total nilai pemesanan dari semua orders di dalam list orders
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < orders.length; i++) {
+      int price = orders[i]['price'];
+      int quantity = orders[i]['quantity'];
+      totalNilaiPemesanan += (price * quantity);
+    }
     // --- End of Answer ---
 
     return totalNilaiPemesanan == 1300000.0;
