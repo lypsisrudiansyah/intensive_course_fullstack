@@ -585,7 +585,6 @@ class Chapter2 {
     for (var i = 0; i < words.length; i++) {
       concatenatedWords += '${words[i]} ';
     }
-    print('Anunya:  $concatenatedWords');
 
     // --- End of Answer ---
 
@@ -802,7 +801,7 @@ class Chapter2 {
 
     // Instruksi: Gunakan looping for untuk mengisi list names dengan semua nama dari users
     for (var i = 0; i < users.length; i++) {
-        names.add(users[i]['name']);
+      names.add(users[i]['name']);
     }
 
     // --- End of Answer ---
@@ -832,9 +831,9 @@ class Chapter2 {
     int age = -1;
 
     // Instruksi: Gunakan looping for untuk mencari user dengan id = 2 dan kembalikan nilai usianya
-   for (var i = 0; i < users.length; i++) {
+    for (var i = 0; i < users.length; i++) {
       if (users[i]['id'] == 2) {
-       age = users[i]['age'];
+        age = users[i]['age'];
       }
     }
 
@@ -899,9 +898,8 @@ class Chapter2 {
 
     // Instruksi: Gunakan looping for untuk mengupdate usia setiap user menjadi usia + 1 dan masukkan ke dalam list updatedUsers
     for (var i = 0; i < users.length; i++) {
-      if (users[i]['name'].toString().startsWith('A')) {
-        filteredUsers.add(users[i]);
-      }
+      users[i]['age'] += 1;
+      updatedUsers.add(users[i]);
     }
 
     // --- End of Answer ---
@@ -932,7 +930,14 @@ class Chapter2 {
     List<Map<String, dynamic>> filteredUsers = [];
 
     // Instruksi: Gunakan looping for untuk mengisi list filteredUsers dengan user yang memiliki properti "address"
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+      // * 1
+      // if (users[i]['address'] != null) {
+      // * 2
+      if (users[i].containsKey('address')) {
+        filteredUsers.add(users[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -961,7 +966,11 @@ class Chapter2 {
     List<String> names = [];
 
     // Instruksi: Gunakan looping for untuk mengisi list names dengan nama-nama user yang usianya kurang dari 30 tahun
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+      if (users[i]['age'] < 30) {
+        names.add(users[i]['name']);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -990,6 +999,15 @@ class Chapter2 {
 
     // Instruksi: Gunakan looping for untuk mencari user dengan id = 3 dan hapus user tersebut dari list users
     // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+      // * 1
+      /* if (users[i]['id'] == 3) {
+        users.removeAt(i);
+      } */
+
+      // * 2
+      users.removeWhere((element) => element['id'] == 3);
+    }
 
     // --- End of Answer ---
 
@@ -1007,7 +1025,19 @@ class Chapter2 {
     int totalSales = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total penjualan (amount positif) dari data transaksi
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int value = int.parse(data[i]['amount'].toString());
+      // * 1
+      /* if (data[i]['transaction'] == 'Sale') {
+        totalSales += value;
+      } */
+
+      // * 2
+      if (value > 0) {
+        totalSales += value;
+      }
+
+    }
 
     // --- End of Answer ---
 
@@ -1025,7 +1055,12 @@ class Chapter2 {
     int totalRefunds = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total refund (amount negatif) dari data transaksi
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int value = int.parse(data[i]['amount'].toString());
+      if (value < 0) {
+        totalRefunds += value.abs();
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1043,7 +1078,12 @@ class Chapter2 {
     int totalPromoSales = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total penjualan dengan isPromo true dari data transaksi
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int value = int.parse(data[i]['amount'].toString());
+      if (data[i]['isPromo'] == true) {
+        totalPromoSales += value;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1061,7 +1101,12 @@ class Chapter2 {
     int totalElectronicsSales = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total penjualan kategori "Electronics" dari data transaksi
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int value = int.parse(data[i]['amount'].toString());
+      if (data[i]['category'] == 'Electronics') {
+        totalElectronicsSales += value;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1079,7 +1124,13 @@ class Chapter2 {
     int totalFashionRefunds = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total refund kategori "Fashion" dari data transaksi
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int value = int.parse(data[i]['amount'].toString());
+      if (data[i]['category'] == 'Fashion' &&
+          data[i]['transaction'] == 'Refund') {
+        totalFashionRefunds += value.abs();
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1097,8 +1148,12 @@ class Chapter2 {
     int totalSalesInElectronics = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total penjualan kategori "Electronics" dari data transaksi
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < data.length; i++) {
+      int value = int.parse(data[i]['amount'].toString());
+      if (data[i]['category'] == 'Electronics') {
+        totalSalesInElectronics += value;
+      }
+    }
     // --- End of Answer ---
 
     return totalSalesInElectronics == 1500;
@@ -1115,7 +1170,13 @@ class Chapter2 {
     int totalRefundsInElectronics = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total refund kategori "Electronics" dari data transaksi
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int value = int.parse(data[i]['amount'].toString());
+      if (data[i]['category'] == 'Electronics' &&
+          data[i]['transaction'] == 'Refund') {
+        totalRefundsInElectronics += value.abs();
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1134,7 +1195,14 @@ class Chapter2 {
     int totalRefunds = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total penjualan dan refund dari data transaksi
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int value = int.parse(data[i]['amount'].toString());
+      if (data[i]['transaction'] == 'Refund') {
+        totalRefunds += value.abs();
+      } else if (data[i]['transaction'] == 'Sale') {
+        totalSales += value;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1151,7 +1219,12 @@ class Chapter2 {
     int totalSalary = 0;
 
     // Instruksi: Gunakan looping for untuk menghitung total gaji (hoursWorked * hourlyRate) dari data karyawan
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < data.length; i++) {
+      int hourlyRate = data[i]['hourlyRate'];
+      int hoursWorked = data[i]['hoursWorked'];
+      print('Anunya: $hourlyRate');
+      totalSalary += (hourlyRate * hoursWorked);
+    }
 
     // --- End of Answer ---
     return totalSalary == 2150;
