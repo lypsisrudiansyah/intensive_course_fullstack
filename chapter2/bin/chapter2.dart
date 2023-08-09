@@ -650,7 +650,11 @@ class Chapter2 {
     List<int> evenNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list evenNumbers dengan angka-angka genap dari list numbers.
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 == 0) {
+        evenNumbers.add(numbers[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -665,7 +669,11 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mengisi list evenNumbers
     // dengan angka-angka genap dari list numbers.
     // Kalikan angka genap itu dengan 9
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 == 0) {
+        evenNumbers.add(numbers[i] * 9);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -694,7 +702,11 @@ class Chapter2 {
     List<Map> filteredUsers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list filteredUsers dengan ketentuan User yang huruf depannya adalah A
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+      if (users[i]['name'].toString().startsWith('A')) {
+        filteredUsers.add(users[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -723,7 +735,11 @@ class Chapter2 {
 
     List<Map<String, dynamic>> filteredUsers = [];
     // Instruksi: Gunakan looping for untuk mengisi list filteredUsers dengan ketentuan User yang huruf depannya adalah "D"
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+      if (users[i]['name'].toString().startsWith('D')) {
+        filteredUsers.add(users[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -752,7 +768,11 @@ class Chapter2 {
     List<Map<String, dynamic>> filteredUsers = [];
 
     // Instruksi: Gunakan looping for untuk mengisi list filteredUsers dengan ketentuan User yang usianya di atas 30 tahun
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+      if (users[i]['age'] > 30) {
+        filteredUsers.add(users[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -781,7 +801,9 @@ class Chapter2 {
     List<String> names = [];
 
     // Instruksi: Gunakan looping for untuk mengisi list names dengan semua nama dari users
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+        names.add(users[i]['name']);
+    }
 
     // --- End of Answer ---
 
@@ -810,7 +832,11 @@ class Chapter2 {
     int age = -1;
 
     // Instruksi: Gunakan looping for untuk mencari user dengan id = 2 dan kembalikan nilai usianya
-    // TODO: Tulis kode for loop di sini
+   for (var i = 0; i < users.length; i++) {
+      if (users[i]['id'] == 2) {
+       age = users[i]['age'];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -839,7 +865,11 @@ class Chapter2 {
     bool containsId3 = false;
 
     // Instruksi: Gunakan looping for untuk mengecek apakah users mengandung user dengan id = 3
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+      if (users[i]['id'] == 3) {
+        containsId3 = true;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -868,7 +898,11 @@ class Chapter2 {
     List<Map<String, dynamic>> updatedUsers = [];
 
     // Instruksi: Gunakan looping for untuk mengupdate usia setiap user menjadi usia + 1 dan masukkan ke dalam list updatedUsers
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < users.length; i++) {
+      if (users[i]['name'].toString().startsWith('A')) {
+        filteredUsers.add(users[i]);
+      }
+    }
 
     // --- End of Answer ---
 
