@@ -288,7 +288,6 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mengisi list reversedNumbers dengan item dari list numbers secara terbalik
     for (var i = (numbers.length - 1); i >= 0; i--) {
-      print('Anunya: i = $i, numbers[i] = ${numbers[i]}');
       reversedNumbers.add(numbers[i]);
     }
 
@@ -320,8 +319,9 @@ class Chapter2 {
     int salesTotal = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total penjualan (salesTotal) dari list sales
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < sales.length; i++) {
+      salesTotal += sales[i];
+    }
     // --- End of Answer ---
 
     return salesTotal == 1500;
@@ -331,9 +331,14 @@ class Chapter2 {
   bool? exercise22() {
     List<int> sales = [100, 200, 300, 400, 500];
     double salesAverage = 0;
+    double salesTotal = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung rata-rata penjualan (salesAverage) dari list sales
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < sales.length; i++) {
+      salesTotal += sales[i];
+    }
+
+    salesAverage = salesTotal / sales.length;
 
     // --- End of Answer ---
 
@@ -343,12 +348,17 @@ class Chapter2 {
   // Exercise 23
   bool? exercise23() {
     List<int> productPrices = [1000, 2000, 1500, 3000, 500];
-    int cheapestProduct = 0;
+    int cheapestProduct = 9999;
 
     // ? Instruksi: Gunakan looping for untuk mencari harga produk termurah (cheapestProduct) dari list productPrices
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < productPrices.length; i++) {
+      cheapestProduct = productPrices[i] < cheapestProduct
+          ? productPrices[i]
+          : cheapestProduct;
+    }
 
     // --- End of Answer ---
+    print('harga = $cheapestProduct');
 
     return cheapestProduct == 500;
   }
@@ -359,7 +369,11 @@ class Chapter2 {
     int expensiveProduct = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari harga produk termahal (expensiveProduct) dari list productPrices
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < productPrices.length; i++) {
+      expensiveProduct = productPrices[i] > expensiveProduct
+          ? productPrices[i]
+          : expensiveProduct;
+    }
 
     // --- End of Answer ---
 
@@ -380,6 +394,23 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari produk favorit (favoriteProduct) yang paling sering muncul dalam list products
     // TODO: Tulis kode for loop di sini
+    var count = 0;
+    for (var i = 0; i < products.length; i++) {
+      var tempCount = 0;
+      for (var m = 0; m < products.length; m++) {
+        if (products[i] == products[m]) {
+          tempCount++;
+        }
+
+        if (tempCount > count) {
+          count = tempCount;
+          favoriteProduct = products[i];
+        }
+      }
+      print('An : $tempCount');
+    }
+
+    print('Anunya: i = $count, numbers[i] = $favoriteProduct');
 
     // --- End of Answer ---
 
