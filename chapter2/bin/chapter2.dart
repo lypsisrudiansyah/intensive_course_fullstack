@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Chapter2 {
   bool? exercise1() {
     List numbers = [10, 20, 30, 40];
@@ -358,7 +360,6 @@ class Chapter2 {
     }
 
     // --- End of Answer ---
-    print('harga = $cheapestProduct');
 
     return cheapestProduct == 500;
   }
@@ -407,10 +408,7 @@ class Chapter2 {
           favoriteProduct = products[i];
         }
       }
-      print('An : $tempCount');
     }
-
-    print('Anunya: i = $count, numbers[i] = $favoriteProduct');
 
     // --- End of Answer ---
 
@@ -423,7 +421,12 @@ class Chapter2 {
     List<int> squaredNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list squaredNumbers dengan nilai kuadrat dari setiap angka dalam list numbers
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      // * 1
+      squaredNumbers.add(pow(numbers[i], 2).toInt());
+      // * 2
+      // squaredNumbers.add(numbers[i] * numbers[i]);
+    }
 
     // --- End of Answer ---
 
@@ -436,7 +439,11 @@ class Chapter2 {
     List<int> evenNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list evenNumbers dengan angka genap dari list numbers
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 == 0) {
+        evenNumbers.add(numbers[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -449,7 +456,11 @@ class Chapter2 {
     List<int> oddNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list oddNumbers dengan angka ganjil dari list numbers
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 != 0) {
+        oddNumbers.add(numbers[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -462,7 +473,9 @@ class Chapter2 {
     List<String> capitalizedFruits = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list capitalizedFruits dengan semua item dari list fruits yang telah dijadikan huruf kapital
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < fruits.length; i++) {
+      capitalizedFruits.add(fruits[i].toUpperCase());
+    }
 
     // --- End of Answer ---
 
@@ -476,6 +489,13 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk menggabungkan semua item dari list names menjadi satu string concatenatedNames, dipisahkan oleh koma
     // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < names.length; i++) {
+      if (i < names.length - 1) {
+        concatenatedNames += '${names[i]},';
+      } else {
+        concatenatedNames += names[i];
+      }
+    }
 
     // --- End of Answer ---
     return concatenatedNames == "Alice,Bob,Charlie,David";
@@ -486,8 +506,19 @@ class Chapter2 {
     List<int> numbers = [5, 2, 7, 3, 1];
     List<int> sortedNumbers = [];
 
-    // ? Isi list 'sortedNumbers' dengan angka-angka yang telah diurutkan secara descending.
-    // TODO: Tulis kode for loop di sini
+    // ? Isi list 'sortedNumbers' dengan angka-angka yang telah diurutkan secara descending save result into sortedNumbers.
+    for (var i = 0; i < numbers.length; i++) {
+      var temp = 0;
+      for (var m = 0; m < numbers.length; m++) {
+        if (numbers[i] > numbers[m]) {
+          temp = numbers[i];
+          numbers[i] = numbers[m];
+          numbers[m] = temp;
+        }
+      }
+    }
+
+    sortedNumbers = numbers;
 
     // --- End of Answer ---
 
@@ -500,7 +531,11 @@ class Chapter2 {
     List<String> filteredFruits = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list filteredFruits dengan nama-nama buah yang memiliki huruf 'a' di dalamnya.
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < fruits.length; i++) {
+      if (fruits[i].contains('a')) {
+        filteredFruits.add(fruits[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -513,7 +548,13 @@ class Chapter2 {
     int sum = 0;
 
     // ? Instruksi: Gunakan looping for untuk menjumlahkan semua item dari numbers ke dalam variabel sum, tetapi berhenti jika jumlahnya mencapai 10.
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      var previousValue = sum;
+      sum += numbers[i];
+      if (sum >= 10) {
+        sum = previousValue;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -526,7 +567,9 @@ class Chapter2 {
     List<int> reversedNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list reversedNumbers dengan item dari numbers secara terbalik
-    // TODO: Tulis kode for loop di sini
+    for (var i = (numbers.length - 1); i >= 0; i--) {
+      reversedNumbers.add(numbers[i]);
+    }
 
     // --- End of Answer ---
 
@@ -539,7 +582,10 @@ class Chapter2 {
     String concatenatedWords = "";
 
     // ? Instruksi: Gunakan looping for untuk menggabungkan semua item dari list words menjadi satu string concatenatedWords, dipisahkan oleh spasi.
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < words.length; i++) {
+      concatenatedWords += '${words[i]} ';
+    }
+    print('Anunya:  $concatenatedWords');
 
     // --- End of Answer ---
 
@@ -552,7 +598,12 @@ class Chapter2 {
     List<int> squaredNumbers = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list squaredNumbers dengan hasil kuadrat dari setiap angka dalam list numbers.
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      // * 1
+      squaredNumbers.add(pow(numbers[i], 2).toInt());
+      // * 2
+      // squaredNumbers.add(numbers[i] * numbers[i]);
+    }
 
     // --- End of Answer ---
 
@@ -565,7 +616,11 @@ class Chapter2 {
     int minValue = numbers[0];
 
     // ? Instruksi: Gunakan looping for untuk mencari nilai terkecil (minimum) dalam list numbers dan simpan dalam variabel minValue.
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] < minValue) {
+        minValue = numbers[i];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -578,7 +633,11 @@ class Chapter2 {
     int maxValue = numbers[0];
 
     // ? Instruksi: Gunakan looping for untuk mencari nilai terbesar (maximum) dalam list numbers dan simpan dalam variabel maxValue.
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < numbers.length; i++) {
+      if (numbers[i] > maxValue) {
+        maxValue = numbers[i];
+      }
+    }
 
     // --- End of Answer ---
 
