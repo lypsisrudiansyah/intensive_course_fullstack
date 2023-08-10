@@ -1221,7 +1221,6 @@ class Chapter2 {
     for (var i = 0; i < data.length; i++) {
       int hourlyRate = data[i]['hourlyRate'];
       int hoursWorked = data[i]['hoursWorked'];
-      print('Anunya: $hourlyRate');
       totalSalary += (hourlyRate * hoursWorked);
     }
 
@@ -1532,8 +1531,14 @@ class Chapter2 {
     int minPrice = products[0]["price"];
 
     // ? Instruksi: Gunakan looping for untuk mencari harga termahal dan harga termurah dari semua produk di dalam list products
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] > maxPrice) {
+        maxPrice = products[i]['price'];
+      }
+      if (products[i]['price'] < minPrice) {
+        minPrice = products[i]['price'];
+      }
+    }
     // --- End of Answer ---
 
     return maxPrice == 350000 && minPrice == 150000;
@@ -1550,8 +1555,12 @@ class Chapter2 {
     int maxQuantitySold = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari produk terlaris (dengan quantitySold terbanyak) di dalam list products
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['quantitySold'] > maxQuantitySold) {
+        maxQuantitySold = products[i]['quantitySold'];
+        bestProduct = products[i]['name'];
+      }
+    }
     // --- End of Answer ---
 
     return bestProduct == "Keyboard";
@@ -1568,7 +1577,12 @@ class Chapter2 {
     int maxKpi = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan terbaik (dengan KPI tertinggi) di dalam list employees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['kpi'] > maxKpi) {
+        maxKpi = employees[i]['kpi'];
+        bestEmployee = employees[i]['name'];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1582,10 +1596,19 @@ class Chapter2 {
       {"id": 2, "name": "Alice", "kpi": 80},
       {"id": 3, "name": "Bob", "kpi": 70},
     ];
+    int lowest = 1000;
+    String lowestSt = '';
     List<String> lowPerformers = [];
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan KPI rendah (kurang dari 80) di dalam list employees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['kpi'] < lowest) {
+        lowest = employees[i]['kpi'];
+        lowestSt = employees[i]['name'];
+      }
+    }
+
+    lowPerformers.add(lowestSt);
 
     // --- End of Answer ---
 
@@ -1602,7 +1625,9 @@ class Chapter2 {
     double totalKpi = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total KPI dari semua karyawan di dalam list employees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      totalKpi += employees[i]['kpi'];
+    }
 
     // --- End of Answer ---
 
@@ -1619,10 +1644,19 @@ class Chapter2 {
     ];
 
     int maxPrice = 0;
-    int minPrice = 0;
+    int minPrice = 99999999;
 
     // ? Instruksi: Gunakan looping for untuk mencari harga termahal dan harga termurah dari semua produk di dalam list products
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] > maxPrice) {
+        maxPrice = products[i]['price'];
+      }
+      if (products[i]['price'] < minPrice) {
+        minPrice = products[i]['price'];
+      }
+    }
+
+    print('Anunya: $maxPrice $minPrice');
 
     // --- End of Answer ---
 
@@ -1640,7 +1674,12 @@ class Chapter2 {
     int maxQuantitySold = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari produk terlaris (dengan quantitySold terbanyak) di dalam list products
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['quantitySold'] > maxQuantitySold) {
+        maxQuantitySold = products[i]['quantitySold'];
+        bestProduct = products[i]['name'];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1658,7 +1697,12 @@ class Chapter2 {
     int minAbsentDays = employees[0]["absentDays"];
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan absensi bagus (sedikit absentDays) di dalam list employees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['absentDays'] < minAbsentDays) {
+        minAbsentDays = employees[i]['absentDays'];
+        bestEmployee = employees[i]['name'];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1676,7 +1720,12 @@ class Chapter2 {
     int maxSoldInDays = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan penjualan tercepat (dengan soldInDays terbanyak) di dalam list products
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['soldInDays'] > maxSoldInDays) {
+        maxSoldInDays = products[i]['soldInDays'];
+        bestProduct = products[i]['name'];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1693,8 +1742,11 @@ class Chapter2 {
     List<String> highPerformers = [];
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan KPI tinggi (lebih dari 80) di dalam list employees
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['kpi'] > 80) {
+        highPerformers.add(employees[i]['name']);
+      }
+    }
     // --- End of Answer ---
 
     return highPerformers.contains("John");
@@ -1707,11 +1759,19 @@ class Chapter2 {
       {"id": 2, "name": "Mouse", "quantitySold": 50, "soldInDays": 5},
       {"id": 3, "name": "Headphones", "quantitySold": 75, "soldInDays": 15},
     ];
+    String bestFirst = '';
     List<String> bestProducts = [];
     int maxSoldInDays = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan penjualan tercepat (dengan soldInDays terbanyak) di dalam list products
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['soldInDays'] > maxSoldInDays) {
+        maxSoldInDays = products[i]['soldInDays'];
+        bestFirst = products[i]['name'];
+      }
+    }
+
+    bestProducts.add(bestFirst); 
 
     // --- End of Answer ---
 
