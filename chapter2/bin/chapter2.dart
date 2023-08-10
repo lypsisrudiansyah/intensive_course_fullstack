@@ -1344,7 +1344,11 @@ class Chapter2 {
     int maxBiayaPengiriman = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari nilai tertinggi dari shippingCost di dalam list shipments
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < shipments.length; i++) {
+      if (shipments[i]['shippingCost'] > maxBiayaPengiriman) {
+        maxBiayaPengiriman = shipments[i]['shippingCost'];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1362,7 +1366,11 @@ class Chapter2 {
     int jumlahHadir = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung jumlah kehadiran (isPresent = true) di dalam list attendance
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < attendance.length; i++) {
+      if (attendance[i]['isPresent'] == true) {
+        jumlahHadir++;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1379,7 +1387,11 @@ class Chapter2 {
     int maxStok = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari nilai tertinggi dari stock di dalam list warehouse
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < warehouse.length; i++) {
+      if (warehouse[i]['stock'] > maxStok) {
+        maxStok = warehouse[i]['stock'];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1396,7 +1408,11 @@ class Chapter2 {
     int jumlahSelesai = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung jumlah tugas yang telah selesai (progress = 100) di dalam list projectTasks
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < projectTasks.length; i++) {
+      if (projectTasks[i]['progress'] == 100) {
+        jumlahSelesai++;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1414,7 +1430,11 @@ class Chapter2 {
     List<Map<String, dynamic>> hadirOnly = [];
 
     // ? Instruksi: Gunakan looping for untuk mengisi list hadirOnly dengan data karyawan yang hadir (isPresent = true)
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employeeAttendance.length; i++) {
+      if (employeeAttendance[i]['isPresent'] == true) {
+        hadirOnly.add(employeeAttendance[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1432,7 +1452,9 @@ class Chapter2 {
     double totalScore = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total nilai dari semua siswa di dalam list studentScores
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < studentScores.length; i++) {
+      totalScore += studentScores[i]['score'];
+    }
 
     // --- End of Answer ---
 
@@ -1451,7 +1473,9 @@ class Chapter2 {
     double totalSales = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total penjualan (quantitySold) dari semua produk di dalam list sales
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < sales.length; i++) {
+      totalSales += sales[i]['quantitySold'];
+    }
 
     // --- End of Answer ---
 
@@ -1468,8 +1492,9 @@ class Chapter2 {
     double totalSalary = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung total gaji (salary) dari semua karyawan di dalam list employees
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < employees.length; i++) {
+      totalSalary += employees[i]['salary'];
+    }
     // --- End of Answer ---
 
     return totalSalary == 15500000;
@@ -1485,7 +1510,11 @@ class Chapter2 {
     double averageAge = 0;
 
     // ? Instruksi: Gunakan looping for untuk menghitung rata-rata usia (age) dari semua karyawan di dalam list employees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      averageAge += employees[i]['age'];
+    }
+
+    averageAge = averageAge / employees.length;
 
     // --- End of Answer ---
 
