@@ -2202,7 +2202,6 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama depan mengandung huruf "Jo"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
     for (var i = 0; i < employees.length; i++) {
-    // print('Anunya: ${employees[i]['name'].contains('Jo')}}');
 
       if (employees[i]['name'].startsWith('Jo')) {
         matchedEmployees.add(employees[i]);
@@ -2226,8 +2225,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan nama mengandung huruf "Logi"
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['name'].contains('Logi')) {
+        matchedProducts.add(products[i]);
+      }
+    }
     // --- End of Answer ---
 
     return matchedProducts.length == 2 &&
@@ -2246,7 +2248,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama belakang mengandung huruf "son"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['name'].endsWith('son')) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2266,7 +2272,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan nama mengandung huruf "Sony"
     // atau mengandung huruf "Logi"
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['name'].contains('Sony') ||
+          products[i]['name'].contains('Logi')) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2285,7 +2296,11 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama depan mengandung huruf "Jo"
     // dan usia kurang dari 30 tahun
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['name'].startsWith('Jo') && employees[i]['age'] < 30) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2305,7 +2320,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 200000
     // atau mengandung huruf "Sony" dalam nama produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] < 200000 ||
+          products[i]['name'].contains('Sony')) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2324,7 +2344,11 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama depan mengandung huruf "Jo"
     // dan usia lebih dari 30 tahun
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['name'].startsWith('Jo') && employees[i]['age'] > 30) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2343,7 +2367,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 100000
     // atau mengandung huruf "Samsung" dalam nama produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] < 100000 ||
+          products[i]['name'].contains('Samsung')) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2362,7 +2391,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan usia lebih dari 35 tahun
     // atau nama mengandung huruf "Smith"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['age'] > 35 ||
+          employees[i]['name'].contains('Smith')) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2382,7 +2416,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga lebih dari 300000
     // atau nama mengandung huruf "Sony" dalam produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] > 300000 ||
+          products[i]['name'].contains('Sony')) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2402,7 +2441,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan usia di antara 25 dan 30 tahun (inklusif)
     // atau nama depan mengandung huruf "Bob"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if ((employees[i]['age'] >= 25 && employees[i]['age'] <= 30) ||
+          employees[i]['name'].startsWith('Bob')) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2423,7 +2467,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 200000
     // dan nama produk mengandung huruf "og"
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] < 200000 &&
+          products[i]['name'].contains('og')) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2443,7 +2492,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan usia kurang dari 30 tahun
     // dan nama belakang mengandung huruf "son"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['age'] < 30 &&
+          employees[i]['name'].endsWith('son')) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2463,7 +2517,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 100000
     // dan nama mengandung huruf "Samsung" dalam produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] < 100000 &&
+          products[i]['name'].contains('Samsung')) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2482,7 +2541,12 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan usia lebih dari 35 tahun
     // dan nama mengandung huruf "Smith"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['age'] > 35 &&
+          employees[i]['name'].contains('Smith')) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
