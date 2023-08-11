@@ -354,9 +354,7 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari harga produk termurah (cheapestProduct) dari list productPrices
     for (var i = 0; i < productPrices.length; i++) {
-      cheapestProduct = productPrices[i] < cheapestProduct
-          ? productPrices[i]
-          : cheapestProduct;
+      cheapestProduct = productPrices[i] < cheapestProduct ? productPrices[i] : cheapestProduct;
     }
 
     // --- End of Answer ---
@@ -371,9 +369,7 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari harga produk termahal (expensiveProduct) dari list productPrices
     for (var i = 0; i < productPrices.length; i++) {
-      expensiveProduct = productPrices[i] > expensiveProduct
-          ? productPrices[i]
-          : expensiveProduct;
+      expensiveProduct = productPrices[i] > expensiveProduct ? productPrices[i] : expensiveProduct;
     }
 
     // --- End of Answer ---
@@ -383,14 +379,7 @@ class Chapter2 {
 
   // Exercise 25
   bool? exercise25() {
-    List<String> products = [
-      "apple",
-      "banana",
-      "orange",
-      "banana",
-      "apple",
-      "banana"
-    ];
+    List<String> products = ["apple", "banana", "orange", "banana", "apple", "banana"];
     String favoriteProduct = "";
 
     // ? Instruksi: Gunakan looping for untuk mencari produk favorit (favoriteProduct) yang paling sering muncul dalam list products
@@ -1125,8 +1114,7 @@ class Chapter2 {
     // Instruksi: Gunakan looping for untuk menghitung total refund kategori "Fashion" dari data transaksi
     for (var i = 0; i < data.length; i++) {
       int value = int.parse(data[i]['amount'].toString());
-      if (data[i]['category'] == 'Fashion' &&
-          data[i]['transaction'] == 'Refund') {
+      if (data[i]['category'] == 'Fashion' && data[i]['transaction'] == 'Refund') {
         totalFashionRefunds += value.abs();
       }
     }
@@ -1171,8 +1159,7 @@ class Chapter2 {
     // Instruksi: Gunakan looping for untuk menghitung total refund kategori "Electronics" dari data transaksi
     for (var i = 0; i < data.length; i++) {
       int value = int.parse(data[i]['amount'].toString());
-      if (data[i]['category'] == 'Electronics' &&
-          data[i]['transaction'] == 'Refund') {
+      if (data[i]['category'] == 'Electronics' && data[i]['transaction'] == 'Refund') {
         totalRefundsInElectronics += value.abs();
       }
     }
@@ -1794,9 +1781,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return highPerformers.length == 2 &&
-        highPerformers[0]["name"] == "John" &&
-        highPerformers[1]["name"] == "Bob";
+    return highPerformers.length == 2 && highPerformers[0]["name"] == "John" && highPerformers[1]["name"] == "Bob";
   }
 
 // Exercise 86
@@ -1961,9 +1946,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return expensiveProducts.length == 2 &&
-        expensiveProducts.contains("Keyboard") &&
-        expensiveProducts.contains("Headphones");
+    return expensiveProducts.length == 2 && expensiveProducts.contains("Keyboard") && expensiveProducts.contains("Headphones");
   }
 
 // Exercise 93
@@ -2005,9 +1988,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return affordableProducts.length == 2 &&
-        affordableProducts.contains("Keyboard") &&
-        affordableProducts.contains("Mouse");
+    return affordableProducts.length == 2 && affordableProducts.contains("Keyboard") && affordableProducts.contains("Mouse");
   }
 
 // Exercise 95
@@ -2091,8 +2072,7 @@ class Chapter2 {
     }
     // --- End of Answer ---
 
-    return affordableProducts.length == 1 &&
-        affordableProducts.contains("Mouse");
+    return affordableProducts.length == 1 && affordableProducts.contains("Mouse");
   }
 
 // Exercise 99
@@ -2163,8 +2143,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 1 &&
-        matchedEmployees[0]["name"] == "John Doe";
+    return matchedEmployees.length == 1 && matchedEmployees[0]["name"] == "John Doe";
   }
 
 // Exercise 102
@@ -2186,8 +2165,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return matchedProducts.length == 1 &&
-        matchedProducts[0]["name"] == "Headphones Sony";
+    return matchedProducts.length == 1 && matchedProducts[0]["name"] == "Headphones Sony";
   }
 
 // Exercise 103
@@ -2202,7 +2180,6 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama depan mengandung huruf "Jo"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
     for (var i = 0; i < employees.length; i++) {
-
       if (employees[i]['name'].startsWith('Jo')) {
         matchedEmployees.add(employees[i]);
       }
@@ -2210,8 +2187,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 1 &&
-        matchedEmployees[0]["name"] == "John Doe";
+    return matchedEmployees.length == 1 && matchedEmployees[0]["name"] == "John Doe";
   }
 
 // Exercise 104
@@ -2232,9 +2208,7 @@ class Chapter2 {
     }
     // --- End of Answer ---
 
-    return matchedProducts.length == 2 &&
-        matchedProducts[0]["name"] == "Keyboard Logitech" &&
-        matchedProducts[1]["name"] == "Mouse Logitech";
+    return matchedProducts.length == 2 && matchedProducts[0]["name"] == "Keyboard Logitech" && matchedProducts[1]["name"] == "Mouse Logitech";
   }
 
 // Exercise 105
@@ -2256,8 +2230,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 1 &&
-        matchedEmployees[0]["name"] == "Bob Johnson";
+    return matchedEmployees.length == 1 && matchedEmployees[0]["name"] == "Bob Johnson";
   }
 
 // Exercise 106
@@ -2273,8 +2246,7 @@ class Chapter2 {
     // atau mengandung huruf "Logi"
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
     for (var i = 0; i < products.length; i++) {
-      if (products[i]['name'].contains('Sony') ||
-          products[i]['name'].contains('Logi')) {
+      if (products[i]['name'].contains('Sony') || products[i]['name'].contains('Logi')) {
         matchedProducts.add(products[i]);
       }
     }
@@ -2304,8 +2276,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 1 &&
-        matchedEmployees[0]["name"] == "John Doe";
+    return matchedEmployees.length == 1 && matchedEmployees[0]["name"] == "John Doe";
   }
 
 // Exercise 108
@@ -2321,8 +2292,7 @@ class Chapter2 {
     // atau mengandung huruf "Sony" dalam nama produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
     for (var i = 0; i < products.length; i++) {
-      if (products[i]['price'] < 200000 ||
-          products[i]['name'].contains('Sony')) {
+      if (products[i]['price'] < 200000 || products[i]['name'].contains('Sony')) {
         matchedProducts.add(products[i]);
       }
     }
@@ -2368,8 +2338,7 @@ class Chapter2 {
     // atau mengandung huruf "Samsung" dalam nama produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
     for (var i = 0; i < products.length; i++) {
-      if (products[i]['price'] < 100000 ||
-          products[i]['name'].contains('Samsung')) {
+      if (products[i]['price'] < 100000 || products[i]['name'].contains('Samsung')) {
         matchedProducts.add(products[i]);
       }
     }
@@ -2392,16 +2361,14 @@ class Chapter2 {
     // atau nama mengandung huruf "Smith"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
     for (var i = 0; i < employees.length; i++) {
-      if (employees[i]['age'] > 35 ||
-          employees[i]['name'].contains('Smith')) {
+      if (employees[i]['age'] > 35 || employees[i]['name'].contains('Smith')) {
         matchedEmployees.add(employees[i]);
       }
     }
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 1 &&
-        matchedEmployees[0]["name"] == "Alice Smith";
+    return matchedEmployees.length == 1 && matchedEmployees[0]["name"] == "Alice Smith";
   }
 
 // Exercise 112
@@ -2417,16 +2384,14 @@ class Chapter2 {
     // atau nama mengandung huruf "Sony" dalam produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
     for (var i = 0; i < products.length; i++) {
-      if (products[i]['price'] > 300000 ||
-          products[i]['name'].contains('Sony')) {
+      if (products[i]['price'] > 300000 || products[i]['name'].contains('Sony')) {
         matchedProducts.add(products[i]);
       }
     }
 
     // --- End of Answer ---
 
-    return matchedProducts.length == 1 &&
-        matchedProducts[0]["name"] == "Headphones Sony";
+    return matchedProducts.length == 1 && matchedProducts[0]["name"] == "Headphones Sony";
   }
 
 // Exercise 113
@@ -2442,17 +2407,14 @@ class Chapter2 {
     // atau nama depan mengandung huruf "Bob"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
     for (var i = 0; i < employees.length; i++) {
-      if ((employees[i]['age'] >= 25 && employees[i]['age'] <= 30) ||
-          employees[i]['name'].startsWith('Bob')) {
+      if ((employees[i]['age'] >= 25 && employees[i]['age'] <= 30) || employees[i]['name'].startsWith('Bob')) {
         matchedEmployees.add(employees[i]);
       }
     }
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 2 &&
-        matchedEmployees[0]["name"] == "John Doe" &&
-        matchedEmployees[1]["name"] == "Bob Johnson";
+    return matchedEmployees.length == 2 && matchedEmployees[0]["name"] == "John Doe" && matchedEmployees[1]["name"] == "Bob Johnson";
   }
 
 // Exercise 114
@@ -2468,16 +2430,14 @@ class Chapter2 {
     // dan nama produk mengandung huruf "og"
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
     for (var i = 0; i < products.length; i++) {
-      if (products[i]['price'] < 200000 &&
-          products[i]['name'].contains('og')) {
+      if (products[i]['price'] < 200000 && products[i]['name'].contains('og')) {
         matchedProducts.add(products[i]);
       }
     }
 
     // --- End of Answer ---
 
-    return matchedProducts.length == 1 &&
-        matchedProducts[0]["name"] == "Mouse Logitech";
+    return matchedProducts.length == 1 && matchedProducts[0]["name"] == "Mouse Logitech";
   }
 
 // Exercise 115
@@ -2493,16 +2453,14 @@ class Chapter2 {
     // dan nama belakang mengandung huruf "son"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
     for (var i = 0; i < employees.length; i++) {
-      if (employees[i]['age'] < 30 &&
-          employees[i]['name'].endsWith('son')) {
+      if (employees[i]['age'] < 30 && employees[i]['name'].endsWith('son')) {
         matchedEmployees.add(employees[i]);
       }
     }
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 1 &&
-        matchedEmployees[0]["name"] == "Bob Johnson";
+    return matchedEmployees.length == 1 && matchedEmployees[0]["name"] == "Bob Johnson";
   }
 
 // Exercise 116
@@ -2518,8 +2476,7 @@ class Chapter2 {
     // dan nama mengandung huruf "Samsung" dalam produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
     for (var i = 0; i < products.length; i++) {
-      if (products[i]['price'] < 100000 &&
-          products[i]['name'].contains('Samsung')) {
+      if (products[i]['price'] < 100000 && products[i]['name'].contains('Samsung')) {
         matchedProducts.add(products[i]);
       }
     }
@@ -2542,8 +2499,7 @@ class Chapter2 {
     // dan nama mengandung huruf "Smith"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
     for (var i = 0; i < employees.length; i++) {
-      if (employees[i]['age'] > 35 &&
-          employees[i]['name'].contains('Smith')) {
+      if (employees[i]['age'] > 35 && employees[i]['name'].contains('Smith')) {
         matchedEmployees.add(employees[i]);
       }
     }
@@ -2565,12 +2521,15 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga lebih dari 300000
     // dan nama mengandung huruf "Sony" dalam produk
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] > 300000 && products[i]['name'].contains('Sony')) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
-    return matchedProducts.length == 1 &&
-        matchedProducts[0]["name"] == "Headphones Sony";
+    return matchedProducts.length == 1 && matchedProducts[0]["name"] == "Headphones Sony";
   }
 
 // Exercise 119
@@ -2585,12 +2544,15 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan usia di antara 25 dan 30 tahun (inklusif)
     // dan nama depan mengandung huruf "Bob"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['age'] >= 25 && employees[i]['age'] <= 30 && employees[i]['name'].startsWith('Bob')) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
-    return matchedEmployees.length == 1 &&
-        matchedEmployees[0]["name"] == "Bob Johnson";
+    return matchedEmployees.length == 1 && matchedEmployees[0]["name"] == "Bob Johnson";
   }
 
 // Exercise 120
@@ -2605,12 +2567,14 @@ class Chapter2 {
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 200000
     // dan nama produk mengandung huruf "og"
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] < 200000 && products[i]['name'].contains('og')) {
+        matchedProducts.add(products[i]);
+      }
+    }
     // --- End of Answer ---
 
-    return matchedProducts.length == 1 &&
-        matchedProducts[0]["name"] == "Mouse Logitech";
+    return matchedProducts.length == 1 && matchedProducts[0]["name"] == "Mouse Logitech";
   }
 
   // Exercise 121
@@ -2624,7 +2588,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari order dengan id 3 dalam list orders
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < orders.length; i++) {
+      if (orders[i]['id'] == 3) {
+        index = i;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2642,7 +2610,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari employee dengan name "Eva" dan salary lebih dari 6000 dalam list employees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['name'] == 'Eva' && employees[i]['salary'] > 6000) {
+        index = i;
+      }
+    }
 
     // --- End of Answer ---
     return index == 3;
@@ -2660,7 +2632,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari transaction dengan id 5 dan type "Purchase" dalam list transactions
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < transactions.length; i++) {
+      if (transactions[i]['id'] == 5 && transactions[i]['type'] == 'Purchase') {
+        index = i;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2678,8 +2654,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari product dengan id 2 dan price 1200 dalam list products
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['id'] == 2 && products[i]['price'] == 1200) {
+        index = i;
+      }
+    }
     // --- End of Answer ---
 
     return index == 1;
@@ -2696,7 +2675,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari employee dengan name "Bob" dan age lebih dari 30 dalam list employees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['name'] == 'Bob' && employees[i]['age'] > 30) {
+        index = i;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2715,7 +2698,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari transaction dengan type "Refund" dan status "Pending" dalam list transactions
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < transactions.length; i++) {
+      if (transactions[i]['type'] == 'Refund' && transactions[i]['status'] == 'Pending') {
+        index = i;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2733,7 +2720,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari product dengan name "Headphones" dan stock lebih dari 15 dalam list products
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['name'] == 'Headphones' && products[i]['stock'] > 15) {
+        index = i;
+      }
+    }
 
     // --- End of Answer ---
     return index == 2;
@@ -2750,8 +2741,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari employee dengan name "John", age 30, dan department "Sales" dalam list employees
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['name'] == 'John' && employees[i]['age'] == 30 && employees[i]['department'] == 'Sales') {
+        index = i;
+      }
+    }
     // --- End of Answer ---
 
     return index == 0;
@@ -2769,7 +2763,11 @@ class Chapter2 {
     int index = -1;
 
     // ? Instruksi: Gunakan looping for untuk mencari index dari transaction dengan amount 75 dan status "Completed" dalam list transactions
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < transactions.length; i++) {
+      if (transactions[i]['amount'] == 75 && transactions[i]['status'] == 'Completed') {
+        index = i;
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2788,11 +2786,15 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari product dengan stock kurang dari 10 dan masukkan ke dalam list filteredProducts
     // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['stock'] < 10) {
+        filteredProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
-    return filteredProducts.isNotEmpty &&
-        filteredProducts[0]["name"] == "Laptop";
+    return filteredProducts.isNotEmpty && filteredProducts[0]["name"] == "Laptop";
   }
 
   // Exercise 131
@@ -2853,6 +2855,17 @@ class Chapter2 {
     // memiliki gender "Female", berusia di atas 25 tahun, dan tinggal di kota "Los Angeles" atau "New York"
     // Masukkan user yang memenuhi kriteria tersebut ke dalam list subscribedUsers
     // TODO: Tulis kode for loop di sini
+
+    for (var i = 0; i < users.length; i++) {
+      if (users[i]['isSubscribed'] == true &&
+          users[i]['isVerified'] == true &&
+          users[i]['age'] > 25 &&
+          (users[i]['city'] == 'Los Angeles' || users[i]['city'] == 'New York')) {
+        subscribedUsers.add(users[i]);
+      }
+    }
+
+    print('Anunya: $subscribedUsers');
 
     // --- End of Answer ---
     return subscribedUsers.isNotEmpty && subscribedUsers.first["id"] == 4;
@@ -2919,9 +2932,7 @@ class Chapter2 {
 
     // --- End of Answer ---
 
-    return featuredProducts.length == 2 &&
-        featuredProducts[0]["name"] == "Headphones" &&
-        featuredProducts[1]["name"] == "TV";
+    return featuredProducts.length == 2 && featuredProducts[0]["name"] == "Headphones" && featuredProducts[1]["name"] == "TV";
   }
 
   // Exercise 133
