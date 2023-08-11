@@ -2928,7 +2928,11 @@ class Chapter2 {
     // Instruksi: Gunakan looping for untuk mencari product yang merupakan produk unggulan (isFeatured = true),
     // memiliki rating di atas 4.5, tersedia (isAvailable = true), dan memiliki lebih dari 100 ulasan (reviews > 100)
     // Masukkan product yang memenuhi kriteria tersebut ke dalam list featuredProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['isFeatured'] == true && products[i]['isAvailable'] == true && products[i]['rating'] > 4.5 && products[i]['reviews'] > 100) {
+        featuredProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2993,7 +2997,13 @@ class Chapter2 {
     // berusia di atas 25 tahun, memiliki pengalaman kerja lebih dari 3 tahun (yearsOfExperience > 3),
     // dan bekerja di departemen "IT" atau "Finance"
     // Masukkan karyawan yang memenuhi kriteria tersebut ke dalam list highPaidEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['salary'] > 5000 &&
+          employees[i]['yearsOfExperience'] > 3 &&
+          (employees[i]['department'] == 'IT' || employees[i]['department'] == 'Finance')) {
+        highPaidEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -3057,8 +3067,11 @@ class Chapter2 {
     // Instruksi: Gunakan looping for untuk mencari product dengan rating rendah (rating < 4.0),
     // dan stok produk kurang dari 10 (stock < 10)
     // Masukkan product yang memenuhi kriteria tersebut ke dalam list lowRatedProducts
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['rating'] < 4.0 && products[i]['stock'] < 10) {
+        lowRatedProducts.add(products[i]);
+      }
+    }
     // --- End of Answer ---
 
     return lowRatedProducts.isEmpty;
@@ -3123,6 +3136,11 @@ class Chapter2 {
     // dan berusia di bawah 25 tahun (age < 25)
     // Masukkan karyawan yang memenuhi kriteria tersebut ke dalam list partTimeEmployees
     // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['isFullTime'] == false && employees[i]['hasHealthInsurance'] == false && employees[i]['age'] < 25) {
+        partTimeEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
