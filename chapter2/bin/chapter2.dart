@@ -1656,8 +1656,6 @@ class Chapter2 {
       }
     }
 
-    print('Anunya: $maxPrice $minPrice');
-
     // --- End of Answer ---
 
     return maxPrice == 350000 && minPrice == 150000;
@@ -1771,7 +1769,7 @@ class Chapter2 {
       }
     }
 
-    bestProducts.add(bestFirst); 
+    bestProducts.add(bestFirst);
 
     // --- End of Answer ---
 
@@ -1788,8 +1786,11 @@ class Chapter2 {
     List<Map<String, dynamic>> highPerformers = [];
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan KPI tinggi (lebih dari 80) di dalam list employees
-    // Kemudian masukkan data karyawan tersebut ke dalam list highPerformers
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['kpi'] > 80) {
+        highPerformers.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1809,8 +1810,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan KPI rendah (kurang dari 80) di dalam list employees
     // Kemudian masukkan data karyawan tersebut ke dalam list lowPerformers
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['kpi'] < 80) {
+        lowPerformers.add(employees[i]);
+      }
+    }
     // --- End of Answer ---
 
     return lowPerformers.length == 1 && lowPerformers[0]["name"] == "Bob";
@@ -1823,12 +1827,20 @@ class Chapter2 {
       {"id": 2, "name": "Mouse", "quantitySold": 50, "soldInDays": 5},
       {"id": 3, "name": "Headphones", "quantitySold": 75, "soldInDays": 15},
     ];
+    Map<String, dynamic> fastestProduct = {};
     List<Map<String, dynamic>> bestProducts = [];
     int maxSoldInDays = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan penjualan tercepat (dengan soldInDays terbanyak) di dalam list products
     // Kemudian masukkan data produk tersebut ke dalam list bestProducts
     // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['soldInDays'] > maxSoldInDays) {
+        maxSoldInDays = products[i]['soldInDays'];
+        fastestProduct = products[i];
+      }
+    }
+    bestProducts.add(fastestProduct);
 
     // --- End of Answer ---
 
@@ -1843,10 +1855,18 @@ class Chapter2 {
       {"id": 3, "name": "Bob", "kpi": 70, "absentDays": 1},
     ];
     List<Map<String, dynamic>> goodPerformers = [];
+    Map<String, dynamic> best = {};
+    int tempAbsentDays = 99;
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan absensi bagus (sedikit absentDays) di dalam list employees
     // Kemudian masukkan data karyawan tersebut ke dalam list goodPerformers
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['absentDays'] < tempAbsentDays) {
+        tempAbsentDays = employees[i]['absentDays'];
+        best = employees[i];
+      }
+    }
+    goodPerformers.add(best);
 
     // --- End of Answer ---
 
@@ -1861,11 +1881,18 @@ class Chapter2 {
       {"id": 3, "name": "Headphones", "quantitySold": 75, "soldInDays": 15},
     ];
     List<Map<String, dynamic>> bestProducts = [];
+    Map<String, dynamic> bestFirst = {};
     int maxSoldInDays = 0;
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan penjualan tercepat (dengan soldInDays terbanyak) di dalam list products
-    // Kemudian masukkan data produk tersebut ke dalam list bestProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['soldInDays'] > maxSoldInDays) {
+        maxSoldInDays = products[i]['soldInDays'];
+        bestFirst = products[i];
+      }
+    }
+
+    bestProducts.add(bestFirst);
 
     // --- End of Answer ---
 
@@ -1883,7 +1910,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan absensi buruk (lebih dari 3 hari absentDays) di dalam list employees
     // Kemudian masukkan data karyawan tersebut ke dalam list badPerformers
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['absentDays'] > 3) {
+        badPerformers.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1901,8 +1932,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan yang bekerja di departemen "HR"
     // Kemudian masukkan nama karyawan tersebut ke dalam list hrEmployees
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['department'] == 'HR') {
+        hrEmployees.add(employees[i]['name']);
+      }
+    }
     // --- End of Answer ---
 
     return hrEmployees.length == 1 && hrEmployees.contains("John");
@@ -1919,7 +1953,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga lebih dari 200000
     // Kemudian masukkan nama produk tersebut ke dalam list expensiveProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] > 200000) {
+        expensiveProducts.add(products[i]['name']);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1938,9 +1976,11 @@ class Chapter2 {
     List<String> financeEmployees = [];
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan yang bekerja di departemen "Finance"
-    // Kemudian masukkan nama karyawan tersebut ke dalam list financeEmployees
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['department'] == 'Finance') {
+        financeEmployees.add(employees[i]['name']);
+      }
+    }
     // --- End of Answer ---
 
     return financeEmployees.length == 1 && financeEmployees.contains("Alice");
@@ -1957,7 +1997,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 300000
     // Kemudian masukkan nama produk tersebut ke dalam list affordableProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] < 300000) {
+        affordableProducts.add(products[i]['name']);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -1977,8 +2021,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan yang bekerja di departemen "HR"
     // Jika ditemukan, simpan nama karyawan tersebut pada variabel hrEmployee
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['department'] == 'HR') {
+        hrEmployee = employees[i]['name'];
+      }
+    }
     // --- End of Answer ---
 
     return hrEmployee == "John";
@@ -1995,8 +2042,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga lebih dari 300000
     // Jika ditemukan, simpan nama produk tersebut pada variabel expensiveProduct
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] > 300000) {
+        expensiveProduct = products[i]['name'];
+      }
+    }
     // --- End of Answer ---
 
     return expensiveProduct == "Headphones";
@@ -2013,8 +2063,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan yang bekerja di departemen "IT"
     // Kemudian masukkan nama karyawan tersebut ke dalam list itEmployees
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['department'] == 'IT') {
+        itEmployees.add(employees[i]['name']);
+      }
+    }
     // --- End of Answer ---
 
     return itEmployees.length == 1 && itEmployees.contains("Bob");
@@ -2031,8 +2084,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga kurang dari 200000
     // Kemudian masukkan nama produk tersebut ke dalam list affordableProducts
-    // TODO: Tulis kode for loop di sini
-
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] < 200000) {
+        affordableProducts.add(products[i]['name']);
+      }
+    }
     // --- End of Answer ---
 
     return affordableProducts.length == 1 &&
@@ -2052,7 +2108,14 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan usia lebih dari 30 tahun atau berjenis kelamin "Female"
     // Jika ditemukan, simpan nama, usia, dan jenis kelaminnya pada variabel yang telah disediakan
-    // TODO: Tulis kode for loop di sini
+
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['age'] > 30 && employees[i]['gender'] == "Female") {
+        name = employees[i]['name'];
+        age = employees[i]['age'];
+        gender = employees[i]['gender'];
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2070,7 +2133,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan harga lebih dari 200000 dan terjual kurang dari 60
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['price'] > 200000 && products[i]['quantitySold'] < 60) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2088,7 +2155,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama mengandung huruf "Do"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+      if (employees[i]['name'].contains('Do')) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2107,7 +2178,11 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari produk dengan nama mengandung huruf "Sony"
     // Kemudian masukkan data produk tersebut ke dalam list matchedProducts
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < products.length; i++) {
+      if (products[i]['name'].contains('Sony')) {
+        matchedProducts.add(products[i]);
+      }
+    }
 
     // --- End of Answer ---
 
@@ -2126,7 +2201,13 @@ class Chapter2 {
 
     // ? Instruksi: Gunakan looping for untuk mencari karyawan dengan nama depan mengandung huruf "Jo"
     // Kemudian masukkan data karyawan tersebut ke dalam list matchedEmployees
-    // TODO: Tulis kode for loop di sini
+    for (var i = 0; i < employees.length; i++) {
+    // print('Anunya: ${employees[i]['name'].contains('Jo')}}');
+
+      if (employees[i]['name'].startsWith('Jo')) {
+        matchedEmployees.add(employees[i]);
+      }
+    }
 
     // --- End of Answer ---
 
