@@ -1192,7 +1192,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "42"
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    String input = "42";
+    int? output = int.tryParse(input);
 
     // --- End of Answer ---
     return output is int && output == 42;
@@ -1202,8 +1203,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "0"
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
-
+    String input = "0";
+    int? output = int.tryParse(input);
     // --- End of Answer ---
     return output is int && output == 0;
   }
@@ -1212,7 +1213,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "-99"
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    String input = "-99";
+    int? output = int.tryParse(input);
 
     // --- End of Answer ---
     return output is int && output == -99;
@@ -1222,7 +1224,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel double input dengan nilai "3.14"
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    double input = 3.14;
+    int? output = input.toInt();
 
     // --- End of Answer ---
     return output is int && output == 3;
@@ -1232,8 +1235,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel double input dengan nilai "9.99"
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
-
+    double input = 9.99;
+    int? output = input.toInt();
     // --- End of Answer ---
     return output is int && output == 9;
   }
@@ -1242,8 +1245,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel double input dengan nilai "5.5"
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
-
+    double input = 5.5;
+    int? output = input.toInt();
     // --- End of Answer ---
     return output is int && output == 5;
   }
@@ -1252,8 +1255,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel bool input dengan nilai true
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
-
+    bool input = true;
+    int output = input ? 1 : 0;
     // --- End of Answer ---
     return output is int && output == 1;
   }
@@ -1262,7 +1265,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel bool input dengan nilai false
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    bool input = false;
+    int output = input ? 1 : 0;
 
     // --- End of Answer ---
     return output is int && output == 0;
@@ -1272,7 +1276,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel bool input dengan nilai true
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    bool input = true;
+    int output = input ? 1 : 0;
 
     // --- End of Answer ---
     return output is int && output == 1;
@@ -1282,8 +1287,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "123"
     // ? Instruksi 2: Buatlah variabel int? output;
     // ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
-
+    String input = "123";
+    int? output = int.tryParse(input);
     // --- End of Answer ---
     return output is int && output == 123;
   }
@@ -1292,8 +1297,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "3.14"
     // ? Instruksi 2: Buatlah variabel double? output;
     // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
-
+    String input = "3.14";
+    double? output = double.tryParse(input);
     // --- End of Answer ---
     return output is double && output == 3.14;
   }
@@ -1302,8 +1307,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "9.99"
     // ? Instruksi 2: Buatlah variabel double? output;
     // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
-
+    String input = "9.99";
+    double? output = double.tryParse(input);
     // --- End of Answer ---
     return output is double && output == 9.99;
   }
@@ -1312,8 +1317,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "5.5"
     // ? Instruksi 2: Buatlah variabel double? output;
     // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
-
+    String input = "5.5";
+    double? output = double.tryParse(input);
     // --- End of Answer ---
     return output is double && output == 5.5;
   }
@@ -1322,7 +1327,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "true"
     // ? Instruksi 2: Buatlah variabel bool? output;
     // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    String input = "true";
+    bool? output = (input == "true");
 
     // --- End of Answer ---
     return output is bool && output == true;
@@ -1332,7 +1338,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "false"
     // ? Instruksi 2: Buatlah variabel bool? output;
     // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    String input = "false";
+    bool? output = (input == "true");
 
     // --- End of Answer ---
     return output is bool && output == false;
@@ -1342,7 +1349,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "0"
     // ? Instruksi 2: Buatlah variabel bool? output;
     // ? Instruksi 3: Konversi input menjadi boolean dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    String input = "0";
+    bool? output = (input == "true");
 
     // --- End of Answer ---
     return output is bool && output == false;
@@ -1352,7 +1360,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "Hello, World!"
     // ? Instruksi 2: Buatlah variabel String? output;
     // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    String input = "Hello, World!";
+    String? output = input;
 
     // --- End of Answer ---
     return output is String && output == "Hello, World!";
@@ -1362,7 +1371,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel int input dengan nilai 2022
     // ? Instruksi 2: Buatlah variabel String? output;
     // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    int input = 2022;
+    String? output = input.toString();
 
     // --- End of Answer ---
     return output is String && output == "2022";
@@ -1372,7 +1382,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel double input dengan nilai 3.14159
     // ? Instruksi 2: Buatlah variabel String? output;
     // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    double input = 3.14159;
+    String? output = input.toString();
 
     // --- End of Answer ---
     return output is String && output == "3.14159";
@@ -1382,7 +1393,9 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel DateTime input dengan tanggal 2023-08-09
     // ? Instruksi 2: Buatlah variabel String? output;
     // ? Instruksi 3: Konversi input menjadi String dengan format "yyyy-MM-dd" dan tampung di dalam variabel output
-    // TODO: Tulis jawabanmu di bawah ini
+    DateTime input = DateTime(2023, 8, 9);
+    String? output = input.toString().split(" ")[0];
+    print('Anunya: $output');
 
     // --- End of Answer ---
     return output is String && output == "2023-08-09";

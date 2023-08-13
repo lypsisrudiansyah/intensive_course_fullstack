@@ -2865,8 +2865,6 @@ class Chapter2 {
       }
     }
 
-    print('Anunya: $subscribedUsers');
-
     // --- End of Answer ---
     return subscribedUsers.isNotEmpty && subscribedUsers.first["id"] == 4;
   }
