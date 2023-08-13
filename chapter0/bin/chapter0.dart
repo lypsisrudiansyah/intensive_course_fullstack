@@ -514,8 +514,7 @@ class Chapter0 {
   // Exercise 53
   bool? exercise53() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<double> dan beri nilai [10.0, 20.0, 30.0, 40.0, 50.0]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<double> output = [10.0, 20.0, 30.0, 40.0, 50.0];
     // --- End of Answer ---
 
     return output is List<double> && output.length == 5 && output[0] == 10.0 && output[4] == 50.0;
@@ -524,7 +523,7 @@ class Chapter0 {
   // Exercise 54
   bool? exercise54() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<String> dan beri nilai ["apple", "banana", "cherry", "date", "fig"]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<String> output = ["apple", "banana", "cherry", "date", "fig"];
 
     // --- End of Answer ---
 
@@ -534,7 +533,7 @@ class Chapter0 {
   // Exercise 55
   bool? exercise55() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<String> dan beri nilai ["grape", "kiwi", "lemon", "mango", "orange"]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<String> output = ["grape", "kiwi", "lemon", "mango", "orange"];
 
     // --- End of Answer ---
 
@@ -544,7 +543,7 @@ class Chapter0 {
   // Exercise 56
   bool? exercise56() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<String> dan beri nilai ["pear", "quince", "raspberry", "strawberry", "tangerine"]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<String> output = ["pear", "quince", "raspberry", "strawberry", "tangerine"];
 
     // --- End of Answer ---
 
@@ -554,7 +553,7 @@ class Chapter0 {
   // Exercise 57
   bool? exercise57() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<bool> dan beri nilai [true, false, true, false, true]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<bool> output = [true, false, true, false, true];
 
     // --- End of Answer ---
 
@@ -564,8 +563,7 @@ class Chapter0 {
   // Exercise 58
   bool? exercise58() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<bool> dan beri nilai [false, true, false, true, false]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<bool> output = [false, true, false, true, false];
     // --- End of Answer ---
 
     return output is List<bool> && output.length == 5 && output[0] == false && output[4] == false;
@@ -581,7 +579,13 @@ class Chapter0 {
     //   {"name": "David", "age": 28},
     //   {"name": "Eve", "age": 22}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<Map<String, dynamic>> output = [
+      {"name": "Alice", "age": 30},
+      {"name": "Bob", "age": 25},
+      {"name": "Carol", "age": 35},
+      {"name": "David", "age": 28},
+      {"name": "Eve", "age": 22}
+    ];
 
     // --- End of Answer ---
 
@@ -603,7 +607,13 @@ class Chapter0 {
     //   {"fruit": "date", "color": "brown"},
     //   {"fruit": "fig", "color": "purple"}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<Map<String, dynamic>> output = [
+      {"fruit": "apple", "color": "red"},
+      {"fruit": "banana", "color": "yellow"},
+      {"fruit": "cherry", "color": "red"},
+      {"fruit": "date", "color": "brown"},
+      {"fruit": "fig", "color": "purple"}
+    ];
 
     // --- End of Answer ---
 
@@ -625,7 +635,13 @@ class Chapter0 {
     //   {"name": "David", "scores": [90, 87, 92]},
     //   {"name": "Eve", "scores": [75, 82, 80]}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<Map<String, dynamic>> output = [
+      {"name": "Alice", "scores": [85, 90, 78]},
+      {"name": "Bob", "scores": [92, 88, 95]},
+      {"name": "Carol", "scores": [78, 85, 80]},
+      {"name": "David", "scores": [90, 87, 92]},
+      {"name": "Eve", "scores": [75, 82, 80]}
+    ];
 
     // --- End of Answer ---
 
@@ -647,7 +663,13 @@ class Chapter0 {
     //   {"name": "David", "skills": ["Java", "C#", "PHP"]},
     //   {"name": "Eve", "skills": ["Ruby", "Python", "Java"]}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<Map<String, dynamic>> output = [
+      {"name": "Alice", "skills": ["Java", "Python", "C++"]},
+      {"name": "Bob", "skills": ["Python", "JavaScript", "Ruby"]},
+      {"name": "Carol", "skills": ["JavaScript", "HTML", "CSS"]},
+      {"name": "David", "skills": ["Java", "C#", "PHP"]},
+      {"name": "Eve", "skills": ["Ruby", "Python", "Java"]}
+    ];
 
     // --- End of Answer ---
 
@@ -669,7 +691,13 @@ class Chapter0 {
     //   {"name": "David", "courses": ["Computer Science", "Programming"]},
     //   {"name": "Eve", "courses": ["Geography", "Economics"]}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<Map<String, dynamic>> output = [
+      {"name": "Alice", "courses": ["Math", "Physics"]},
+      {"name": "Bob", "courses": ["Biology", "Chemistry"]},
+      {"name": "Carol", "courses": ["English", "History"]},
+      {"name": "David", "courses": ["Computer Science", "Programming"]},
+      {"name": "Eve", "courses": ["Geography", "Economics"]}
+    ];
 
     // --- End of Answer ---
 
