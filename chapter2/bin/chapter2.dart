@@ -2864,6 +2864,7 @@ class Chapter2 {
         subscribedUsers.add(users[i]);
       }
     }
+    print('Anunya: $subscribedUsers');
 
     // --- End of Answer ---
     return subscribedUsers.isNotEmpty && subscribedUsers.first["id"] == 4;
