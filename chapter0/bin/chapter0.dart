@@ -388,8 +388,8 @@ class Chapter0 {
   // Exercise 40
   bool? exercise40() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "Hello, World!"
-    // TODO: Tulis jawabanmu di bawah ini
 
+    String output = "Hello, World!";
     // --- End of Answer ---
 
     return output is String && output == "Hello, World!";
@@ -398,7 +398,7 @@ class Chapter0 {
   // Exercise 41
   bool? exercise41() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data DateTime dan beri nilai tanggal 1 Januari 2022
-    // TODO: Tulis jawabanmu di bawah ini
+    DateTime output = DateTime(2022, 1, 1);
 
     // --- End of Answer ---
 
@@ -408,7 +408,7 @@ class Chapter0 {
   // Exercise 42
   bool? exercise42() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data DateTime dan beri nilai tanggal 31 Desember 2000
-    // TODO: Tulis jawabanmu di bawah ini
+    DateTime output = DateTime(2000, 12, 31);
 
     // --- End of Answer ---
 
@@ -418,8 +418,7 @@ class Chapter0 {
   // Exercise 43
   bool? exercise43() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data DateTime dan beri nilai tanggal 15 September 1995
-    // TODO: Tulis jawabanmu di bawah ini
-
+    DateTime output = DateTime(1995, 9, 15);
     // --- End of Answer ---
 
     return output is DateTime && output.year == 1995 && output.month == 9 && output.day == 15;
@@ -428,8 +427,7 @@ class Chapter0 {
   // Exercise 44
   bool? exercise44() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data DateTime dan beri nilai tanggal 10 Mei 2023
-    // TODO: Tulis jawabanmu di bawah ini
-
+    DateTime output = DateTime(2023, 5, 10);
     // --- End of Answer ---
 
     return output is DateTime && output.year == 2023 && output.month == 5 && output.day == 10;
@@ -438,8 +436,7 @@ class Chapter0 {
   // Exercise 45
   bool? exercise45() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data DateTime dan beri nilai tanggal 24 November 2010
-    // TODO: Tulis jawabanmu di bawah ini
-
+    DateTime output = DateTime(2010, 11, 24);
     // --- End of Answer ---
 
     return output is DateTime && output.year == 2010 && output.month == 11 && output.day == 24;
@@ -448,7 +445,7 @@ class Chapter0 {
   // Exercise 46
   bool? exercise46() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<int> dan beri nilai [1, 2, 3, 4, 5]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<int> output = [1, 2, 3, 4, 5];
 
     // --- End of Answer ---
 
@@ -458,7 +455,7 @@ class Chapter0 {
   // Exercise 47
   bool? exercise47() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<int> dan beri nilai [10, 20, 30, 40, 50]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<int> output = [10, 20, 30, 40, 50];
 
     // --- End of Answer ---
 
@@ -468,7 +465,7 @@ class Chapter0 {
   // Exercise 48
   bool? exercise48() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<int> dan beri nilai [5, 4, 3, 2, 1]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<int> output = [5, 4, 3, 2, 1];
 
     // --- End of Answer ---
 
@@ -478,7 +475,7 @@ class Chapter0 {
   // Exercise 49
   bool? exercise49() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<int> dan beri nilai [0, 2, 4, 6, 8]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<int> output = [0, 2, 4, 6, 8];
 
     // --- End of Answer ---
 
@@ -488,7 +485,7 @@ class Chapter0 {
   // Exercise 50
   bool? exercise50() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<int> dan beri nilai [9, 7, 5, 3, 1]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<int> output = [9, 7, 5, 3, 1];
 
     // --- End of Answer ---
 
@@ -497,7 +494,7 @@ class Chapter0 {
 
   bool? exercise51() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<double> dan beri nilai [1.1, 2.2, 3.3, 4.4, 5.5]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<double> output = [1.1, 2.2, 3.3, 4.4, 5.5];
 
     // --- End of Answer ---
 
@@ -507,7 +504,7 @@ class Chapter0 {
   // Exercise 52
   bool? exercise52() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data List<double> dan beri nilai [0.5, 1.5, 2.5, 3.5, 4.5]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<double> output = [0.5, 1.5, 2.5, 3.5, 4.5];
 
     // --- End of Answer ---
 
