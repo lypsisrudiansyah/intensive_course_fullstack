@@ -1,0 +1,31 @@
+Nomor  1 - 10 berhubungan dengan int
+Nomor 11 - 20 berhubungan dengan double
+Nomor 21 - 30 berhubungan dengan boolean
+Nomor 31 - 40 berhubungan dengan String
+Nomor 41-50 Berhungan dengan DaetTime
+Nomor 51-60 Berhubungan dengan List
+Nomor 61-70 Berhubungan dengan Map
+Nomor 71-80 Berhubungan dengan List<Map<String,dynamic>>
+Nomor 81-90 Berhubungan dengan konversi data dari tipe X ke int
+Nomor 91-100 Berhubungan dengan konversi data dari tipe X ke double
+Nomor 101-110Berhubungan dengan konversi data dari tipe X ke bool
+Nomor 111-120 Berhubungan dengan konversi data dari tipe X ke String
+Nomor 121-130 Berhubungan dengan konversi data dari tipe X ke DateTime
+Nomor 131-140 Berhubungan dengan konversi data dari tipe X ke List
+Nomor 141-150 Berhubungan dengan konversi data dari tipe X ke Map
+Nomor 151-160 Berhubungan dengan konversi data dari tipe X ke List<Map<String,dynamic>>
+Nomor 161-180 Berhubungan dengan menggabungan beberapa String menjadi satu
+Nomor 181-200 Berhubungan dengan mereplace text dari String
+Nomor 201-220 Berhubungan dengan mengubah String menjadi List
+
+
+Kamu boleh membuat beberapa intruksi misal:
+// ? Instruksi 1 :Buatlah variabel String input dengan nilai 42
+// ? Instruksi 2: Buatlah variabel int? output;
+// ? Instruksi 3: Konversi input menjadi integer dan tampung di dalam variabel output
+* Instruksi tidak terbatas, bisa lebih dari 3!
+
+Jawaban selalu berada di antara
+// TODO 
+dan
+// --- End of Answer ---
