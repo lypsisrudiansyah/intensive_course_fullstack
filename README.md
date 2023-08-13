@@ -8,5 +8,8 @@
     - Null Safety
     - IF Statement
     - List dan Map
-  - Practice From around 130 Exercises
-### 
+  - Practice from around 130 exercises
+### Chapter 2
+  - Learn concept looping
+  - Study case of looping
+  - Practice from around 135 exercises
