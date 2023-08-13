@@ -4,7 +4,7 @@ class Chapter0 {
   // Exercise 1
   bool? exercise1() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 10
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = 10;
     // --- End of Answer ---
 
     return output is int && output == 10;
@@ -13,7 +13,7 @@ class Chapter0 {
   // Exercise 2
   bool? exercise2() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 42
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = 42;
 
     // --- End of Answer ---
 
@@ -23,7 +23,7 @@ class Chapter0 {
   // Exercise 3
   bool? exercise3() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai -7
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = -7;
 
     // --- End of Answer ---
 
@@ -33,7 +33,7 @@ class Chapter0 {
   // Exercise 4
   bool? exercise4() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 0
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = 0;
 
     // --- End of Answer ---
 
@@ -43,7 +43,7 @@ class Chapter0 {
   // Exercise 5
   bool? exercise5() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 99999
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = 99999;
 
     // --- End of Answer ---
 
@@ -53,7 +53,7 @@ class Chapter0 {
   // Exercise 6
   bool? exercise6() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai -12345
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = -12345;
 
     // --- End of Answer ---
 
@@ -63,7 +63,7 @@ class Chapter0 {
   // Exercise 7
   bool? exercise7() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 1000000
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = 1000000;
 
     // --- End of Answer ---
 
@@ -73,7 +73,7 @@ class Chapter0 {
   // Exercise 8
   bool? exercise8() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai -987654
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = -987654;
 
     // --- End of Answer ---
 
@@ -83,7 +83,7 @@ class Chapter0 {
   // Exercise 9
   bool? exercise9() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai 888
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = 888;
 
     // --- End of Answer ---
 
@@ -93,7 +93,7 @@ class Chapter0 {
   // Exercise 10
   bool? exercise10() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data int dan beri nilai -555
-    // TODO: Tulis jawabanmu di bawah ini
+    int output = -555;
 
     // --- End of Answer ---
 
@@ -103,8 +103,7 @@ class Chapter0 {
   // Exercise 11
   bool? exercise11() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai 3.14
-    // TODO: Tulis jawabanmu di bawah ini
-
+    double output = 3.14;
     // --- End of Answer ---
 
     return output is double && output == 3.14;
@@ -113,7 +112,7 @@ class Chapter0 {
   // Exercise 12
   bool? exercise12() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai 2.71828
-    // TODO: Tulis jawabanmu di bawah ini
+    double output = 2.71828;
 
     // --- End of Answer ---
 
@@ -123,7 +122,7 @@ class Chapter0 {
   // Exercise 13
   bool? exercise13() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai -5.67
-    // TODO: Tulis jawabanmu di bawah ini
+    double output = -5.67;
 
     // --- End of Answer ---
 
@@ -133,7 +132,7 @@ class Chapter0 {
   // Exercise 14
   bool? exercise14() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai 0.0
-    // TODO: Tulis jawabanmu di bawah ini
+    double output = 0.0;
 
     // --- End of Answer ---
 
@@ -143,7 +142,7 @@ class Chapter0 {
   // Exercise 15
   bool? exercise15() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai 12345.6789
-    // TODO: Tulis jawabanmu di bawah ini
+    double output = 12345.6789;
 
     // --- End of Answer ---
 
@@ -153,7 +152,7 @@ class Chapter0 {
   // Exercise 16
   bool? exercise16() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai 7.5
-    // TODO: Tulis jawabanmu di bawah ini
+    double output = 7.5;
 
     // --- End of Answer ---
 
@@ -163,7 +162,7 @@ class Chapter0 {
   // Exercise 17
   bool? exercise17() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai -2.25
-    // TODO: Tulis jawabanmu di bawah ini
+    double output = -2.25;
 
     // --- End of Answer ---
 
@@ -173,7 +172,7 @@ class Chapter0 {
   // Exercise 18
   bool? exercise18() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai 0.01
-    // TODO: Tulis jawabanmu di bawah ini
+    double output = 0.01;
 
     // --- End of Answer ---
 
@@ -183,8 +182,7 @@ class Chapter0 {
   // Exercise 19
   bool? exercise19() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai 123.456
-    // TODO: Tulis jawabanmu di bawah ini
-
+    double output = 123.456;
     // --- End of Answer ---
 
     return output is double && output == 123.456;
@@ -193,8 +191,8 @@ class Chapter0 {
   // Exercise 20
   bool? exercise20() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data double dan beri nilai -9876.54321
-    // TODO: Tulis jawabanmu di bawah ini
 
+    double output = -9876.54321;
     // --- End of Answer ---
 
     return output is double && output == -9876.54321;
@@ -203,7 +201,7 @@ class Chapter0 {
   // Exercise 21
   bool? exercise21() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai true
-    // TODO: Tulis jawabanmu di bawah ini
+    bool output = true;
 
     // --- End of Answer ---
 
@@ -213,8 +211,7 @@ class Chapter0 {
   // Exercise 22
   bool? exercise22() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai false
-    // TODO: Tulis jawabanmu di bawah ini
-
+    bool output = false;
     // --- End of Answer ---
 
     return output is bool && output == false;
@@ -223,7 +220,7 @@ class Chapter0 {
   // Exercise 23
   bool? exercise23() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai true
-    // TODO: Tulis jawabanmu di bawah ini
+    bool output = true;
 
     // --- End of Answer ---
 
@@ -233,7 +230,7 @@ class Chapter0 {
   // Exercise 24
   bool? exercise24() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai false
-    // TODO: Tulis jawabanmu di bawah ini
+    bool output = false;
 
     // --- End of Answer ---
 
@@ -243,7 +240,7 @@ class Chapter0 {
   // Exercise 25
   bool? exercise25() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai true
-    // TODO: Tulis jawabanmu di bawah ini
+    bool output = true;
 
     // --- End of Answer ---
 
@@ -253,7 +250,7 @@ class Chapter0 {
   // Exercise 26
   bool? exercise26() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai false
-    // TODO: Tulis jawabanmu di bawah ini
+    bool output = false;
 
     // --- End of Answer ---
 
@@ -263,7 +260,7 @@ class Chapter0 {
   // Exercise 27
   bool? exercise27() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai true
-    // TODO: Tulis jawabanmu di bawah ini
+    bool output = true;
 
     // --- End of Answer ---
 
@@ -273,7 +270,7 @@ class Chapter0 {
   // Exercise 28
   bool? exercise28() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai false
-    // TODO: Tulis jawabanmu di bawah ini
+    bool output = false;
 
     // --- End of Answer ---
 
@@ -283,8 +280,7 @@ class Chapter0 {
   // Exercise 29
   bool? exercise29() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai true
-    // TODO: Tulis jawabanmu di bawah ini
-
+    bool output = true;
     // --- End of Answer ---
 
     return output is bool && output == true;
@@ -293,7 +289,7 @@ class Chapter0 {
   // Exercise 30
   bool? exercise30() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data boolean dan beri nilai false
-    // TODO: Tulis jawabanmu di bawah ini
+    bool output = false;
 
     // --- End of Answer ---
 
@@ -303,7 +299,7 @@ class Chapter0 {
   // Exercise 31
   bool? exercise31() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "Hello, World!"
-    // TODO: Tulis jawabanmu di bawah ini
+    String output = "Hello, World!";
 
     // --- End of Answer ---
 
@@ -313,7 +309,7 @@ class Chapter0 {
   // Exercise 32
   bool? exercise32() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "Dart is fun!"
-    // TODO: Tulis jawabanmu di bawah ini
+    String output = "Dart is fun!";
 
     // --- End of Answer ---
 
@@ -323,7 +319,7 @@ class Chapter0 {
   // Exercise 33
   bool? exercise33() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "12345"
-    // TODO: Tulis jawabanmu di bawah ini
+    String output = "12345";
 
     // --- End of Answer ---
 
@@ -333,7 +329,7 @@ class Chapter0 {
   // Exercise 34
   bool? exercise34() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "3.14159"
-    // TODO: Tulis jawabanmu di bawah ini
+    String output = "3.14159";
 
     // --- End of Answer ---
 
@@ -343,7 +339,7 @@ class Chapter0 {
   // Exercise 35
   bool? exercise35() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "true"
-    // TODO: Tulis jawabanmu di bawah ini
+    String output = "true";
 
     // --- End of Answer ---
 
@@ -353,7 +349,7 @@ class Chapter0 {
   // Exercise 36
   bool? exercise36() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "false"
-    // TODO: Tulis jawabanmu di bawah ini
+    String output = "false";
 
     // --- End of Answer ---
 
@@ -363,7 +359,7 @@ class Chapter0 {
   // Exercise 37
   bool? exercise37() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "Hello, Dart!"
-    // TODO: Tulis jawabanmu di bawah ini
+    String output = "Hello, Dart!";
 
     // --- End of Answer ---
 
@@ -373,7 +369,7 @@ class Chapter0 {
   // Exercise 38
   bool? exercise38() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "42"
-    // TODO: Tulis jawabanmu di bawah ini
+    String output = "42";
 
     // --- End of Answer ---
 
@@ -383,8 +379,7 @@ class Chapter0 {
   // Exercise 39
   bool? exercise39() {
     // ? Instruksi: Deklarasikan sebuah variabel "output" dengan tipe data String dan beri nilai "3.14"
-    // TODO: Tulis jawabanmu di bawah ini
-
+    String output = "3.14";
     // --- End of Answer ---
 
     return output is String && output == "3.14";
@@ -407,10 +402,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is DateTime &&
-        output.year == 2022 &&
-        output.month == 1 &&
-        output.day == 1;
+    return output is DateTime && output.year == 2022 && output.month == 1 && output.day == 1;
   }
 
   // Exercise 42
@@ -420,10 +412,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is DateTime &&
-        output.year == 2000 &&
-        output.month == 12 &&
-        output.day == 31;
+    return output is DateTime && output.year == 2000 && output.month == 12 && output.day == 31;
   }
 
   // Exercise 43
@@ -433,10 +422,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is DateTime &&
-        output.year == 1995 &&
-        output.month == 9 &&
-        output.day == 15;
+    return output is DateTime && output.year == 1995 && output.month == 9 && output.day == 15;
   }
 
   // Exercise 44
@@ -446,10 +432,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is DateTime &&
-        output.year == 2023 &&
-        output.month == 5 &&
-        output.day == 10;
+    return output is DateTime && output.year == 2023 && output.month == 5 && output.day == 10;
   }
 
   // Exercise 45
@@ -459,10 +442,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is DateTime &&
-        output.year == 2010 &&
-        output.month == 11 &&
-        output.day == 24;
+    return output is DateTime && output.year == 2010 && output.month == 11 && output.day == 24;
   }
 
   // Exercise 46
@@ -472,10 +452,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 5 &&
-        output[0] == 1 &&
-        output[4] == 5;
+    return output is List<int> && output.length == 5 && output[0] == 1 && output[4] == 5;
   }
 
   // Exercise 47
@@ -485,10 +462,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 5 &&
-        output[0] == 10 &&
-        output[4] == 50;
+    return output is List<int> && output.length == 5 && output[0] == 10 && output[4] == 50;
   }
 
   // Exercise 48
@@ -498,10 +472,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 5 &&
-        output[0] == 5 &&
-        output[4] == 1;
+    return output is List<int> && output.length == 5 && output[0] == 5 && output[4] == 1;
   }
 
   // Exercise 49
@@ -511,10 +482,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 5 &&
-        output[0] == 0 &&
-        output[4] == 8;
+    return output is List<int> && output.length == 5 && output[0] == 0 && output[4] == 8;
   }
 
   // Exercise 50
@@ -524,10 +492,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 5 &&
-        output[0] == 9 &&
-        output[4] == 1;
+    return output is List<int> && output.length == 5 && output[0] == 9 && output[4] == 1;
   } // Exercise 51
 
   bool? exercise51() {
@@ -536,10 +501,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<double> &&
-        output.length == 5 &&
-        output[0] == 1.1 &&
-        output[4] == 5.5;
+    return output is List<double> && output.length == 5 && output[0] == 1.1 && output[4] == 5.5;
   }
 
   // Exercise 52
@@ -549,10 +511,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<double> &&
-        output.length == 5 &&
-        output[0] == 0.5 &&
-        output[4] == 4.5;
+    return output is List<double> && output.length == 5 && output[0] == 0.5 && output[4] == 4.5;
   }
 
   // Exercise 53
@@ -562,10 +521,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<double> &&
-        output.length == 5 &&
-        output[0] == 10.0 &&
-        output[4] == 50.0;
+    return output is List<double> && output.length == 5 && output[0] == 10.0 && output[4] == 50.0;
   }
 
   // Exercise 54
@@ -575,10 +531,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.length == 5 &&
-        output[0] == "apple" &&
-        output[4] == "fig";
+    return output is List<String> && output.length == 5 && output[0] == "apple" && output[4] == "fig";
   }
 
   // Exercise 55
@@ -588,10 +541,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.length == 5 &&
-        output[0] == "grape" &&
-        output[4] == "orange";
+    return output is List<String> && output.length == 5 && output[0] == "grape" && output[4] == "orange";
   }
 
   // Exercise 56
@@ -601,10 +551,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.length == 5 &&
-        output[0] == "pear" &&
-        output[4] == "tangerine";
+    return output is List<String> && output.length == 5 && output[0] == "pear" && output[4] == "tangerine";
   }
 
   // Exercise 57
@@ -614,10 +561,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<bool> &&
-        output.length == 5 &&
-        output[0] == true &&
-        output[4] == true;
+    return output is List<bool> && output.length == 5 && output[0] == true && output[4] == true;
   }
 
   // Exercise 58
@@ -627,10 +571,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<bool> &&
-        output.length == 5 &&
-        output[0] == false &&
-        output[4] == false;
+    return output is List<bool> && output.length == 5 && output[0] == false && output[4] == false;
   }
 
   // Exercise 59
@@ -803,10 +744,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, dynamic> &&
-        output["name"] == "Alice" &&
-        output["details"]["age"] == 30 &&
-        output["details"]["city"] == "New York";
+    return output is Map<String, dynamic> && output["name"] == "Alice" && output["details"]["age"] == 30 && output["details"]["city"] == "New York";
   }
 
   bool? exercise67() {
@@ -821,10 +759,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, dynamic> &&
-        output["name"] == "Bob" &&
-        output["details"]["age"] == 25 &&
-        output["details"]["city"] == "Los Angeles";
+    return output is Map<String, dynamic> && output["name"] == "Bob" && output["details"]["age"] == 25 && output["details"]["city"] == "Los Angeles";
   }
 
   bool? exercise68() {
@@ -839,10 +774,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, dynamic> &&
-        output["name"] == "Carol" &&
-        output["details"]["age"] == 35 &&
-        output["details"]["city"] == "Chicago";
+    return output is Map<String, dynamic> && output["name"] == "Carol" && output["details"]["age"] == 35 && output["details"]["city"] == "Chicago";
   }
 
   bool? exercise69() {
@@ -857,10 +789,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, dynamic> &&
-        output["name"] == "David" &&
-        output["details"]["age"] == 28 &&
-        output["details"]["city"] == "Houston";
+    return output is Map<String, dynamic> && output["name"] == "David" && output["details"]["age"] == 28 && output["details"]["city"] == "Houston";
   }
 
   bool? exercise70() {
@@ -875,10 +804,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, dynamic> &&
-        output["name"] == "Eve" &&
-        output["details"]["age"] == 22 &&
-        output["details"]["city"] == "Miami";
+    return output is Map<String, dynamic> && output["name"] == "Eve" && output["details"]["age"] == 22 && output["details"]["city"] == "Miami";
   }
 
   bool? exercise71() {
@@ -1082,10 +1008,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 26 &&
-        output[2]["name"] == "Carol" &&
-        output.last["age"] == 31;
+    return output is List<Map<String, dynamic>> && output.length == 26 && output[2]["name"] == "Carol" && output.last["age"] == 31;
   }
 
   bool? exercise81() {
@@ -1495,10 +1418,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is DateTime &&
-        output.year == 2023 &&
-        output.month == 8 &&
-        output.day == 9;
+    return output is DateTime && output.year == 2023 && output.month == 8 && output.day == 9;
   }
 
   bool? exercise122() {
@@ -1508,10 +1428,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is DateTime &&
-        output.year == 1999 &&
-        output.month == 12 &&
-        output.day == 31;
+    return output is DateTime && output.year == 1999 && output.month == 12 && output.day == 31;
   }
 
   bool? exercise123() {
@@ -1521,10 +1438,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is DateTime &&
-        output.year == 2022 &&
-        output.month == 1 &&
-        output.day == 15;
+    return output is DateTime && output.year == 2022 && output.month == 1 && output.day == 15;
   }
 
   bool? exercise124() {
@@ -1534,10 +1448,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is DateTime &&
-        output.year == 1987 &&
-        output.month == 5 &&
-        output.day == 25;
+    return output is DateTime && output.year == 1987 && output.month == 5 && output.day == 25;
   }
 
   bool? exercise125() {
@@ -1547,10 +1458,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is DateTime &&
-        output.year == 2025 &&
-        output.month == 10 &&
-        output.day == 1;
+    return output is DateTime && output.year == 2025 && output.month == 10 && output.day == 1;
   }
 
   bool? exercise126() {
@@ -1560,10 +1468,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<int> &&
-        output.length == 5 &&
-        output[0] == 1 &&
-        output[4] == 5;
+    return output is List<int> && output.length == 5 && output[0] == 1 && output[4] == 5;
   }
 
   bool? exercise127() {
@@ -1573,10 +1478,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<String> &&
-        output.length == 3 &&
-        output[0] == "apple" &&
-        output[2] == "cherry";
+    return output is List<String> && output.length == 3 && output[0] == "apple" && output[2] == "cherry";
   }
 
   bool? exercise128() {
@@ -1586,10 +1488,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<double> &&
-        output.length == 3 &&
-        output[0] == 3.14 &&
-        output[2] == 1.618;
+    return output is List<double> && output.length == 3 && output[0] == 3.14 && output[2] == 1.618;
   }
 
   bool? exercise129() {
@@ -1599,10 +1498,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, int> &&
-        output.length == 3 &&
-        output["apple"] == 2 &&
-        output["cherry"] == 5;
+    return output is Map<String, int> && output.length == 3 && output["apple"] == 2 && output["cherry"] == 5;
   }
 
   bool? exercise130() {
@@ -1612,10 +1508,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, double> &&
-        output.length == 3 &&
-        output["pi"] == 3.14 &&
-        output["phi"] == 1.618;
+    return output is Map<String, double> && output.length == 3 && output["pi"] == 3.14 && output["phi"] == 1.618;
   }
 
   bool? exercise131() {
@@ -1625,10 +1518,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, dynamic> &&
-        output.length == 3 &&
-        output["name"] == "John" &&
-        output["isStudent"] == true;
+    return output is Map<String, dynamic> && output.length == 3 && output["name"] == "John" && output["isStudent"] == true;
   }
 
   bool? exercise132() {
@@ -1638,10 +1528,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is Map<String, dynamic> &&
-        output.length == 3 &&
-        output["title"] == "Book" &&
-        output["price"] == 20.99;
+    return output is Map<String, dynamic> && output.length == 3 && output["title"] == "Book" && output["price"] == 20.99;
   }
 
   bool? exercise133() {
@@ -1651,10 +1538,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, int>> &&
-        output.length == 3 &&
-        output[0]["score"] == 90 &&
-        output[2]["score"] == 95;
+    return output is List<Map<String, int>> && output.length == 3 && output[0]["score"] == 90 && output[2]["score"] == 95;
   }
 
   bool? exercise134() {
@@ -1664,10 +1548,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 3 &&
-        output[0]["name"] == "Alice" &&
-        output[2]["name"] == "Charlie";
+    return output is List<Map<String, dynamic>> && output.length == 3 && output[0]["name"] == "Alice" && output[2]["name"] == "Charlie";
   }
 
   bool? exercise135() {
@@ -1677,10 +1558,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["city"] == "New York" &&
-        output[1]["population"] == 3990456;
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["city"] == "New York" && output[1]["population"] == 3990456;
   }
 
   bool? exercise136() {
@@ -1690,10 +1568,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["name"] == "Alice" &&
-        output[1]["age"] == 30;
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["name"] == "Alice" && output[1]["age"] == 30;
   }
 
   bool? exercise137() {
@@ -1703,10 +1578,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["country"] == "USA" &&
-        output[1]["capital"] == "Ottawa";
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["country"] == "USA" && output[1]["capital"] == "Ottawa";
   }
 
   bool? exercise138() {
@@ -1716,10 +1588,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["code"] == "A1" &&
-        output[1]["value"] == 20;
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["code"] == "A1" && output[1]["value"] == 20;
   }
 
   bool? exercise139() {
@@ -1729,10 +1598,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["item"] == "Apple" &&
-        output[1]["price"] == 0.99;
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["item"] == "Apple" && output[1]["price"] == 0.99;
   }
 
   bool? exercise140() {
@@ -1742,10 +1608,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["name"] == "Alice" &&
-        output[1]["age"] == 30;
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["name"] == "Alice" && output[1]["age"] == 30;
   }
 
   bool? exercise141() {
@@ -1755,10 +1618,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["city"] == "New York" &&
-        output[1]["population"] == 3990456;
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["city"] == "New York" && output[1]["population"] == 3990456;
   }
 
   bool? exercise142() {
@@ -1768,10 +1628,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["country"] == "USA" &&
-        output[1]["capital"] == "Ottawa";
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["country"] == "USA" && output[1]["capital"] == "Ottawa";
   }
 
   bool? exercise143() {
@@ -1781,10 +1638,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["code"] == "A1" &&
-        output[1]["value"] == 20;
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["code"] == "A1" && output[1]["value"] == 20;
   }
 
   bool? exercise144() {
@@ -1794,10 +1648,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<Map<String, dynamic>> &&
-        output.length == 2 &&
-        output[0]["item"] == "Apple" &&
-        output[1]["price"] == 0.99;
+    return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["item"] == "Apple" && output[1]["price"] == 0.99;
   }
 
   bool? exercise145() {
@@ -1867,11 +1718,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<String> &&
-        output.length == 3 &&
-        output.contains("apple") &&
-        output.contains("banana") &&
-        output.contains("orange");
+    return output is List<String> && output.length == 3 && output.contains("apple") && output.contains("banana") && output.contains("orange");
   }
 
   bool? exercise152() {
@@ -1881,12 +1728,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<int> &&
-        output.length == 4 &&
-        output.contains(42) &&
-        output.contains(38) &&
-        output.contains(56) &&
-        output.contains(29);
+    return output is List<int> && output.length == 4 && output.contains(42) && output.contains(38) && output.contains(56) && output.contains(29);
   }
 
   bool? exercise153() {
@@ -1896,10 +1738,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<bool> &&
-        output.length == 4 &&
-        output.contains(true) &&
-        output.contains(false);
+    return output is List<bool> && output.length == 4 && output.contains(true) && output.contains(false);
   }
 
   bool? exercise154() {
@@ -1909,11 +1748,7 @@ class Chapter0 {
     // TODO: Tulis jawabanmu di bawah ini
 
     // --- End of Answer ---
-    return output is List<double> &&
-        output.length == 3 &&
-        output.contains(3.14) &&
-        output.contains(2.718) &&
-        output.contains(1.618);
+    return output is List<double> && output.length == 3 && output.contains(3.14) && output.contains(2.718) && output.contains(1.618);
   }
 
   bool? exercise155() {
@@ -2011,8 +1846,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.every((element) => element is String);
+    return output is List<String> && output.every((element) => element is String);
   }
 
   bool? exercise164() {
@@ -2023,8 +1857,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.every((element) => element is String);
+    return output is List<String> && output.every((element) => element is String);
   }
 
   bool? exercise165() {
@@ -2035,8 +1868,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.every((element) => element is String);
+    return output is List<String> && output.every((element) => element is String);
   }
 
   bool? exercise166() {
@@ -2125,9 +1957,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.length == 3 &&
-        output.every((element) => element is String);
+    return output is List<String> && output.length == 3 && output.every((element) => element is String);
   }
 
   bool? exercise174() {
@@ -2138,9 +1968,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 5 &&
-        output.every((element) => element is int);
+    return output is List<int> && output.length == 5 && output.every((element) => element is int);
   }
 
   bool? exercise175() {
@@ -2151,9 +1979,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<double> &&
-        output.length == 3 &&
-        output.every((element) => element is double);
+    return output is List<double> && output.length == 3 && output.every((element) => element is double);
   }
 
   bool? exercise176() {
@@ -2164,9 +1990,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<bool> &&
-        output.length == 3 &&
-        output.every((element) => element is bool);
+    return output is List<bool> && output.length == 3 && output.every((element) => element is bool);
   }
 
   bool? exercise177() {
@@ -2177,9 +2001,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<DateTime> &&
-        output.length == 3 &&
-        output.every((element) => element is DateTime);
+    return output is List<DateTime> && output.length == 3 && output.every((element) => element is DateTime);
   }
 
   bool? exercise178() {
@@ -2212,11 +2034,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 3 &&
-        output.contains(3) &&
-        output.contains(2) &&
-        output.contains(1);
+    return output is List<int> && output.length == 3 && output.contains(3) && output.contains(2) && output.contains(1);
   }
 
   bool? exercise181() {
@@ -2250,11 +2068,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 5 &&
-        output.contains(0) &&
-        !output.contains(2) &&
-        !output.contains(4);
+    return output is List<int> && output.length == 5 && output.contains(0) && !output.contains(2) && !output.contains(4);
   }
 
   bool? exercise184() {
@@ -2265,11 +2079,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is Map<String, int> &&
-        output.length == 3 &&
-        output["apple"] == 5 &&
-        output["banana"] == 6 &&
-        output["cherry"] == 6;
+    return output is Map<String, int> && output.length == 3 && output["apple"] == 5 && output["banana"] == 6 && output["cherry"] == 6;
   }
 
   bool? exercise185() {
@@ -2280,13 +2090,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is Map<int, int> &&
-        output.length == 5 &&
-        output[1] == 1 &&
-        output[2] == 4 &&
-        output[3] == 9 &&
-        output[4] == 16 &&
-        output[5] == 25;
+    return output is Map<int, int> && output.length == 5 && output[1] == 1 && output[2] == 4 && output[3] == 9 && output[4] == 16 && output[5] == 25;
   }
 
   bool? exercise186() {
@@ -2297,11 +2101,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<Map<String, int>> &&
-        output.length == 3 &&
-        output[0]["length"] == 5 &&
-        output[1]["length"] == 6 &&
-        output[2]["length"] == 6;
+    return output is List<Map<String, int>> && output.length == 3 && output[0]["length"] == 5 && output[1]["length"] == 6 && output[2]["length"] == 6;
   }
 
   bool? exercise187() {
@@ -2312,11 +2112,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.length == 3 &&
-        output.contains("apple") &&
-        output.contains("banana") &&
-        output.contains("cherry");
+    return output is List<String> && output.length == 3 && output.contains("apple") && output.contains("banana") && output.contains("cherry");
   }
 
   bool? exercise188() {
@@ -2327,11 +2123,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 3 &&
-        output.contains(5) &&
-        output.contains(10) &&
-        output.contains(3);
+    return output is List<int> && output.length == 3 && output.contains(5) && output.contains(10) && output.contains(3);
   }
 
   bool? exercise189() {
@@ -2342,11 +2134,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 3 &&
-        output.contains(7) &&
-        output.contains(15) &&
-        output.contains(9);
+    return output is List<int> && output.length == 3 && output.contains(7) && output.contains(15) && output.contains(9);
   }
 
   bool? exercise190() {
@@ -2357,11 +2145,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<int> &&
-        output.length == 3 &&
-        output.contains(5) &&
-        output.contains(10) &&
-        output.contains(3);
+    return output is List<int> && output.length == 3 && output.contains(5) && output.contains(10) && output.contains(3);
   }
 
   bool? exercise191() {
@@ -2406,10 +2190,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<bool> &&
-        output.length == 5 &&
-        output.contains(true) &&
-        output.contains(false);
+    return output is List<bool> && output.length == 5 && output.contains(true) && output.contains(false);
   }
 
   bool? exercise194() {
@@ -2420,10 +2201,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.length == 5 &&
-        output.contains("apple") &&
-        output.contains("banana");
+    return output is List<String> && output.length == 5 && output.contains("apple") && output.contains("banana");
   }
 
   bool? exercise195() {
@@ -2483,10 +2261,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<bool> &&
-        output.length == 5 &&
-        output.contains(true) &&
-        output.contains(false);
+    return output is List<bool> && output.length == 5 && output.contains(true) && output.contains(false);
   }
 
   bool? exercise199() {
@@ -2497,10 +2272,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<String> &&
-        output.length == 5 &&
-        output.contains("apple") &&
-        output.contains("banana");
+    return output is List<String> && output.length == 5 && output.contains("apple") && output.contains("banana");
   }
 
   bool? exercise200() {
@@ -2560,10 +2332,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<bool> &&
-        output.length == 5 &&
-        output.contains(true) &&
-        output.contains(false);
+    return output is List<bool> && output.length == 5 && output.contains(true) && output.contains(false);
   }
 
   bool? exercise204() {
@@ -2640,10 +2409,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<bool> &&
-        output.length == 5 &&
-        output.contains(true) &&
-        output.contains(false);
+    return output is List<bool> && output.length == 5 && output.contains(true) && output.contains(false);
   }
 
   bool? exercise209() {
@@ -2720,10 +2486,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is List<bool> &&
-        output.length == 5 &&
-        output.contains(true) &&
-        output.contains(false);
+    return output is List<bool> && output.length == 5 && output.contains(true) && output.contains(false);
   }
 
   bool? exercise214() {
@@ -2783,11 +2546,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is Map<String, int> &&
-        output.length == 3 &&
-        output["apple"] == 100 &&
-        output["banana"] == 200 &&
-        output["cherry"] == 300;
+    return output is Map<String, int> && output.length == 3 && output["apple"] == 100 && output["banana"] == 200 && output["cherry"] == 300;
   }
 
   bool? exercise218() {
@@ -2798,11 +2557,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is Map<String, double> &&
-        output.length == 3 &&
-        output["apple"] == 1.1 &&
-        output["banana"] == 2.2 &&
-        output["cherry"] == 3.3;
+    return output is Map<String, double> && output.length == 3 && output["apple"] == 1.1 && output["banana"] == 2.2 && output["cherry"] == 3.3;
   }
 
   bool? exercise219() {
@@ -2813,11 +2568,7 @@ class Chapter0 {
 
     // --- End of Answer ---
 
-    return output is Map<String, bool> &&
-        output.length == 3 &&
-        output["apple"] == true &&
-        output["banana"] == false &&
-        output["cherry"] == true;
+    return output is Map<String, bool> && output.length == 3 && output["apple"] == true && output["banana"] == false && output["cherry"] == true;
   }
 
   bool? exercise220() {
