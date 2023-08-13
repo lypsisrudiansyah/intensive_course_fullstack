@@ -636,11 +636,26 @@ class Chapter0 {
     //   {"name": "Eve", "scores": [75, 82, 80]}
     // ]
     List<Map<String, dynamic>> output = [
-      {"name": "Alice", "scores": [85, 90, 78]},
-      {"name": "Bob", "scores": [92, 88, 95]},
-      {"name": "Carol", "scores": [78, 85, 80]},
-      {"name": "David", "scores": [90, 87, 92]},
-      {"name": "Eve", "scores": [75, 82, 80]}
+      {
+        "name": "Alice",
+        "scores": [85, 90, 78]
+      },
+      {
+        "name": "Bob",
+        "scores": [92, 88, 95]
+      },
+      {
+        "name": "Carol",
+        "scores": [78, 85, 80]
+      },
+      {
+        "name": "David",
+        "scores": [90, 87, 92]
+      },
+      {
+        "name": "Eve",
+        "scores": [75, 82, 80]
+      }
     ];
 
     // --- End of Answer ---
@@ -664,11 +679,26 @@ class Chapter0 {
     //   {"name": "Eve", "skills": ["Ruby", "Python", "Java"]}
     // ]
     List<Map<String, dynamic>> output = [
-      {"name": "Alice", "skills": ["Java", "Python", "C++"]},
-      {"name": "Bob", "skills": ["Python", "JavaScript", "Ruby"]},
-      {"name": "Carol", "skills": ["JavaScript", "HTML", "CSS"]},
-      {"name": "David", "skills": ["Java", "C#", "PHP"]},
-      {"name": "Eve", "skills": ["Ruby", "Python", "Java"]}
+      {
+        "name": "Alice",
+        "skills": ["Java", "Python", "C++"]
+      },
+      {
+        "name": "Bob",
+        "skills": ["Python", "JavaScript", "Ruby"]
+      },
+      {
+        "name": "Carol",
+        "skills": ["JavaScript", "HTML", "CSS"]
+      },
+      {
+        "name": "David",
+        "skills": ["Java", "C#", "PHP"]
+      },
+      {
+        "name": "Eve",
+        "skills": ["Ruby", "Python", "Java"]
+      }
     ];
 
     // --- End of Answer ---
@@ -692,11 +722,26 @@ class Chapter0 {
     //   {"name": "Eve", "courses": ["Geography", "Economics"]}
     // ]
     List<Map<String, dynamic>> output = [
-      {"name": "Alice", "courses": ["Math", "Physics"]},
-      {"name": "Bob", "courses": ["Biology", "Chemistry"]},
-      {"name": "Carol", "courses": ["English", "History"]},
-      {"name": "David", "courses": ["Computer Science", "Programming"]},
-      {"name": "Eve", "courses": ["Geography", "Economics"]}
+      {
+        "name": "Alice",
+        "courses": ["Math", "Physics"]
+      },
+      {
+        "name": "Bob",
+        "courses": ["Biology", "Chemistry"]
+      },
+      {
+        "name": "Carol",
+        "courses": ["English", "History"]
+      },
+      {
+        "name": "David",
+        "courses": ["Computer Science", "Programming"]
+      },
+      {
+        "name": "Eve",
+        "courses": ["Geography", "Economics"]
+      }
     ];
 
     // --- End of Answer ---
@@ -719,7 +764,28 @@ class Chapter0 {
     //   {"name": "David", "data": {"age": 28, "city": "Houston"}},
     //   {"name": "Eve", "data": {"age": 22, "city": "Miami"}}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
+    List<Map<String, dynamic>> output = [
+      {
+        "name": "Alice",
+        "data": {"age": 30, "city": "New York"}
+      },
+      {
+        "name": "Bob",
+        "data": {"age": 25, "city": "Los Angeles"}
+      },
+      {
+        "name": "Carol",
+        "data": {"age": 35, "city": "Chicago"}
+      },
+      {
+        "name": "David",
+        "data": {"age": 28, "city": "Houston"}
+      },
+      {
+        "name": "Eve",
+        "data": {"age": 22, "city": "Miami"}
+      }
+    ];
 
     // --- End of Answer ---
 
@@ -743,8 +809,29 @@ class Chapter0 {
     //   {"name": "David", "details": {"age": 28, "city": "Houston", "occupation": "Developer"}},
     //   {"name": "Eve", "details": {"age": 22, "city": "Miami", "occupation": "Student"}}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
 
+    List<Map<String, dynamic>> output = [
+      {
+        "name": "Alice",
+        "details": {"age": 30, "city": "New York", "occupation": "Engineer"}
+      },
+      {
+        "name": "Bob",
+        "details": {"age": 25, "city": "Los Angeles", "occupation": "Designer"}
+      },
+      {
+        "name": "Carol",
+        "details": {"age": 35, "city": "Chicago", "occupation": "Teacher"}
+      },
+      {
+        "name": "David",
+        "details": {"age": 28, "city": "Houston", "occupation": "Developer"}
+      },
+      {
+        "name": "Eve",
+        "details": {"age": 22, "city": "Miami", "occupation": "Student"}
+      }
+    ];
     // --- End of Answer ---
 
     return output is List<Map<String, dynamic>> &&
@@ -766,7 +853,10 @@ class Chapter0 {
     //     "city": "New York"
     //   }
     // }
-    // TODO: Tulis jawabanmu di bawah ini
+    Map<String, dynamic> output = {
+      "name": "Alice",
+      "details": {"age": 30, "city": "New York"}
+    };
 
     // --- End of Answer ---
     return output is Map<String, dynamic> && output["name"] == "Alice" && output["details"]["age"] == 30 && output["details"]["city"] == "New York";
@@ -781,7 +871,10 @@ class Chapter0 {
     //     "city": "Los Angeles"
     //   }
     // }
-    // TODO: Tulis jawabanmu di bawah ini
+    Map<String, dynamic> output = {
+      "name": "Bob",
+      "details": {"age": 25, "city": "Los Angeles"}
+    };
 
     // --- End of Answer ---
     return output is Map<String, dynamic> && output["name"] == "Bob" && output["details"]["age"] == 25 && output["details"]["city"] == "Los Angeles";
@@ -796,7 +889,10 @@ class Chapter0 {
     //     "city": "Chicago"
     //   }
     // }
-    // TODO: Tulis jawabanmu di bawah ini
+    Map<String, dynamic> output = {
+      "name": "Carol",
+      "details": {"age": 35, "city": "Chicago"}
+    };
 
     // --- End of Answer ---
     return output is Map<String, dynamic> && output["name"] == "Carol" && output["details"]["age"] == 35 && output["details"]["city"] == "Chicago";
@@ -811,8 +907,10 @@ class Chapter0 {
     //     "city": "Houston"
     //   }
     // }
-    // TODO: Tulis jawabanmu di bawah ini
-
+    Map<String, dynamic> output = {
+      "name": "David",
+      "details": {"age": 28, "city": "Houston"}
+    };
     // --- End of Answer ---
     return output is Map<String, dynamic> && output["name"] == "David" && output["details"]["age"] == 28 && output["details"]["city"] == "Houston";
   }
@@ -826,8 +924,10 @@ class Chapter0 {
     //     "city": "Miami"
     //   }
     // }
-    // TODO: Tulis jawabanmu di bawah ini
-
+    Map<String, dynamic> output = {
+      "name": "Eve",
+      "details": {"age": 22, "city": "Miami"}
+    };
     // --- End of Answer ---
     return output is Map<String, dynamic> && output["name"] == "Eve" && output["details"]["age"] == 22 && output["details"]["city"] == "Miami";
   }
@@ -839,8 +939,11 @@ class Chapter0 {
     //   {"name": "Bob", "age": 25},
     //   {"name": "Carol", "age": 35}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Alice", "age": 30},
+      {"name": "Bob", "age": 25},
+      {"name": "Carol", "age": 35}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "Alice" &&
@@ -858,8 +961,11 @@ class Chapter0 {
     //   {"name": "Eve", "age": 22},
     //   {"name": "Frank", "age": 40}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "David", "age": 28},
+      {"name": "Eve", "age": 22},
+      {"name": "Frank", "age": 40}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "David" &&
@@ -877,8 +983,11 @@ class Chapter0 {
     //   {"name": "Hank", "age": 45},
     //   {"name": "Ivy", "age": 29}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Grace", "age": 50},
+      {"name": "Hank", "age": 45},
+      {"name": "Ivy", "age": 29}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "Grace" &&
@@ -896,8 +1005,11 @@ class Chapter0 {
     //   {"name": "Kate", "age": 27},
     //   {"name": "Leo", "age": 38}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Jack", "age": 33},
+      {"name": "Kate", "age": 27},
+      {"name": "Leo", "age": 38}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "Jack" &&
@@ -915,8 +1027,11 @@ class Chapter0 {
     //   {"name": "Noah", "age": 29},
     //   {"name": "Olivia", "age": 26}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Mia", "age": 24},
+      {"name": "Noah", "age": 29},
+      {"name": "Olivia", "age": 26}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "Mia" &&
@@ -934,8 +1049,11 @@ class Chapter0 {
     //   {"name": "Queen", "age": 23},
     //   {"name": "Robert", "age": 36}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Peter", "age": 31},
+      {"name": "Queen", "age": 23},
+      {"name": "Robert", "age": 36}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "Peter" &&
@@ -953,8 +1071,11 @@ class Chapter0 {
     //   {"name": "Tom", "age": 32},
     //   {"name": "Uma", "age": 30}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Sam", "age": 27},
+      {"name": "Tom", "age": 32},
+      {"name": "Uma", "age": 30}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "Sam" &&
@@ -972,8 +1093,11 @@ class Chapter0 {
     //   {"name": "William", "age": 24},
     //   {"name": "Xander", "age": 35}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Victoria", "age": 29},
+      {"name": "William", "age": 24},
+      {"name": "Xander", "age": 35}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "Victoria" &&
@@ -990,8 +1114,10 @@ class Chapter0 {
     //   {"name": "Yara", "age": 28},
     //   {"name": "Zane", "age": 31}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Yara", "age": 28},
+      {"name": "Zane", "age": 31}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> &&
         output[0]["name"] == "Yara" &&
@@ -1030,8 +1156,34 @@ class Chapter0 {
     //   {"name": "Yara", "age": 28},
     //   {"name": "Zane", "age": 31}
     // ]
-    // TODO: Tulis jawabanmu di bawah ini
-
+    List<Map<String, dynamic>> output = [
+      {"name": "Alice", "age": 30},
+      {"name": "Bob", "age": 25},
+      {"name": "Carol", "age": 35},
+      {"name": "David", "age": 28},
+      {"name": "Eve", "age": 22},
+      {"name": "Frank", "age": 40},
+      {"name": "Grace", "age": 50},
+      {"name": "Hank", "age": 45},
+      {"name": "Ivy", "age": 29},
+      {"name": "Jack", "age": 33},
+      {"name": "Kate", "age": 27},
+      {"name": "Leo", "age": 38},
+      {"name": "Mia", "age": 24},
+      {"name": "Noah", "age": 29},
+      {"name": "Olivia", "age": 26},
+      {"name": "Peter", "age": 31},
+      {"name": "Queen", "age": 23},
+      {"name": "Robert", "age": 36},
+      {"name": "Sam", "age": 27},
+      {"name": "Tom", "age": 32},
+      {"name": "Uma", "age": 30},
+      {"name": "Victoria", "age": 29},
+      {"name": "William", "age": 24},
+      {"name": "Xander", "age": 35},
+      {"name": "Yara", "age": 28},
+      {"name": "Zane", "age": 31}
+    ];
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> && output.length == 26 && output[2]["name"] == "Carol" && output.last["age"] == 31;
   }
