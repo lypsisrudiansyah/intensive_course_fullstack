@@ -1578,6 +1578,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel double input dengan nilai 3.14
     // ? Instruksi 2: Buatlah variabel String? output;
     // ? Instruksi 3: Konversi input menjadi String dan tampung di dalam variabel output
+    double input = 3.14;
+    String? output = input.toString();
 
     // --- End of Answer ---
     return output is String && output == "3.14";
@@ -1587,6 +1589,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "9.99"
     // ? Instruksi 2: Buatlah variabel double? output;
     // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+    String input = "9.99";
+    double? output = double.tryParse(input);
 
     // --- End of Answer ---
     return output is double && output == 9.99;
@@ -1596,6 +1600,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "3.14"
     // ? Instruksi 2: Buatlah variabel double? output;
     // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+    String input = "3.14";
+    double? output = double.tryParse(input);
 
     // --- End of Answer ---
     return output is double && output == 3.14;
@@ -1605,6 +1611,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "5.5"
     // ? Instruksi 2: Buatlah variabel double? output;
     // ? Instruksi 3: Konversi input menjadi double dan tampung di dalam variabel output
+    String input = "5.5";
+    double? output = double.tryParse(input);
 
     // --- End of Answer ---
     return output is double && output == 5.5;
@@ -1614,6 +1622,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "2023-08-09"
     // ? Instruksi 2: Buatlah variabel DateTime? output;
     // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
+    String input = "2023-08-09";
+    DateTime? output = DateTime.tryParse(input);
 
     // --- End of Answer ---
     return output is DateTime && output.year == 2023 && output.month == 8 && output.day == 9;
@@ -1623,6 +1633,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "1999-12-31"
     // ? Instruksi 2: Buatlah variabel DateTime? output;
     // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
+     String input = "1999-12-31";
+    DateTime? output = DateTime.tryParse(input);
 
     // --- End of Answer ---
     return output is DateTime && output.year == 1999 && output.month == 12 && output.day == 31;
