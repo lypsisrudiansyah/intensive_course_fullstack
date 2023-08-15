@@ -1633,7 +1633,7 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "1999-12-31"
     // ? Instruksi 2: Buatlah variabel DateTime? output;
     // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
-     String input = "1999-12-31";
+    String input = "1999-12-31";
     DateTime? output = DateTime.tryParse(input);
 
     // --- End of Answer ---
@@ -1644,7 +1644,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "2022-01-15"
     // ? Instruksi 2: Buatlah variabel DateTime? output;
     // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
-
+    String input = "2022-01-15";
+    DateTime? output = DateTime.tryParse(input);
     // --- End of Answer ---
     return output is DateTime && output.year == 2022 && output.month == 1 && output.day == 15;
   }
@@ -1653,6 +1654,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "1987-05-25"
     // ? Instruksi 2: Buatlah variabel DateTime? output;
     // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
+    String input = "1987-05-25";
+    DateTime? output = DateTime.tryParse(input);
 
     // --- End of Answer ---
     return output is DateTime && output.year == 1987 && output.month == 5 && output.day == 25;
@@ -1662,7 +1665,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel String input dengan nilai "2025-10-01"
     // ? Instruksi 2: Buatlah variabel DateTime? output;
     // ? Instruksi 3: Konversi input menjadi DateTime dan tampung di dalam variabel output
-
+    String input = "2025-10-01";
+    DateTime? output = DateTime.tryParse(input);
     // --- End of Answer ---
     return output is DateTime && output.year == 2025 && output.month == 10 && output.day == 1;
   }
@@ -1671,6 +1675,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<int> input dengan nilai [1, 2, 3, 4, 5]
     // ? Instruksi 2: Buatlah variabel List<int>? output;
     // ? Instruksi 3: Konversi input menjadi List<int> dan tampung di dalam variabel output
+     List<int> input = [1, 2, 3, 4, 5];
+      List<int>? output = input;
 
     // --- End of Answer ---
     return output is List<int> && output.length == 5 && output[0] == 1 && output[4] == 5;
@@ -1680,6 +1686,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<String> input dengan nilai ["apple", "banana", "cherry"]
     // ? Instruksi 2: Buatlah variabel List<String>? output;
     // ? Instruksi 3: Konversi input menjadi List<String> dan tampung di dalam variabel output
+    List<String> input = ["apple", "banana", "cherry"];
+     List<String>? output = input;
 
     // --- End of Answer ---
     return output is List<String> && output.length == 3 && output[0] == "apple" && output[2] == "cherry";
@@ -1689,6 +1697,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<double> input dengan nilai [3.14, 2.71, 1.618]
     // ? Instruksi 2: Buatlah variabel List<double>? output;
     // ? Instruksi 3: Konversi input menjadi List<double> dan tampung di dalam variabel output
+    List<double> input = [3.14, 2.71, 1.618];
+    List<double>? output = input;
 
     // --- End of Answer ---
     return output is List<double> && output.length == 3 && output[0] == 3.14 && output[2] == 1.618;
