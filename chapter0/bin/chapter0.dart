@@ -1395,7 +1395,6 @@ class Chapter0 {
     // ? Instruksi 3: Konversi input menjadi String dengan format "yyyy-MM-dd" dan tampung di dalam variabel output
     DateTime input = DateTime(2023, 8, 9);
     String? output = input.toString().split(" ")[0];
-    print('Anunya: $output');
 
     // --- End of Answer ---
     return output is String && output == "2023-08-09";
@@ -2068,6 +2067,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<int> input dengan nilai [1, 2, 3, 4, 5]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi String dan cek apakah string "3" terdapat dalam output
+    List<int> input = [1, 2, 3, 4, 5];
+    bool? output = input.contains(3);
 
     // --- End of Answer ---
 
@@ -2078,7 +2079,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<String> input dengan nilai ["apple", "banana", "cherry"]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi String dan cek apakah string "grape" terdapat dalam output
-
+    List<String> input = ["apple", "banana", "cherry"];
+    bool? output = input.contains("grape");
     // --- End of Answer ---
 
     return output is bool && !output;
@@ -2088,7 +2090,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<int> input dengan nilai [10, 20, 30, 40, 50]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi List<String> dengan mengubah setiap elemen menjadi string
-
+    List<int> input = [10, 20, 30, 40, 50];
+    List<String>? output = input.map((e) => e.toString()).toList();
     // --- End of Answer ---
 
     return output is List<String> && output.every((element) => element is String);
@@ -2098,6 +2101,10 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel Map<String, int> input dengan pasangan nilai "apple" -> 3 dan "banana" -> 2
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi List<String> dengan mengambil semua kunci (keys) dari map
+    Map<String, int> input = {"apple": 3, "banana": 2};
+    List<String>? output = input.keys.toList();
+    print('Anunya: $output');
+
 
     // --- End of Answer ---
 
@@ -2108,7 +2115,9 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel Map<int, String> input dengan pasangan nilai 1 -> "one" dan 2 -> "two"
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi List<int> dengan mengambil semua nilai (values) dari map
-
+    Map<int, String> input = {1: "one", 2: "two"};
+    List<String>? output = input.values.toList();
+    
     // --- End of Answer ---
 
     return output is List<String> && output.every((element) => element is String);
