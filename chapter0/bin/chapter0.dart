@@ -1674,8 +1674,8 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<int> input dengan nilai [1, 2, 3, 4, 5]
     // ? Instruksi 2: Buatlah variabel List<int>? output;
     // ? Instruksi 3: Konversi input menjadi List<int> dan tampung di dalam variabel output
-     List<int> input = [1, 2, 3, 4, 5];
-      List<int>? output = input;
+    List<int> input = [1, 2, 3, 4, 5];
+    List<int>? output = input;
 
     // --- End of Answer ---
     return output is List<int> && output.length == 5 && output[0] == 1 && output[4] == 5;
@@ -1686,7 +1686,7 @@ class Chapter0 {
     // ? Instruksi 2: Buatlah variabel List<String>? output;
     // ? Instruksi 3: Konversi input menjadi List<String> dan tampung di dalam variabel output
     List<String> input = ["apple", "banana", "cherry"];
-     List<String>? output = input;
+    List<String>? output = input;
 
     // --- End of Answer ---
     return output is List<String> && output.length == 3 && output[0] == "apple" && output[2] == "cherry";
@@ -1751,9 +1751,12 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, int>> input dengan nilai [{"score": 90}, {"score": 85}, {"score": 95}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, int>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, int>> dan tampung di dalam variabel output
-    List<Map<String, int>> input = [{"score": 90}, {"score": 85}, {"score": 95}];
+    List<Map<String, int>> input = [
+      {"score": 90},
+      {"score": 85},
+      {"score": 95}
+    ];
     List<Map<String, int>>? output = input;
-
 
     // --- End of Answer ---
     return output is List<Map<String, int>> && output.length == 3 && output[0]["score"] == 90 && output[2]["score"] == 95;
@@ -1763,7 +1766,11 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"name": "Alice"}, {"name": "Bob"}, {"name": "Charlie"}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"name": "Alice"}, {"name": "Bob"}, {"name": "Charlie"}];
+    List<Map<String, dynamic>> input = [
+      {"name": "Alice"},
+      {"name": "Bob"},
+      {"name": "Charlie"}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1774,7 +1781,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"city": "New York", "population": 8378394}, {"city": "Los Angeles", "population": 3990456}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"city": "New York", "population": 8378394}, {"city": "Los Angeles", "population": 3990456}];
+    List<Map<String, dynamic>> input = [
+      {"city": "New York", "population": 8378394},
+      {"city": "Los Angeles", "population": 3990456}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1785,7 +1795,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}];
+    List<Map<String, dynamic>> input = [
+      {"name": "Alice", "age": 25},
+      {"name": "Bob", "age": 30}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1796,7 +1809,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"country": "USA", "capital": "Washington, D.C."}, {"country": "Canada", "capital": "Ottawa"}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"country": "USA", "capital": "Washington, D.C."}, {"country": "Canada", "capital": "Ottawa"}];
+    List<Map<String, dynamic>> input = [
+      {"country": "USA", "capital": "Washington, D.C."},
+      {"country": "Canada", "capital": "Ottawa"}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1807,7 +1823,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"code": "A1", "value": 10}, {"code": "B2", "value": 20}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"code": "A1", "value": 10}, {"code": "B2", "value": 20}];
+    List<Map<String, dynamic>> input = [
+      {"code": "A1", "value": 10},
+      {"code": "B2", "value": 20}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1818,7 +1837,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"item": "Apple", "price": 1.99}, {"item": "Banana", "price": 0.99}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"item": "Apple", "price": 1.99}, {"item": "Banana", "price": 0.99}];
+    List<Map<String, dynamic>> input = [
+      {"item": "Apple", "price": 1.99},
+      {"item": "Banana", "price": 0.99}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1829,9 +1851,11 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}];
+    List<Map<String, dynamic>> input = [
+      {"name": "Alice", "age": 25},
+      {"name": "Bob", "age": 30}
+    ];
     List<Map<String, dynamic>>? output = input;
-
 
     // --- End of Answer ---
     return output is List<Map<String, dynamic>> && output.length == 2 && output[0]["name"] == "Alice" && output[1]["age"] == 30;
@@ -1841,7 +1865,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"city": "New York", "population": 8378394}, {"city": "Los Angeles", "population": 3990456}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"city": "New York", "population": 8378394}, {"city": "Los Angeles", "population": 3990456}];
+    List<Map<String, dynamic>> input = [
+      {"city": "New York", "population": 8378394},
+      {"city": "Los Angeles", "population": 3990456}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1852,7 +1879,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"country": "USA", "capital": "Washington, D.C."}, {"country": "Canada", "capital": "Ottawa"}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"country": "USA", "capital": "Washington, D.C."}, {"country": "Canada", "capital": "Ottawa"}];
+    List<Map<String, dynamic>> input = [
+      {"country": "USA", "capital": "Washington, D.C."},
+      {"country": "Canada", "capital": "Ottawa"}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1863,7 +1893,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"code": "A1", "value": 10}, {"code": "B2", "value": 20}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"code": "A1", "value": 10}, {"code": "B2", "value": 20}];
+    List<Map<String, dynamic>> input = [
+      {"code": "A1", "value": 10},
+      {"code": "B2", "value": 20}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -1874,7 +1907,10 @@ class Chapter0 {
     // ? Instruksi 1: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"item": "Apple", "price": 1.99}, {"item": "Banana", "price": 0.99}]
     // ? Instruksi 2: Buatlah variabel List<Map<String, dynamic>>? output;
     // ? Instruksi 3: Konversi input menjadi List<Map<String, dynamic>> dan tampung di dalam variabel output
-    List<Map<String, dynamic>> input = [{"item": "Apple", "price": 1.99}, {"item": "Banana", "price": 0.99}];
+    List<Map<String, dynamic>> input = [
+      {"item": "Apple", "price": 1.99},
+      {"item": "Banana", "price": 0.99}
+    ];
     List<Map<String, dynamic>>? output = input;
 
     // --- End of Answer ---
@@ -2104,7 +2140,6 @@ class Chapter0 {
     Map<String, int> input = {"apple": 3, "banana": 2};
     List<String>? output = input.keys.toList();
 
-
     // --- End of Answer ---
 
     return output is List<String> && output.every((element) => element is String);
@@ -2116,7 +2151,7 @@ class Chapter0 {
     // ? Instruksi: Konversi input menjadi List<int> dengan mengambil semua nilai (values) dari map
     Map<int, String> input = {1: "one", 2: "two"};
     List<String>? output = input.values.toList();
-    
+
     // --- End of Answer ---
 
     return output is List<String> && output.every((element) => element is String);
@@ -2126,7 +2161,10 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<Map<String, int>> input dengan nilai [{ "apple": 3 }, { "banana": 2 }]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi List<int> dengan mengambil semua nilai dari map-map di dalam list
-    List<Map<String, int>> input = [{"apple": 3}, {"banana": 2}];
+    List<Map<String, int>> input = [
+      {"apple": 3},
+      {"banana": 2}
+    ];
     List<int>? output = input.map((e) => e.values.first).toList();
 
     // --- End of Answer ---
@@ -2153,7 +2191,6 @@ class Chapter0 {
     List<int> input = [1, 2, 3, 4, 5];
     // Map<String, int>? output = input.asMap().map((key, value) => MapEntry("number", value));
     Map<String, int>? output = {"number": input.first};
-    print('Anunya: $output');
 
     // --- End of Answer ---
 
@@ -2177,7 +2214,10 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<Map<String, int>> input dengan nilai [{ "apple": 3 }, { "banana": 2 }]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi Map<String, int> dengan mengambil pasangan kunci "apple" dan nilai dari map pertama dalam list
-    List<Map<String, int>> input = [{"apple": 3}, {"banana": 2}];
+    List<Map<String, int>> input = [
+      {"apple": 3},
+      {"banana": 2}
+    ];
     Map<String, int>? output = input.first;
     // --- End of Answer ---
 
@@ -2261,6 +2301,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "2022-08-01,2023-01-15,2021-05-10"
     // ? Instruksi: Buatlah variabel List<DateTime>? output;
     // ? Instruksi: Konversi input menjadi List<DateTime> dengan mengubah setiap elemen menjadi DateTime
+    String input = "2022-08-01,2023-01-15,2021-05-10";
+    List<DateTime>? output = input.split(",").map((e) => DateTime.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2271,7 +2313,16 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple,banana,cherry"
     // ? Instruksi: Buatlah variabel Map<String, int>? output;
     // ? Instruksi: Konversi input menjadi Map<String, int> dengan mengubah setiap elemen menjadi pasangan kunci "fruit" dan nilai 1
-
+    String input = "apple,banana,cherry";
+    Map<String, int>? output = input.split(",").fold<Map<String, int>>(
+      {},
+      (map, fruit) {
+        return map..[fruit] = 1;
+      },
+    );
+    // Map<String, int>? output = input.split(",").map((e) => {e: 1}).toList().asMap();
+    // Map<String, int>? output = {input[0]: 1, input[1]: 1, input[2]: 1};
+    // output.length
     // --- End of Answer ---
 
     return output is Map<String, int> && output.length == 3;
@@ -2281,6 +2332,11 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "10,20,30"
     // ? Instruksi: Buatlah variabel Map<int, String>? output;
     // ? Instruksi: Konversi input menjadi Map<int, String> dengan mengubah setiap elemen menjadi pasangan kunci integer dan nilai "value"
+    String input = "10,20,30";
+    Map<int, String>? output = input.split(",").fold<Map<int, String>>(
+      {},
+      (map, fruit) => map..[int.parse(fruit)] = "value",
+    );
 
     // --- End of Answer ---
 
@@ -2291,6 +2347,18 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<Map<String, int>> input dengan nilai [{ "apple": 3 }, { "banana": 2 }, { "cherry": 1 }]
     // ? Instruksi: Buatlah variabel List<int>? output;
     // ? Instruksi: Konversi input menjadi List<int> dengan mengambil nilai dari setiap map dalam list
+    List<Map<String, int>> input = [
+      {"apple": 3},
+      {"banana": 2},
+      {"cherry": 1}
+    ];
+    List<int>? output = input.map((e) {
+    print('1: $e');
+    print('2: ${e.values}');
+    print('3: ${e.values.first}');
+
+      return e.values.first;
+    }).toList();
 
     // --- End of Answer ---
 
@@ -2301,6 +2369,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "Hello, world!"
     // ? Instruksi: Buatlah variabel String? output;
     // ? Instruksi: Ganti kata "world" menjadi "Dart" dalam input dan simpan dalam variabel output
+    String input = "Hello, world!";
+    String? output = input.replaceAll("world", "Dart");
 
     // --- End of Answer ---
 
