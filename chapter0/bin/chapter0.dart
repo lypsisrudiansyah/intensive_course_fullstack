@@ -2103,7 +2103,6 @@ class Chapter0 {
     // ? Instruksi: Konversi input menjadi List<String> dengan mengambil semua kunci (keys) dari map
     Map<String, int> input = {"apple": 3, "banana": 2};
     List<String>? output = input.keys.toList();
-    print('Anunya: $output');
 
 
     // --- End of Answer ---
@@ -2127,6 +2126,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<Map<String, int>> input dengan nilai [{ "apple": 3 }, { "banana": 2 }]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi List<int> dengan mengambil semua nilai dari map-map di dalam list
+    List<Map<String, int>> input = [{"apple": 3}, {"banana": 2}];
+    List<int>? output = input.map((e) => e.values.first).toList();
 
     // --- End of Answer ---
 
@@ -2137,6 +2138,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel Map<String, dynamic> input dengan pasangan nilai "age" -> 25 dan "name" -> "John"
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi List<dynamic> dengan mengambil semua nilai dari map
+    Map<String, dynamic> input = {"age": 25, "name": "John"};
+    List<dynamic>? output = input.values.toList();
 
     // --- End of Answer ---
 
@@ -2147,6 +2150,10 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<int> input dengan nilai [1, 2, 3, 4, 5]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi Map<String, int> dengan mengubah setiap elemen menjadi pasangan kunci "number" dan nilai elemen
+    List<int> input = [1, 2, 3, 4, 5];
+    // Map<String, int>? output = input.asMap().map((key, value) => MapEntry("number", value));
+    Map<String, int>? output = {"number": input.first};
+    print('Anunya: $output');
 
     // --- End of Answer ---
 
@@ -2157,6 +2164,9 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<String> input dengan nilai ["apple", "banana", "cherry"]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi Map<String, String> dengan mengubah setiap elemen menjadi pasangan kunci dan nilai yang sama
+    List<String> input = ["apple", "banana", "cherry"];
+    // Map<String, String>? output = input.asMap().map((key, value) => MapEntry(value, value));
+    Map<String, String>? output = {"number": input.first};
 
     // --- End of Answer ---
 
@@ -2167,7 +2177,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<Map<String, int>> input dengan nilai [{ "apple": 3 }, { "banana": 2 }]
     // ? Instruksi: Buatlah variabel bool? output;
     // ? Instruksi: Konversi input menjadi Map<String, int> dengan mengambil pasangan kunci "apple" dan nilai dari map pertama dalam list
-
+    List<Map<String, int>> input = [{"apple": 3}, {"banana": 2}];
+    Map<String, int>? output = input.first;
     // --- End of Answer ---
 
     return output is Map<String, int> && output.containsKey("apple");
@@ -2178,6 +2189,9 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input2 dengan nilai "world"
     // ? Instruksi: Buatlah variabel String? output;
     // ? Instruksi: Gabungkan input1 dan input2 menjadi satu string dan simpan dalam variabel output
+    String input1 = "Hello";
+    String input2 = "world";
+    String? output = "$input1 $input2";
 
     // --- End of Answer ---
 
@@ -2188,6 +2202,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "Hello, my name is John"
     // ? Instruksi: Buatlah variabel String? output;
     // ? Instruksi: Ganti kata "John" menjadi "Alice" dalam input dan simpan dalam variabel output
+    String input = "Hello, my name is John";
+    String? output = input.replaceAll("John", "Alice");
 
     // --- End of Answer ---
 
@@ -2198,6 +2214,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple,banana,cherry"
     // ? Instruksi: Buatlah variabel List<String>? output;
     // ? Instruksi: Konversi input menjadi List<String> dengan memisahkan string berdasarkan koma (",")
+    String input = "apple,banana,cherry";
+    List<String>? output = input.split(",");
 
     // --- End of Answer ---
 
@@ -2208,6 +2226,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "10,20,30,40,50"
     // ? Instruksi: Buatlah variabel List<int>? output;
     // ? Instruksi: Konversi input menjadi List<int> dengan mengubah setiap elemen menjadi integer
+    String input = "10,20,30,40,50";
+    List<int>? output = input.split(",").map((e) => int.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2218,6 +2238,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "1.5,2.5,3.5"
     // ? Instruksi: Buatlah variabel List<double>? output;
     // ? Instruksi: Konversi input menjadi List<double> dengan mengubah setiap elemen menjadi double
+    String input = "1.5,2.5,3.5";
+    List<double>? output = input.split(",").map((e) => double.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2228,7 +2250,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "true,false,true"
     // ? Instruksi: Buatlah variabel List<bool>? output;
     // ? Instruksi: Konversi input menjadi List<bool> dengan mengubah setiap elemen menjadi boolean
-
+    String input = "true,false,true";
+    List<bool>? output = input.split(",").map((e) => e == "true").toList();
     // --- End of Answer ---
 
     return output is List<bool> && output.length == 3 && output.every((element) => element is bool);
