@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Chapter0 {
   dynamic output;
 
@@ -2353,9 +2355,6 @@ class Chapter0 {
       {"cherry": 1}
     ];
     List<int>? output = input.map((e) {
-    print('1: $e');
-    print('2: ${e.values}');
-    print('3: ${e.values.first}');
 
       return e.values.first;
     }).toList();
@@ -2381,7 +2380,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple,banana,apple,apple,cherry"
     // ? Instruksi: Buatlah variabel String? output;
     // ? Instruksi: Ganti semua kata "apple" menjadi "orange" dalam input dan simpan dalam variabel output
-
+    String input = "apple,banana,apple,apple,cherry";
+    String? output = input.replaceAll("apple", "orange");
     // --- End of Answer ---
 
     return output is String && output == "orange,banana,orange,orange,cherry";
@@ -2392,6 +2392,12 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<int>? output;
     // ? Instruksi: Konversi input menjadi List<int> dengan mengubah setiap elemen menjadi integer
     // ? Instruksi: Ganti semua angka yang habis dibagi 2 dengan nilai 0 dalam list output
+    String input = "1,2,3,4,5";
+    List<int>? output = input.split(",").map((e) {
+      var i = int.parse(e);
+
+      return i % 2 == 0 ? 0 : i;
+    }).toList();
 
     // --- End of Answer ---
 
@@ -2402,6 +2408,14 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<String> input dengan nilai ["apple", "banana", "cherry"]
     // ? Instruksi: Buatlah variabel Map<String, int>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi pasangan kunci "fruit" dan panjang string dalam map output
+    List<String> input = ["apple", "banana", "cherry"];
+    Map<String, int>? output = input.fold<Map<String, int>>(
+      {},
+      (map, fruit) => map..[fruit] = fruit.length,
+    );
+
+      print('1: $output');
+
 
     // --- End of Answer ---
 
@@ -2412,6 +2426,12 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<int> input dengan nilai [1, 2, 3, 4, 5]
     // ? Instruksi: Buatlah variabel Map<int, int>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi pasangan kunci integer dan kuadrat dari elemen dalam map output
+    List<int> input = [1, 2, 3, 4, 5];
+    Map<int, int>? output = input.fold<Map<int, int>>(
+      {},
+      // (map, number) => map..[number] = number * number,
+      (map, number) => map..[number] = pow(number, 2).toInt(),
+    );
 
     // --- End of Answer ---
 
