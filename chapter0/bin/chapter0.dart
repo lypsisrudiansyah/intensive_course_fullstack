@@ -2414,7 +2414,6 @@ class Chapter0 {
       (map, fruit) => map..[fruit] = fruit.length,
     );
 
-      print('1: $output');
 
 
     // --- End of Answer ---
@@ -2442,6 +2441,9 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<String> input dengan nilai ["apple", "banana", "cherry"]
     // ? Instruksi: Buatlah variabel List<Map<String, int>>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi map dengan pasangan kunci "length" dan panjang string sebagai nilai, lalu tambahkan dalam list output
+    List<String> input = ["apple", "banana", "cherry"];
+    List<Map<String, int>>? output = input.map((e) => {"length": e.length}).toList();
+      print('und : $output');
 
     // --- End of Answer ---
 
@@ -2452,6 +2454,12 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"fruit": "apple"}, {"fruit": "banana"}, {"fruit": "cherry"}]
     // ? Instruksi: Buatlah variabel List<String>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi string "fruit" dalam list output
+    List<Map<String, dynamic>> input = [
+      {"fruit": "apple"},
+      {"fruit": "banana"},
+      {"fruit": "cherry"}
+    ];
+    List<String>? output = input.map((e) => e["fruit"].toString()).toList();
 
     // --- End of Answer ---
 
@@ -2462,6 +2470,12 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<Map<String, int>> input dengan nilai [{"amount": 5}, {"amount": 10}, {"amount": 3}]
     // ? Instruksi: Buatlah variabel List<int>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi integer "amount" dalam list output
+    List<Map<String, int>> input = [
+      {"amount": 5},
+      {"amount": 10},
+      {"amount": 3}
+    ];
+    List<int>? output = input.map((e) => e["amount"]!).toList();
 
     // --- End of Answer ---
 
