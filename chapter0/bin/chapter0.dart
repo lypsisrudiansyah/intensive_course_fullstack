@@ -2486,6 +2486,12 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<Map<String, dynamic>> input dengan nilai [{"value": 7}, {"value": 15}, {"value": 9}]
     // ? Instruksi: Buatlah variabel List<int>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi integer "value" dalam list output
+    List<Map<String, dynamic>> input = [
+      {"value": 7},
+      {"value": 15},
+      {"value": 9}
+    ];
+    List<int>? output = input.map((e) => e["value"] as int).toList();
 
     // --- End of Answer ---
 
@@ -2496,6 +2502,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel List<String> input dengan nilai ["5", "10", "3"]
     // ? Instruksi: Buatlah variabel List<int>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi integer dan tambahkan dalam list output
+    List<String> input = ["5", "10", "3"];
+    List<int>? output = input.map((e) => int.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2506,6 +2514,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "5,10,15,20,25"
     // ? Instruksi: Buatlah variabel List<int>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi integer dan tambahkan dalam list output
+    String input = "5,10,15,20,25";
+    List<int>? output = input.split(",").map((e) => int.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2522,6 +2532,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "5.5,10.5,15.5,20.5,25.5"
     // ? Instruksi: Buatlah variabel List<double>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi double dan tambahkan dalam list output
+    String input = "5.5,10.5,15.5,20.5,25.5";
+    List<double>? output = input.split(",").map((e) => double.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2538,6 +2550,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "true,false,true,false,true"
     // ? Instruksi: Buatlah variabel List<bool>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi boolean dan tambahkan dalam list output
+    String input = "true,false,true,false,true";
+    List<bool>? output = input.split(",").map((e) => e == "true").toList();
 
     // --- End of Answer ---
 
@@ -2548,6 +2562,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple,banana,apple,banana,apple"
     // ? Instruksi: Buatlah variabel List<String>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi string dan tambahkan dalam list output
+    String input = "apple,banana,apple,banana,apple";
+    List<String>? output = input.split(",").map((e) => e).toList();
 
     // --- End of Answer ---
 
