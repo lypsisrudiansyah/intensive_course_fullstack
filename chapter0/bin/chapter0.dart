@@ -2574,6 +2574,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "2022-01-01,2023-02-02,2024-03-03"
     // ? Instruksi: Buatlah variabel List<DateTime>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi DateTime dan tambahkan dalam list output
+    String input = "2022-01-01,2023-02-02,2024-03-03";
+    List<DateTime>? output = input.split(",").map((e) => DateTime.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2588,6 +2590,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "1,2,3,4,5"
     // ? Instruksi: Buatlah variabel List<int>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi integer dan tambahkan dalam list output
+    String input = "1,2,3,4,5";
+    List<int>? output = input.split(",").map((e) => int.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2604,6 +2608,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "1.1,2.2,3.3,4.4,5.5"
     // ? Instruksi: Buatlah variabel List<double>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi double dan tambahkan dalam list output
+    String input = "1.1,2.2,3.3,4.4,5.5";
+    List<double>? output = input.split(",").map((e) => double.parse(e)).toList();
 
     // --- End of Answer ---
 
@@ -2620,6 +2626,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "true,false,true,false,true"
     // ? Instruksi: Buatlah variabel List<bool>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi boolean dan tambahkan dalam list output
+    String input = "true,false,true,false,true";
+    List<bool>? output = input.split(",").map((e) => e == "true").toList();
 
     // --- End of Answer ---
 
@@ -2630,6 +2638,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple,banana,apple,banana,apple"
     // ? Instruksi: Buatlah variabel List<String>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi string dan tambahkan dalam list output
+    String input = "apple,banana,apple,banana,apple";
+    List<String>? output = input.split(",").map((e) => e).toList();
 
     // --- End of Answer ---
 
@@ -2640,6 +2650,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "2022-01-01,2023-02-02,2024-03-03"
     // ? Instruksi: Buatlah variabel List<DateTime>? output;
     // ? Instruksi: Konversi setiap elemen dalam input menjadi DateTime dan tambahkan dalam list output
+    String input = "2022-01-01,2023-02-02,2024-03-03";
+    List<DateTime>? output = input.split(",").map((e) => DateTime.parse(e)).toList();
 
     // --- End of Answer ---
 
