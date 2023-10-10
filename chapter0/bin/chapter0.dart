@@ -2355,7 +2355,6 @@ class Chapter0 {
       {"cherry": 1}
     ];
     List<int>? output = input.map((e) {
-
       return e.values.first;
     }).toList();
 
@@ -2414,8 +2413,6 @@ class Chapter0 {
       (map, fruit) => map..[fruit] = fruit.length,
     );
 
-
-
     // --- End of Answer ---
 
     return output is Map<String, int> && output.length == 3 && output["apple"] == 5 && output["banana"] == 6 && output["cherry"] == 6;
@@ -2443,7 +2440,6 @@ class Chapter0 {
     // ? Instruksi: Konversi setiap elemen dalam input menjadi map dengan pasangan kunci "length" dan panjang string sebagai nilai, lalu tambahkan dalam list output
     List<String> input = ["apple", "banana", "cherry"];
     List<Map<String, int>>? output = input.map((e) => {"length": e.length}).toList();
-      print('und : $output');
 
     // --- End of Answer ---
 
@@ -2894,6 +2890,8 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple,banana,cherry,dates,elderberry"
     // ? Instruksi: Buatlah variabel List<String>? output;
     // ? Instruksi: Konversi input menjadi list string dan tampung dalam variabel output
+    String input = "apple,banana,cherry,dates,elderberry";
+    List<String>? output = input.split(",").map((e) => e).toList();
 
     // --- End of Answer ---
 
@@ -2910,6 +2908,10 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple,banana,cherry,dates,elderberry"
     // ? Instruksi: Buatlah variabel Map<String, int>? output;
     // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan kata dan values berdasarkan panjang kata, tampung dalam variabel output
+    String input = "apple,banana,cherry,dates,elderberry";
+    Map<String, int>? output =
+        input.split(",").map((e) => MapEntry(e, e.length)).toList().fold<Map<String, int>>({}, (map, e) => map..[e.key] = e.value);
+    print('und : $output');
 
     // --- End of Answer ---
 
@@ -2926,7 +2928,17 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple:100,banana:200,cherry:300"
     // ? Instruksi: Buatlah variabel Map<String, int>? output;
     // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan nama buah dan values berdasarkan jumlahnya, tampung dalam variabel output
-
+    String input = "apple:100,banana:200,cherry:300";
+    // Map<String, int>? output = input.split(",").map((e) => e.split(':')).fold<Map<String, int>>({}, (map, e) => map..[e[0]] = int.parse(e[1]));
+    Map<String, int>? output = input
+        .split(",")
+        .map(
+          (e) => e.split(':'),
+        )
+        .fold<Map<String, int>>(
+      {},
+      (previousValue, element) => previousValue..[element[0]] = int.parse(element[1]),
+    );
     // --- End of Answer ---
 
     return output is Map<String, int> && output.length == 3 && output["apple"] == 100 && output["banana"] == 200 && output["cherry"] == 300;
@@ -2936,7 +2948,16 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple:1.1,banana:2.2,cherry:3.3"
     // ? Instruksi: Buatlah variabel Map<String, double>? output;
     // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan nama buah dan values berdasarkan angka, tampung dalam variabel output
-
+    String input = "apple:1.1,banana:2.2,cherry:3.3";
+    Map<String, double>? output = input
+        .split(",")
+        .map(
+          (e) => e.split(':'),
+        )
+        .fold<Map<String, double>>(
+      {},
+      (previousValue, element) => previousValue..[element[0]] = double.parse(element[1]),
+    );
     // --- End of Answer ---
 
     return output is Map<String, double> && output.length == 3 && output["apple"] == 1.1 && output["banana"] == 2.2 && output["cherry"] == 3.3;
@@ -2946,7 +2967,16 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple:true,banana:false,cherry:true"
     // ? Instruksi: Buatlah variabel Map<String, bool>? output;
     // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan nama buah dan values berdasarkan nilai boolean, tampung dalam variabel output
-
+    String input = "apple:true,banana:false,cherry:true";
+    Map<String, bool>? output = input
+        .split(",")
+        .map(
+          (e) => e.split(':'),
+        )
+        .fold<Map<String, bool>>(
+      {},
+      (previousValue, element) => previousValue..[element[0]] = element[1] == "true",
+    );
     // --- End of Answer ---
 
     return output is Map<String, bool> && output.length == 3 && output["apple"] == true && output["banana"] == false && output["cherry"] == true;
@@ -2956,7 +2986,16 @@ class Chapter0 {
     // ? Instruksi: Buatlah variabel String input dengan nilai "apple:2022-01-01,banana:2023-02-02,cherry:2024-03-03"
     // ? Instruksi: Buatlah variabel Map<String, DateTime>? output;
     // ? Instruksi: Konversi input menjadi map dengan keys berdasarkan nama buah dan values berdasarkan tanggal, tampung dalam variabel output
-
+    String input = "apple:2022-01-01,banana:2023-02-02,cherry:2024-03-03";
+    Map<String, DateTime>? output = input
+        .split(",")
+        .map(
+          (e) => e.split(':'),
+        )
+        .fold<Map<String, DateTime>>(
+      {},
+      (previousValue, element) => previousValue..[element[0]] = DateTime.parse(element[1]),
+    );
     // --- End of Answer ---
 
     return output is Map<String, DateTime> &&
