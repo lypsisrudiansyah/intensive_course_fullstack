@@ -19,6 +19,30 @@ class ExampleLayout extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
+                children: [
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.blue,
+                  ),
+                  const SizedBox(
+                    width: 10.0,
+                  ),
+                  // const Spacer(),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.purple,
+                  ),
+                ],
+              ),
+              const Divider(),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
@@ -45,13 +69,51 @@ class ExampleLayout extends StatelessWidget {
               Row(
                 children: const [
                   Expanded(
-                    child: Text("lorem ipsum dolor sit amet, consectetur adipiscing elit."),
+                    child: Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                   Icon(
                     Icons.favorite,
                     color: Colors.red,
                   ),
                 ],
+              ),
+              const SizedBox(height: 20),
+              const Text("Example Expanded But Now as Children of SingleChildScrollView->Column :"),
+              const SizedBox(height: 20),
+
+              ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxHeight: MediaQuery.of(context).size.height,
+                ),
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 120,
+                        width: MediaQuery.of(context).size.width,
+                        color: Colors.red,
+                      ),
+                    ),
+                    Container(
+                      height: 120,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.blue,
+                    ),
+                    Container(
+                      height: 120,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.green,
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(height: 20),
               const Text("Example Wrap :"),
