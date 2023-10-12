@@ -13,7 +13,7 @@ class SecondLayout extends StatelessWidget {
         actions: const [],
       ),
       body: ListView.builder(
-        itemCount: 3,
+        itemCount: 10,
         physics: const ScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
           return Card(
@@ -25,7 +25,8 @@ class SecondLayout extends StatelessWidget {
                 ),
               ),
               title: const Text("Jessica Doe"),
-              subtitle: const Text("Programmer"),
+              subtitle: const Text("jess@mail.co"),
+              trailing: const Icon(Icons.add),
             ),
           );
         },
