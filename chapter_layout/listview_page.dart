@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class SecondLayout extends StatelessWidget {
-  const SecondLayout({Key? key}) : super(key: key);
+class ListViewPage extends StatelessWidget {
+  const ListViewPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
