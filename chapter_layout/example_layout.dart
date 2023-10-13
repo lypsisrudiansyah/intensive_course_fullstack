@@ -18,28 +18,36 @@ class ExampleLayout extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.red,
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.blue,
-                  ),
-                  const SizedBox(
-                    width: 10.0,
-                  ),
-                  // const Spacer(),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.purple,
-                  ),
-                ],
+              // & Handling Overflow Widget using Scrollable Widget
+              SingleChildScrollView(
+                controller: ScrollController(),
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: List.generate(10, (index) {
+                    return Row(
+                      children: [
+                        Container(
+                          width: 100.0,
+                          height: 100.0,
+                          color: Colors.red,
+                        ),
+                        Container(
+                          width: 100.0,
+                          height: 100.0,
+                          color: Colors.blue,
+                        ),
+                        const SizedBox(
+                          width: 10.0,
+                        ),
+                        Container(
+                          width: 100.0,
+                          height: 100.0,
+                          color: Colors.purple,
+                        ),
+                      ],
+                    );
+                  }),
+                ),
               ),
               const Divider(),
               Row(
