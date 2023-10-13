@@ -13,22 +13,20 @@ class GridViewPage extends StatelessWidget {
         actions: const [],
       ),
       body: GridView.builder(
-        padding: EdgeInsets.zero,
+        padding: const EdgeInsets.all(6),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           childAspectRatio: 1.0,
-          crossAxisCount: 5,
+          crossAxisCount: 3,
           mainAxisSpacing: 6,
           crossAxisSpacing: 6,
         ),
-        itemCount: 10,
+        itemCount: 12,
         shrinkWrap: true,
         physics: const ScrollPhysics(),
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            color: Colors.greenAccent,
-            child: Column(
-              children: const [],
-            ),
+            color: Colors.orange,
+            child: Center(child: Text((index+1).toString())),
           );
         },
       ),
