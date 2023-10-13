@@ -13,23 +13,26 @@ class StaggeredGridViewPage extends StatelessWidget {
         title: const Text("Dashboard"),
         actions: const [],
       ),
-      body: StaggeredGrid.count(
-        crossAxisCount: 2,
-        mainAxisSpacing: 4,
-        crossAxisSpacing: 4,
-        children: List.generate(
-          10,
-          (index) {
-            bool evenLine = index % 2 == 0;
-            return StaggeredGridTile.count(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: evenLine ? 1 : 1.5,
-              child: Container(
-                color: Colors.red,
-                height: 100.0,
-              ),
-            );
-          },
+      body: SingleChildScrollView(
+        child: StaggeredGrid.count(
+          crossAxisCount: 2,
+          mainAxisSpacing: 4,
+          crossAxisSpacing: 4,
+          children: List.generate(
+            10,
+            (index) {
+              bool evenLine = index % 2 == 0;
+              return StaggeredGridTile.count(
+                crossAxisCellCount: 1,
+                mainAxisCellCount: evenLine ? 1 : 1.5,
+                child: Container(
+                  color: Colors.orange,
+                  height: 100.0,
+                  child: Center(child: Text((index + 1).toString())),
+                ),
+              );
+            },
+          ),
         ),
       ),
     );
